@@ -1,0 +1,127 @@
+fileFormatVersion: 2
+guid: 0212d81ec18c7574ca302a7b85b6d388
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: cluster1Handle
+    100002: cluster2Handle
+    100004: cluster3Handle
+    100006: cluster4Handle
+    100008: cluster5Handle
+    100010: curve1
+    100012: ikHandle1
+    100014: m_stethoscope_kg_2:stethoscope_mesh
+    100016: //RootNode
+    100018: stethoscope_a
+    100020: stethoscope_a_anim
+    100022: stethoscope_a_o
+    100024: stethoscope_b
+    100026: stethoscope_b_anim
+    100028: stethoscope_b_o
+    100030: stethoscope_c
+    100032: stethoscope_c_anim
+    100034: stethoscope_c_o
+    100036: stethoscope_d
+    100038: stethoscope_d_anim
+    100040: stethoscope_d_o
+    100042: stethoscope_e
+    100044: stethoscope_e_anim
+    100046: stethoscope_e_o
+    100048: stethoscope_end
+    100050: stethoscope_f
+    100052: cluster6Handle
+    100054: mstr_cntrl
+    100056: stethoscope_c2_anim
+    100058: stethoscope_c2_o
+    100060: stethoscope_mesh
+    400000: cluster1Handle
+    400002: cluster2Handle
+    400004: cluster3Handle
+    400006: cluster4Handle
+    400008: cluster5Handle
+    400010: curve1
+    400012: ikHandle1
+    400014: m_stethoscope_kg_2:stethoscope_mesh
+    400016: //RootNode
+    400018: stethoscope_a
+    400020: stethoscope_a_anim
+    400022: stethoscope_a_o
+    400024: stethoscope_b
+    400026: stethoscope_b_anim
+    400028: stethoscope_b_o
+    400030: stethoscope_c
+    400032: stethoscope_c_anim
+    400034: stethoscope_c_o
+    400036: stethoscope_d
+    400038: stethoscope_d_anim
+    400040: stethoscope_d_o
+    400042: stethoscope_e
+    400044: stethoscope_e_anim
+    400046: stethoscope_e_o
+    400048: stethoscope_end
+    400050: stethoscope_f
+    400052: cluster6Handle
+    400054: mstr_cntrl
+    400056: stethoscope_c2_anim
+    400058: stethoscope_c2_o
+    400060: stethoscope_mesh
+    4300000: m_stethoscope_kg_2:stethoscope_mesh
+    4300002: stethoscope_mesh
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: m_stethoscope_kg_2:stethoscope_mesh
+    13700002: stethoscope_mesh
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .200000003
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

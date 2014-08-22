@@ -1,0 +1,11 @@
+/Users/Tim/Git/drexelNeonatal/Temp/bin/Debug/Assembly-CSharp.dll.mdb
+/Users/Tim/Git/drexelNeonatal/Temp/bin/Debug/Assembly-CSharp.dll
+/Users/Tim/Git/drexelNeonatal/obj/Debug/Assembly-CSharp.dll
+/Users/Tim/Git/drexelNeonatal/obj/Debug/Assembly-CSharp.dll.mdb
+/Users/Tim/Git/drexelNeonatal/Temp/bin/Debug/UnityEngine.dll
+/Users/Tim/Git/drexelNeonatal/Temp/bin/Debug/UnityEditor.dll
+/Users/Tim/Git/drexelNeonatal/Temp/bin/Debug/dfScriptLite.dll
+/Users/Tim/Git/drexelNeonatal/Temp/bin/Debug/Mono.Cecil.dll
+/Users/Tim/Git/drexelNeonatal/Temp/bin/Debug/nunit.framework.dll
+/Users/Tim/Git/drexelNeonatal/Temp/bin/Debug/Unity.DataContract.dll
+/Users/Tim/Git/drexelNeonatal/Temp/bin/Debug/ICSharpCode.NRefactory.dll

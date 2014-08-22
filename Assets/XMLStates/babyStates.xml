@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<babyStates>
+	<baby id="1">
+		<animation>Take 001</animation>
+	</baby>	
+	<baby id="2">
+		<animation>anim01</animation>
+	</baby>
+</babyStates>

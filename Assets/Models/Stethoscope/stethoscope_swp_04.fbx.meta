@@ -1,0 +1,97 @@
+fileFormatVersion: 2
+guid: e68b8944b809d9446993544b434e025c
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: stethoscope_mesh
+    100002: //RootNode
+    100004: sts_01_j
+    100006: sts_02_j
+    100008: sts_03_j
+    100010: sts_04_j
+    100012: sts_05_j
+    100014: sts_06_j
+    100016: sts_07_j
+    100018: sts_08_j
+    100020: sts_09_j
+    100022: sts_10_j
+    100024: sts_11_j
+    100026: sts_12_j
+    100028: sts_13_j
+    100030: sts_14_j
+    100032: sts_15_j
+    100034: sts_16_j
+    400000: stethoscope_mesh
+    400002: //RootNode
+    400004: sts_01_j
+    400006: sts_02_j
+    400008: sts_03_j
+    400010: sts_04_j
+    400012: sts_05_j
+    400014: sts_06_j
+    400016: sts_07_j
+    400018: sts_08_j
+    400020: sts_09_j
+    400022: sts_10_j
+    400024: sts_11_j
+    400026: sts_12_j
+    400028: sts_13_j
+    400030: sts_14_j
+    400032: sts_15_j
+    400034: sts_16_j
+    4300000: stethoscope_mesh
+    9500000: //RootNode
+    13700000: stethoscope_mesh
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
