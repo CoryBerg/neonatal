@@ -7,16 +7,9 @@ public class RespiratoryCase : MonoBehaviour {
 	public bool isCorrect = false;
 	public float timer = 0.0f;
 	public Transform mouthTarget;
-
 	public int bpm;
-	public string heartRate, Sp02, bloodPressure, temperature;
-	protected float decompTimer, deathTimer;
 	public int currentState = 0;
-	protected SWP_HeartRateMonitor heartMonitor;
-//	private float firstTime = 3f;
-
-	protected Material babyMaterial;
-	protected GameObject babyBody;
+	public string heartRate, Sp02, bloodPressure, temperature;
 	/*
 	*	States:
 	*		0 - Initial
@@ -24,6 +17,12 @@ public class RespiratoryCase : MonoBehaviour {
 	*		2 - Correct needle decomp, baby healthy
 	*		3 - No action 10 minutes, or improper needle decomp x2
 	*/
+
+	protected GameObject babyBody;
+	protected Material babyMaterial;
+	protected float decompTimer, deathTimer;
+	protected SWP_HeartRateMonitor heartMonitor;
+
 	protected virtual void Awake() {
 		babyBreath = GameObject.FindGameObjectWithTag ("Baby").GetComponent<Breathing> ();
 		babyBody = GameObject.FindGameObjectWithTag("BabyBody");
@@ -34,8 +33,6 @@ public class RespiratoryCase : MonoBehaviour {
 		babyMaterial = babyBody.renderer.material;
 		babyMaterial.SetFloat ("_Blend", 0.0f);
 		mouthTarget = GameObject.Find ("mouthTarget").transform;
-		//TODO: Fix this, currently Setting this in inspector to avoid null ref.
-//		GameObject.Find ("endotrachealTube").transform.parent = mouthTarget;
 	}
 
 	protected virtual void Start() {
@@ -65,7 +62,7 @@ public class RespiratoryCase : MonoBehaviour {
 	}
 	
 	protected virtual IEnumerator DeathCondition() {
-		yield return new WaitForSeconds(deathTimer); // if 
+		yield return new WaitForSeconds(deathTimer);
 		if(currentState != 2) { // If you haven't won after death time is up... kill the baby
 			BabyDeath();
 		}
@@ -73,7 +70,7 @@ public class RespiratoryCase : MonoBehaviour {
 
 	// Update is called once per frame
 	protected virtual void Update () {
-		heartMonitor.BeatsPerMinute = bpm;///4;
+		heartMonitor.BeatsPerMinute = bpm;
 	}
 
 	protected void UpdateMonitor() {
@@ -86,48 +83,38 @@ public class RespiratoryCase : MonoBehaviour {
 	
 	// Initial state of baby
 	protected virtual void InitialState() {
-		
-		// SpO2 75%
 		Sp02 = "75%";
-		// Temperature 37.1 C
 		temperature = "37.1";
-		// Respiratory Rate 90 breathes/min
 		babyBreath.respRate = 90f;
-		// Right lung not working
-		babyBreath.both = false;
-		// Blood pressure 50/25 mmHg
 		bloodPressure = "50/25";
-		// Heart rate
 		heartRate = "180";
 		bpm = 180;
-		// Pulse strength weak
+
+		// Right lung not working
+		babyBreath.both = false;
+
 		babyBody = GameObject.FindGameObjectWithTag("BabyBody");
 		babyMaterial = babyBody.renderer.material;
 		babyMaterial.SetFloat ("_Blend", 0.0f); // Healthy Lip
-		UpdateMonitor();
 
+		UpdateMonitor();
 	}
 	
 	// No needle decomp by 5 min (regardless of interations or lack thereof) or needle decomp in incorrect location
 	protected virtual void FurtherDecomp() {
-
 		Debug.Log ("Enter FurtherDecomp");
 		currentState = 1;
 		// Chest retraction
 		// Nasal flaring
 		// Grunting
 		
-		// SpO2 60%
 		Sp02 = "60%";
 		// Cyanosis enabled
-		// Respiratory rate 120 breathes/min
 		babyBreath.respRate = 120f;
-		// Blood pressure 30/10 mmHg
 		bloodPressure = "30/10";
-		// Heart rate 220bpm
 		bpm = 220;
 		heartRate = "220";
-		// Pulse strength weak
+
 		babyMaterial.SetFloat ("_Blend", 1.0f); // Blue Lips
 
 		UpdateMonitor();
@@ -141,24 +128,15 @@ public class RespiratoryCase : MonoBehaviour {
 		// No nasal flaring
 		// No grunting
 		
-		// SpO2 94%
 		Sp02 = "94%";
-		// Cyanosis disabled
-		// Respiratory rate 40 breathes/min
 		babyBreath.respRate = 40f;
-		// Both lungs working
-		babyBreath.both = true;
-		// Blood pressure 65/35 mmHg
 		bloodPressure = "65/35";
-		// Heart rate 140 bpm
 		bpm = 140;
 		heartRate = "140";
-		// Pulse strength strong
-		
-		// END SCENARIO WITH WIN
-		
-		//baby.GetComponent<BabyAnimatorController>().currentState = "";
-		
+
+		// Both lungs working
+		babyBreath.both = true;
+
 		Invoke ("ChangeScene", 60.0f);
 		babyMaterial.SetFloat ("_Blend", 0.0f); // Healthy Lips
 

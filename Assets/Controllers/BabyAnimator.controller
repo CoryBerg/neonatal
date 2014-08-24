@@ -243,7 +243,7 @@ State:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Into Flex
-  m_Speed: 1
+  m_Speed: .5
   m_CycleOffset: 0
   m_Motions:
   - {fileID: 7400000, guid: d97b19c79c7735f46939d2ecd817c74d, type: 3}
@@ -273,7 +273,7 @@ State:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Out Extend
-  m_Speed: 1
+  m_Speed: .5
   m_CycleOffset: 0
   m_Motions:
   - {fileID: 7400010, guid: d97b19c79c7735f46939d2ecd817c74d, type: 3}
@@ -387,21 +387,21 @@ StateMachine:
       second:
       - {fileID: 110192678}
     data:
-      first: {fileID: 110281422}
+      first: {fileID: 110232370}
       second:
-      - {fileID: 110129874}
+      - {fileID: 110186324}
     data:
       first: {fileID: 110236865}
       second:
       - {fileID: 110125089}
     data:
-      first: {fileID: 110232370}
-      second:
-      - {fileID: 110186324}
-    data:
       first: {fileID: 110278349}
       second:
       - {fileID: 110133607}
+    data:
+      first: {fileID: 110281422}
+      second:
+      - {fileID: 110129874}
   m_MotionSetCount: 1
   m_AnyStatePosition: {x: 0, y: 0, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
