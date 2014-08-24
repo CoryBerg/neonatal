@@ -7,7 +7,6 @@ public class ArmAnimatorController : MonoBehaviour {
 
 	private Animator animator;
 	private ArmAnimationContainer animations;
-//	private ArmSpecialCase special;
 	private Transform startingParent;
 	private Vector3 startingLocalPos;
 	private bool doOnce = true;
@@ -17,8 +16,6 @@ public class ArmAnimatorController : MonoBehaviour {
         startingLocalPos = this.transform.localPosition;
 		Instance = this;
 		animations = new ArmAnimationContainer ();
-//		special = new ArmSpecialCase ();
-
 		animator = GetComponent<Animator> ();
 
 		ArmItemsContainer.Instance.DisableAllItems ();
@@ -42,7 +39,7 @@ public class ArmAnimatorController : MonoBehaviour {
 		transform.parent = target;
 		transform.localPosition = Vector3.zero;
 		ArmItemsContainer.Instance.NewAnimation ("ButtonSteth");
-		animator.SetTrigger("UseStethoscope");
+		animator.SetTrigger("ButtonSteth");
 	}
 
 	// Triggers mechanim state for animation
@@ -56,7 +53,7 @@ public class ArmAnimatorController : MonoBehaviour {
 		}
 		string animName = animations.GetAnimation(animation);
 		if(animName == "") {
-			print ("Animation DNE");
+			Debug.Log("Animation DNE");
 			return;
 		}
 

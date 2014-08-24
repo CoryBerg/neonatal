@@ -3,27 +3,25 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class ArmAnimationContainer {
-	private Dictionary<string, string> animations;
+	private List<string> animations;
 
-	// Builds dictionary of ButtonPressed:AnimationName
+	// Builds list of existing animations
 	public ArmAnimationContainer() {
-		animations = new Dictionary<string, string> ()
-			{
-				{"ButtonNeedle", "NeedleDecomp"},
-				{"ButtonSteth", "UseStethoscope"},
-				{"ButtonChest", "ChestCompression"},
-				{"ButtonSunctionbaby", "Sunction"},
-				{"ButtonIntubation", "Intubation"},
-				{"StartCC", "StartCC"},
-				{"EndCC", "EndCC"},
-				{"Stethescope", "UseStethoscope"} // Unnecessary
-			};
+		animations = new List<string> () {
+			"ButtonChest",
+				"StartCC",
+				"EndCC",
+			"ButtonIntubation",
+			"ButtonNeedle",
+			"ButtonSuction"
+		};
 	}
 
-	public string GetAnimation(string key) {
-		if(animations.ContainsKey(key)) {
-			return animations[key];
+	public string GetAnimation(string anim) {
+		if(animations.Contains(anim)) {
+			return anim;
 		} else {
+			 Debug.Log("Animation not found");
 			return "";
 		}
 	}

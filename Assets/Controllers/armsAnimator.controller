@@ -8,43 +8,31 @@ AnimatorController:
   m_Name: armsAnimator
   serializedVersion: 2
   m_AnimatorParameters:
-  - m_Name: ChestCompression
+  - m_Name: ButtonChest
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 9100000}
-  - m_Name: UseStethoscope
+  - m_Name: ButtonSteth
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 9100000}
-  - m_Name: NeedleDecomp
+  - m_Name: ButtonNeedle
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 9100000}
-  - m_Name: Larygynoscope
+  - m_Name: ButtonIntubation
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 9100000}
-  - m_Name: Syringe
-    m_Type: 9
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
-  - m_Name: Intubation
-    m_Type: 9
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
-  - m_Name: Sunction
+  - m_Name: ButtonSuction
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -86,7 +74,7 @@ Transition:
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: ChestCompression
+    m_ConditionEvent: ButtonChest
     m_EventTreshold: 0
     m_ExitTime: .884615421
   m_Atomic: 1
@@ -122,7 +110,7 @@ Transition:
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: UseStethoscope
+    m_ConditionEvent: ButtonSteth
     m_EventTreshold: 0
     m_ExitTime: .945454538
   m_Atomic: 1
@@ -212,7 +200,7 @@ Transition:
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 5
-    m_ConditionEvent: 
+    m_ConditionEvent: ButtonSuction
     m_EventTreshold: 0
     m_ExitTime: .907692313
   m_Atomic: 1
@@ -230,7 +218,7 @@ Transition:
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: Sunction
+    m_ConditionEvent: ButtonSuction
     m_EventTreshold: 0
     m_ExitTime: .884615421
   m_Atomic: 1
@@ -320,7 +308,7 @@ Transition:
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 5
-    m_ConditionEvent: 
+    m_ConditionEvent: ButtonSuction
     m_EventTreshold: 0
     m_ExitTime: .899999976
   m_Atomic: 1
@@ -338,7 +326,7 @@ Transition:
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 5
-    m_ConditionEvent: Sunction
+    m_ConditionEvent: ButtonSuction
     m_EventTreshold: 0
     m_ExitTime: .875
   m_Atomic: 1
@@ -374,7 +362,7 @@ Transition:
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 5
-    m_ConditionEvent: 
+    m_ConditionEvent: ButtonSuction
     m_EventTreshold: 0
     m_ExitTime: .92405057
   m_Atomic: 1
@@ -410,7 +398,7 @@ Transition:
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: Intubation
+    m_ConditionEvent: ButtonIntubation
     m_EventTreshold: 0
     m_ExitTime: .884615421
   m_Atomic: 1
@@ -428,7 +416,7 @@ Transition:
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: NeedleDecomp
+    m_ConditionEvent: ButtonNeedle
     m_EventTreshold: 0
     m_ExitTime: .884615421
   m_Atomic: 1
@@ -446,7 +434,7 @@ Transition:
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 5
-    m_ConditionEvent: 
+    m_ConditionEvent: ButtonSuction
     m_EventTreshold: 0
     m_ExitTime: .95419848
   m_Atomic: 1
@@ -500,7 +488,7 @@ Transition:
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 5
-    m_ConditionEvent: 
+    m_ConditionEvent: ButtonSuction
     m_EventTreshold: 0
     m_ExitTime: .87755084
   m_Atomic: 1
@@ -518,7 +506,7 @@ Transition:
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 5
-    m_ConditionEvent: Sunction
+    m_ConditionEvent: ButtonSuction
     m_EventTreshold: 0
     m_ExitTime: 0
   m_Atomic: 1
@@ -825,18 +813,6 @@ StateMachine:
   m_ChildStateMachinePosition: []
   m_OrderedTransitions:
     data:
-      first: {fileID: 110299098}
-      second:
-      - {fileID: 110193630}
-    data:
-      first: {fileID: 110223416}
-      second:
-      - {fileID: 110155654}
-    data:
-      first: {fileID: 110209637}
-      second:
-      - {fileID: 110144184}
-    data:
       first: {fileID: 0}
       second: []
     data:
@@ -848,25 +824,42 @@ StateMachine:
       - {fileID: 110129482}
       - {fileID: 110107887}
     data:
-      first: {fileID: 110204808}
+      first: {fileID: 110272663}
       second:
-      - {fileID: 110142830}
+      - {fileID: 110125542}
+      - {fileID: 110150997}
     data:
-      first: {fileID: 110207592}
+      first: {fileID: 110221970}
       second:
-      - {fileID: 110127248}
+      - {fileID: 110189519}
     data:
       first: {fileID: 110207708}
       second:
       - {fileID: 110146445}
     data:
+      first: {fileID: 110207592}
+      second:
+      - {fileID: 110127248}
+    data:
+      first: {fileID: 110254033}
+      second:
+      - {fileID: 110106145}
+    data:
+      first: {fileID: 110240075}
+      second:
+      - {fileID: 110196299}
+    data:
+      first: {fileID: 110267744}
+      second:
+      - {fileID: 110170403}
+    data:
+      first: {fileID: 110242845}
+      second:
+      - {fileID: 110111838}
+    data:
       first: {fileID: 110210885}
       second:
       - {fileID: 110131322}
-    data:
-      first: {fileID: 110221970}
-      second:
-      - {fileID: 110189519}
     data:
       first: {fileID: 110230232}
       second:
@@ -876,34 +869,29 @@ StateMachine:
       second:
       - {fileID: 110158831}
     data:
-      first: {fileID: 110240075}
+      first: {fileID: 110270884}
       second:
-      - {fileID: 110196299}
-    data:
-      first: {fileID: 110242845}
-      second:
-      - {fileID: 110111838}
-    data:
-      first: {fileID: 110254033}
-      second:
-      - {fileID: 110106145}
+      - {fileID: 110142693}
     data:
       first: {fileID: 110266400}
       second:
       - {fileID: 110122600}
     data:
-      first: {fileID: 110267744}
+      first: {fileID: 110204808}
       second:
-      - {fileID: 110170403}
+      - {fileID: 110142830}
     data:
-      first: {fileID: 110270884}
+      first: {fileID: 110209637}
       second:
-      - {fileID: 110142693}
+      - {fileID: 110144184}
     data:
-      first: {fileID: 110272663}
+      first: {fileID: 110223416}
       second:
-      - {fileID: 110125542}
-      - {fileID: 110150997}
+      - {fileID: 110155654}
+    data:
+      first: {fileID: 110299098}
+      second:
+      - {fileID: 110193630}
   m_MotionSetCount: 1
   m_AnyStatePosition: {x: -48, y: -156, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
