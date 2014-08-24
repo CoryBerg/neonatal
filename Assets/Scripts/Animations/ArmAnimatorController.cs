@@ -17,8 +17,6 @@ public class ArmAnimatorController : MonoBehaviour {
 		Instance = this;
 		animations = new ArmAnimationContainer ();
 		animator = GetComponent<Animator> ();
-
-		ArmItemsContainer.Instance.DisableAllItems ();
 		startingParent = this.transform.parent;
 	}
 

@@ -14,6 +14,7 @@ public class ArmItemsContainer : MonoBehaviour {
 		items.Add ("ButtonSunction", maskAndBag);
 		items.Add ("ButtonIntubation", laryngoscope);
 		items.Add ("ButtonSteth", steth);
+		DisableAllItems ();
 	}
 
 	public void NewAnimation(string animation) {
