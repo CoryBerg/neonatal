@@ -11,7 +11,7 @@ public class ArmItemsContainer : MonoBehaviour {
 		Instance = this;
 		items = new Dictionary<string, GameObject>();
 		items.Add ("ButtonNeedle", butterfly);
-		items.Add ("ButtonSunction", maskAndBag);
+		items.Add ("ButtonSuction", maskAndBag);
 		items.Add ("ButtonIntubation", laryngoscope);
 		items.Add ("ButtonSteth", steth);
 		DisableAllItems ();

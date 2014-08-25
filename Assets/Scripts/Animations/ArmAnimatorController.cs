@@ -22,10 +22,10 @@ public class ArmAnimatorController : MonoBehaviour {
 
 	// Called every frame
 	void Update() {
-		if (animator.GetCurrentAnimatorStateInfo (0).IsName ("Idle") && doOnce) {
-			doOnce = false;
-			GameObject.FindGameObjectWithTag("Baby").GetComponent<Animator>().SetFloat("Intubation", 0.0f);
-		}
+		//if (animator.GetCurrentAnimatorStateInfo (0).IsName ("idle") && doOnce) {
+			//doOnce = false;
+			//ArmItemsContainer.Instance.DisableAllItems();
+		//}
 	}
 
 	void ResetArms() {
@@ -42,12 +42,12 @@ public class ArmAnimatorController : MonoBehaviour {
 
 	// Triggers mechanim state for animation
 	public void TriggerAnimation(string animation) {
+		doOnce = true;
 		ResetArms();
 		ArmItemsContainer.Instance.NewAnimation (animation);
 
 		if(animation == "ButtonIntubation") {
 			GameObject.FindGameObjectWithTag("Baby").GetComponent<Animator>().SetFloat("Intubation", 0.5f);
-			doOnce = true;
 		}
 		string animName = animations.GetAnimation(animation);
 		if(animName == "") {

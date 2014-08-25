@@ -14,7 +14,7 @@ public class BabyAnimationContainer {
 				{"ButtonNeedle", 0.0f},
 				{"ButtonSteth", -1.0f},
 				{"ButtonChest", -1.0f},
-				{"ButtonSunctionbaby", 0.0f},
+				{"ButtonSuction", 0.0f},
 				{"ButtonIntubation", 1.0f},
 			};
 	}
