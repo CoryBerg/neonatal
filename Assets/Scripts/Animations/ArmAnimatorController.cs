@@ -45,10 +45,7 @@ public class ArmAnimatorController : MonoBehaviour {
 		doOnce = true;
 		ResetArms();
 		ArmItemsContainer.Instance.NewAnimation (animation);
-
-		if(animation == "ButtonIntubation") {
-			GameObject.FindGameObjectWithTag("Baby").GetComponent<Animator>().SetFloat("Intubation", 0.5f);
-		}
+		
 		string animName = animations.GetAnimation(animation);
 		if(animName == "") {
 			Debug.Log("Animation DNE");

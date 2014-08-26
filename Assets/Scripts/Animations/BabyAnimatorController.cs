@@ -15,11 +15,14 @@ public class BabyAnimatorController : MonoBehaviour {
 
 	// Triggers mechanim state for animation
 	public void TriggerAnimation(string animation) {
-		float t = animations.GetAnimation(animation);
-		if(t == BabyAnimationContainer.ANIM_SENTINEL) {
-			print ("Baby animation not found.");
-			return;
+		if (animation == "ButtonIntubation") {
+			animator.SetTrigger (animation);
 		}
-		animator.SetFloat ("State", t);
+		//float t = animations.GetAnimation(animation);
+		//if(t == BabyAnimationContainer.ANIM_SENTINEL) {
+		//	print ("Baby animation not found.");
+		//	return;
+		//}
+		//animator.SetFloat ("State", t);
 	}
 }
