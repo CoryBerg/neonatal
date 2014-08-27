@@ -5,15 +5,16 @@ using System.Collections.Generic;
 public class ArmItemsContainer : MonoBehaviour {
 	public static ArmItemsContainer Instance;
 	public GameObject butterfly, maskAndBag, laryngoscope, steth;
-	private Dictionary<string, GameObject> items;
+    public List<GameObject> butterFlyObs, maskAndBagObs, larynObjs, stethObs;
+	private Dictionary<string, List<GameObject>> items;
 
 	void Awake() {
 		Instance = this;
-		items = new Dictionary<string, GameObject>();
-		items.Add ("ButtonNeedle", butterfly);
-		items.Add ("ButtonSuction", maskAndBag);
-		items.Add ("ButtonIntubation", laryngoscope);
-		items.Add ("ButtonSteth", steth);
+		items = new Dictionary<string, List<GameObject>>();
+		items.Add ("ButtonNeedle", butterFlyObs);
+		items.Add ("ButtonSuction", maskAndBagObs);
+        items.Add("ButtonIntubation", larynObjs);
+		items.Add ("ButtonSteth", stethObs);
 		DisableAllItems ();
 	}
 
@@ -25,13 +26,17 @@ public class ArmItemsContainer : MonoBehaviour {
 	public void EnableItems(string key) {
 		print ("Want to enable: " + key);// + items[key]);
 		if(items.ContainsKey(key)) {
-			items[key].SetActive(true);
+            foreach (GameObject i in items[key]) {
+                i.SetActive(true);
+            }
 		}
 	}
 
 	public void DisableAllItems() {
-		foreach (GameObject item in items.Values) {
-			item.SetActive (false);
+		foreach (List<GameObject> ilist in items.Values) {
+            foreach (GameObject i in ilist) {
+			    i.SetActive (false);
+            }
 		}
 	}
 }
