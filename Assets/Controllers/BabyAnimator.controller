@@ -297,10 +297,10 @@ State:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Intubation
-  m_Speed: 1
+  m_Speed: .75
   m_CycleOffset: 0
   m_Motions:
-  - {fileID: 7400012, guid: d97b19c79c7735f46939d2ecd817c74d, type: 3}
+  - {fileID: 7400000, guid: e5f8705e3666f9541bf48fdac4975d4d, type: 3}
   m_ParentStateMachine: {fileID: 110700000}
   m_Position: {x: 432, y: 228, z: 0}
   m_IKOnFeet: 0
@@ -401,16 +401,13 @@ StateMachine:
   m_ChildStateMachinePosition: []
   m_OrderedTransitions:
     data:
+      first: {fileID: 0}
+      second: []
+    data:
       first: {fileID: 110256782}
       second:
       - {fileID: 110170400}
       - {fileID: 110147254}
-    data:
-      first: {fileID: 0}
-      second: []
-    data:
-      first: {fileID: 0}
-      second: []
     data:
       first: {fileID: 110221005}
       second:
