@@ -32,8 +32,8 @@ public class RespiratoryCase : MonoBehaviour {
 		babyBody = GameObject.FindGameObjectWithTag("BabyBody");
 		heartMonitor = GameObject.Find("HeartMonitor").GetComponent<SWP_HeartRateMonitor>();
 		InitialState();
-		decompTimer = 300f;
-		deathTimer = 600f;
+		decompTimer = 600f;
+		deathTimer = 900f;
 		babyMaterial = babyBody.renderer.material;
 		babyMaterial.SetFloat ("_Blend", 0.0f);
 		mouthTarget = GameObject.Find ("mouthTarget").transform;

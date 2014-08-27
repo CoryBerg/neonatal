@@ -9,8 +9,8 @@ public class CardiacCase : RespiratoryCase {
 	
 	protected override void Awake() {
 		base.Awake();
-		decompTimer = 900f;
-		deathTimer = 1800f;
+		decompTimer = 600f;
+		deathTimer = 900f;
 	}
 
 	protected override void InitialState ()	{
