@@ -23,7 +23,11 @@ public class RespiratoryCase : MonoBehaviour {
 	protected float decompTimer, deathTimer;
 	protected SWP_HeartRateMonitor heartMonitor;
 
+	private GameObject ett, vt;
+
 	protected virtual void Awake() {
+		ett = GameObject.FindGameObjectWithTag ("Arms").GetComponent<ArmAnimatorController> ().ett;
+		vt = GameObject.FindGameObjectWithTag ("Arms").GetComponent<ArmAnimatorController> ().vt;
 		babyBreath = GameObject.FindGameObjectWithTag ("Baby").GetComponent<Breathing> ();
 		babyBody = GameObject.FindGameObjectWithTag("BabyBody");
 		heartMonitor = GameObject.Find("HeartMonitor").GetComponent<SWP_HeartRateMonitor>();
@@ -33,6 +37,18 @@ public class RespiratoryCase : MonoBehaviour {
 		babyMaterial = babyBody.renderer.material;
 		babyMaterial.SetFloat ("_Blend", 0.0f);
 		mouthTarget = GameObject.Find ("mouthTarget").transform;
+
+		EttVtPositioning ();
+	}
+
+	private void EttVtPositioning() {
+		float x = 0.002780795f,
+		y = -0.06677689f,
+		z = -0.1790561f;
+		vt.transform.parent = mouthTarget;
+		ett.transform.parent = mouthTarget;
+		ett.transform.localEulerAngles = new Vector3 (90, 0, 0);
+		ett.transform.localPosition = new Vector3 (x, y, z);
 	}
 
 	protected virtual void Start() {

@@ -4,6 +4,7 @@ using System.Collections;
 public class ArmAnimatorController : MonoBehaviour {
 	public static ArmAnimatorController Instance;
 	public AudioClip armMove;
+	public GameObject ett, vt;
 
 	private Animator animator;
 	private ArmAnimationContainer animations;
@@ -22,10 +23,10 @@ public class ArmAnimatorController : MonoBehaviour {
 
 	// Called every frame
 	void Update() {
-		//if (animator.GetCurrentAnimatorStateInfo (0).IsName ("idle") && doOnce) {
-			//doOnce = false;
-			//ArmItemsContainer.Instance.DisableAllItems();
-		//}
+		if (animator.GetCurrentAnimatorStateInfo (0).IsName ("Remove ETT")) {
+			ett.transform.parent = GameObject.Find("L_Hand").transform;
+			vt.transform.parent = GameObject.Find("mesh_grp").transform;
+		}
 	}
 
 	void ResetArms() {
