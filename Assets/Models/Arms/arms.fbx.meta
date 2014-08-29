@@ -4905,7 +4905,7 @@ ModelImporter:
       name: -> Intubation (Remove ETT & VT)
       takeName: Take 001
       firstFrame: 707
-      lastFrame: 764
+      lastFrame: 770
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -5228,7 +5228,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Intubation Removing ETT
       takeName: Take 001
-      firstFrame: 765
+      firstFrame: 771
       lastFrame: 826
       wrapMode: 0
       orientationOffsetY: 0
@@ -5552,8 +5552,8 @@ ModelImporter:
     - serializedVersion: 16
       name: Reintubation
       takeName: Take 001
-      firstFrame: 928
-      lastFrame: 1270
+      firstFrame: 828
+      lastFrame: 1170
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -5876,8 +5876,8 @@ ModelImporter:
     - serializedVersion: 16
       name: Suction
       takeName: Take 001
-      firstFrame: 1800
-      lastFrame: 2000
+      firstFrame: 1172
+      lastFrame: 1362
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -6046,8 +6046,6 @@ ModelImporter:
       - path: arm_root/R_clavicle/R_shoulder/R_Elbow/R_Wrist/R_Hand/R_thumb_a/R_thumb_b/R_thumb_c
         weight: 1
       - path: arm_root/R_clavicle/R_shoulder/R_Elbow/R_Wrist/R_Hand/R_thumb_a/R_thumb_b/R_thumb_c/R_thumb_end
-        weight: 1
-      - path: arm_root/R_clavicle/R_shoulder/R_Elbow/R_Wrist/R_Hand/stc_01_o
         weight: 1
       - path: arm_root/R_clavicle/R_shoulder/R_Elbow/R_Wrist/sts_master_grp
         weight: 1

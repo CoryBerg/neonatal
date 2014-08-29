@@ -30,8 +30,8 @@ public class RespiratoryCase : MonoBehaviour {
 		vt = GameObject.FindGameObjectWithTag ("Arms").GetComponent<ArmAnimatorController> ().vt;
 		babyBreath = GameObject.FindGameObjectWithTag ("Baby").GetComponent<Breathing> ();
 		babyBody = GameObject.FindGameObjectWithTag("BabyBody");
-		heartMonitor = GameObject.Find("HeartMonitor").GetComponent<SWP_HeartRateMonitor>();
-		InitialState();
+		heartMonitor = GameObject.Find("HeartMonitor").GetComponent<SWP_HeartRateMonitor> ();
+		InitialState ();
 		decompTimer = 600f;
 		deathTimer = 900f;
 		babyMaterial = babyBody.renderer.material;
@@ -45,10 +45,10 @@ public class RespiratoryCase : MonoBehaviour {
 		float x = 0.002780795f,
 		y = -0.06677689f,
 		z = -0.1790561f;
-		vt.transform.parent = mouthTarget;
 		ett.transform.parent = mouthTarget;
 		ett.transform.localEulerAngles = new Vector3 (90, 0, 0);
 		ett.transform.localPosition = new Vector3 (x, y, z);
+		vt.transform.parent = ett.transform;
 	}
 
 	protected virtual void Start() {

@@ -24,7 +24,11 @@ public class ArmAnimatorController : MonoBehaviour {
 	// Called every frame
 	void Update() {
 		if (animator.GetCurrentAnimatorStateInfo (0).IsName ("Remove ETT")) {
+			float x = 357.3963f;
+			float y = 223.2345f;
+			float z = 147.7629f;
 			ett.transform.parent = GameObject.Find("L_Hand").transform;
+			ett.transform.position = new Vector3(x,y,z);
 			vt.transform.parent = GameObject.Find("mesh_grp").transform;
 		}
 	}

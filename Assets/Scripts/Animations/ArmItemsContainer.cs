@@ -4,15 +4,14 @@ using System.Collections.Generic;
 
 public class ArmItemsContainer : MonoBehaviour {
 	public static ArmItemsContainer Instance;
-	public GameObject butterfly, maskAndBag, laryngoscope, steth;
-    public List<GameObject> butterFlyObs, maskAndBagObs, larynObjs, stethObs;
+    public List<GameObject> butterFlyObs, suctionObs, larynObjs, stethObs;
 	private Dictionary<string, List<GameObject>> items;
 
 	void Awake() {
 		Instance = this;
 		items = new Dictionary<string, List<GameObject>>();
 		items.Add ("ButtonNeedle", butterFlyObs);
-		items.Add ("ButtonSuction", maskAndBagObs);
+		items.Add ("ButtonSuction", suctionObs);
         items.Add("ButtonIntubation", larynObjs);
 		items.Add ("ButtonSteth", stethObs);
 		DisableAllItems ();
