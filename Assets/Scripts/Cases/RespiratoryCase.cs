@@ -176,8 +176,8 @@ public class RespiratoryCase : MonoBehaviour {
 		// Blood pressure 15/5 mmHg
 		bloodPressure = "15/5";
 		// Heart rate 250 bpm
-		bpm = 250;
-		heartRate = "250";
+		bpm = 0;
+		heartRate = "0";
 		// Pusle strength absent
 		
 		// END SCENARIO WITH FAIL

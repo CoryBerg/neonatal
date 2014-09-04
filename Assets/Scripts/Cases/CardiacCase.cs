@@ -11,6 +11,7 @@ public class CardiacCase : RespiratoryCase {
 		base.Awake();
 		decompTimer = 600f;
 		deathTimer = 900f;
+		babyBreath.both = true;
 	}
 
 	protected override void InitialState ()	{
@@ -30,8 +31,8 @@ public class CardiacCase : RespiratoryCase {
 		currentState = 3; // death
 		Sp02 = "85%";
 		bloodPressure = "65/35";
-		heartRate = "140";
-		bpm = 140;
+		heartRate = "0";
+		bpm = 0;
 		// Pulse strength strong
 		babyMaterial.SetFloat ("_Blend", 1.0f);
 		UpdateMonitor();
