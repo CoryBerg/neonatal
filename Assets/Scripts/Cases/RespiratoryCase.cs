@@ -26,8 +26,11 @@ public class RespiratoryCase : MonoBehaviour {
 	private GameObject ett, vt;
 
 	protected virtual void Awake() {
-		ett = GameObject.FindGameObjectWithTag ("Arms").GetComponent<ArmAnimatorController> ().ett;
-		vt = GameObject.FindGameObjectWithTag ("Arms").GetComponent<ArmAnimatorController> ().vt;
+        if (ArmAnimatorController.Instance == null) {
+            print("AHH");
+        }
+        ett = ArmAnimatorController.Instance.ett;
+		vt = ArmAnimatorController.Instance.vt;
 		babyBreath = GameObject.FindGameObjectWithTag ("Baby").GetComponent<Breathing> ();
 		babyBody = GameObject.FindGameObjectWithTag("BabyBody");
 		heartMonitor = GameObject.Find("HeartMonitor").GetComponent<SWP_HeartRateMonitor> ();

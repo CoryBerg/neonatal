@@ -11,14 +11,16 @@ public class ArmAnimatorController : MonoBehaviour {
 	private Transform startingParent;
 	private Vector3 startingLocalPos;
 	private bool doOnce = true;
-
+    private bool inSteth = false;
 	// Use this for initialization
     void Awake() {
+        print("AWAKE START");
         startingLocalPos = this.transform.localPosition;
 		Instance = this;
 		animations = new ArmAnimationContainer ();
 		animator = GetComponent<Animator> ();
-		startingParent = this.transform.parent;
+        startingParent = this.transform.parent;
+        print("AWAKE END");
 	}
 
 	// Called every frame
@@ -38,12 +40,38 @@ public class ArmAnimatorController : MonoBehaviour {
 		this.transform.localPosition = startingLocalPos;
 	}
 
+    IEnumerator MoveTo(Vector3 tar) {
+        Vector3 start = transform.position;
+        float t = 0f;
+        while(t < .82f) {
+            float lVal = t / 2f;
+            transform.position = Vector3.Lerp(start,tar,lVal);
+            t += Time.deltaTime;
+            yield return null;
+        }
+    }
+
 	public void Stethescope(Transform target) {
+        if (inSteth) {
+            StopCoroutine("MoveTo");
+            StartCoroutine(MoveTo(target.position));
+            print("Steth Transition");
+            return;
+        }
+        print("Steth Begin");
 		transform.parent = target;
 		transform.localPosition = Vector3.zero;
 		ArmItemsContainer.Instance.NewAnimation ("ButtonSteth");
-		animator.SetTrigger("ButtonSteth");
+        animator.SetTrigger("ButtonSteth");
+        animator.SetBool("InSteth", true);
+        inSteth = true;
 	}
+
+    public void FinishSteth() {
+        animator.SetBool("InSteth", false);
+        inSteth = false;
+        print("Steth Finsh");
+    }
 
 	// Triggers mechanim state for animation
 	public void TriggerAnimation(string animation) {
