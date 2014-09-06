@@ -34,8 +34,9 @@ public class RespiratoryCase : MonoBehaviour {
 		InitialState ();
 		decompTimer = 600f;
 		deathTimer = 900f;
-		babyMaterial = babyBody.renderer.material;
-		babyMaterial.SetFloat ("_Blend", 0.0f);
+        babyMaterial = babyBody.renderer.material;
+
+        StartCoroutine(LipsOff(3f));
 		mouthTarget = GameObject.Find ("mouthTarget").transform;
 
 		EttVtPositioning ();
@@ -110,8 +111,9 @@ public class RespiratoryCase : MonoBehaviour {
 		babyBreath.both = false;
 
 		babyBody = GameObject.FindGameObjectWithTag("BabyBody");
-		babyMaterial = babyBody.renderer.material;
-		babyMaterial.SetFloat ("_Blend", 0.0f); // Healthy Lip
+        babyMaterial = babyBody.renderer.material;
+
+        StartCoroutine(LipsOff(3f));
 
 		UpdateMonitor();
 	}
@@ -131,11 +133,35 @@ public class RespiratoryCase : MonoBehaviour {
 		bpm = 220;
 		heartRate = "220";
 
-		babyMaterial.SetFloat ("_Blend", 1.0f); // Blue Lips
+        StartCoroutine(LipsOn(3f));
+
+		//babyMaterial.SetFloat ("_Blend", 1.0f); // Blue Lips
 
 		UpdateMonitor();
 	}
-	
+
+    protected IEnumerator LipsOn(float t) {
+        float start = t;
+        while (t > 0) {
+            t -= Time.deltaTime;
+            SetBlend(1f - t / start);
+            yield return null;
+        }
+    }
+
+    void SetBlend(float t) {
+        babyMaterial.SetFloat("_Blend", t);
+    }
+
+    protected IEnumerator LipsOff(float t) {
+        float start = t;
+        while (t > 0) {
+            t -= Time.deltaTime;
+            SetBlend(t / start);
+            yield return null;
+        }
+    }
+
 	// Needle decomp by 5 min in correct location
 	protected virtual void BabyRecovery() {
 		currentState = 2;
@@ -153,8 +179,9 @@ public class RespiratoryCase : MonoBehaviour {
 		// Both lungs working
 		babyBreath.both = true;
 
-		Invoke ("ChangeScene", 60.0f);
-		babyMaterial.SetFloat ("_Blend", 0.0f); // Healthy Lips
+        Invoke("ChangeScene", 60.0f);
+
+        StartCoroutine(LipsOff(3f));
 
 		UpdateMonitor(60f);
 	}
@@ -181,9 +208,10 @@ public class RespiratoryCase : MonoBehaviour {
 		// Pusle strength absent
 		
 		// END SCENARIO WITH FAIL
-		
-		Invoke ("ChangeScene", 3.0f);
-		babyMaterial.SetFloat ("_Blend", 1.0f); // Blue Lips
+
+        Invoke("ChangeScene", 3.0f);
+
+        StartCoroutine(LipsOn(3f));
 		UpdateMonitor();
 	}
 

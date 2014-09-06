@@ -22,8 +22,9 @@ public class CardiacCase : RespiratoryCase {
 		bpm = 180;
 		UpdateMonitor();
 		babyBody = GameObject.FindGameObjectWithTag("BabyBody");
-		babyMaterial = babyBody.renderer.material;
-		babyMaterial.SetFloat ("_Blend", 0.0f);
+        babyMaterial = babyBody.renderer.material;
+
+        StartCoroutine(LipsOff(3f));
 	}
 
 	protected override void BabyDeath () {
@@ -33,8 +34,9 @@ public class CardiacCase : RespiratoryCase {
 		bloodPressure = "65/35";
 		heartRate = "0";
 		bpm = 0;
-		// Pulse strength strong
-		babyMaterial.SetFloat ("_Blend", 1.0f);
+        // Pulse strength strong
+
+        StartCoroutine(LipsOn(1f));
 		UpdateMonitor();
 	}
 
@@ -47,8 +49,9 @@ public class CardiacCase : RespiratoryCase {
 		bpm = 140;
 		// strong pulse
 		// cyanosis disabled
-		Invoke ("ChangeScene", 3.0f);
-		babyMaterial.SetFloat ("_Blend", 0.0f);
+        Invoke("ChangeScene", 3.0f);
+
+        StartCoroutine(LipsOff(3f));
 		UpdateMonitor();
 	}
 
@@ -61,8 +64,9 @@ public class CardiacCase : RespiratoryCase {
 		// resp rate: 120 b/m
 		bloodPressure = "30/10";
 		heartRate = "220";
-		bpm = 220;
-		babyMaterial.SetFloat ("_Blend", 1.0f);
+        bpm = 220;
+
+        StartCoroutine(LipsOn(3f));
 		UpdateMonitor();
 		// weak pulse strength
 	}

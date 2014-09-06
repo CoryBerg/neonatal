@@ -1,0 +1,12 @@
+D:\User Folders\My Documents\Git\neonatal\Temp\bin\Debug\Assembly-CSharp-firstpass.dll
+D:\User Folders\My Documents\Git\neonatal\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb
+D:\User Folders\My Documents\Git\neonatal\Temp\bin\Debug\dfScriptLite.dll
+D:\User Folders\My Documents\Git\neonatal\Temp\bin\Debug\UnityEditor.dll
+D:\User Folders\My Documents\Git\neonatal\Temp\bin\Debug\UnityEngine.dll
+D:\User Folders\My Documents\Git\neonatal\Temp\bin\Debug\Mono.Cecil.dll
+D:\User Folders\My Documents\Git\neonatal\Temp\bin\Debug\nunit.framework.dll
+D:\User Folders\My Documents\Git\neonatal\Temp\bin\Debug\Unity.DataContract.dll
+D:\User Folders\My Documents\Git\neonatal\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+D:\User Folders\My Documents\Git\neonatal\obj\Debug\Assembly-CSharp-firstpass-vs.csprojResolveAssemblyReference.cache
+D:\User Folders\My Documents\Git\neonatal\obj\Debug\Assembly-CSharp-firstpass.dll
+D:\User Folders\My Documents\Git\neonatal\obj\Debug\Assembly-CSharp-firstpass.pdb

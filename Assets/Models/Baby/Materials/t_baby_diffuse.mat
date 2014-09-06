@@ -56,7 +56,7 @@ Material:
       data:
         first:
           name: _Blend
-        second: 0
+        second: 1
       data:
         first:
           name: _Alpha
