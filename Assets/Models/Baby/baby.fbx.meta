@@ -96,6 +96,12 @@ ModelImporter:
     100180: spine2
     100182: spine3
     100184: umbilicalCatheter
+    100186: chestTarget
+    100188: deleteBeforeBake_grp
+    100190: IVTarget
+    100192: left
+    100194: mouthTarget
+    100196: persp1
     400000: //RootNode
     400002: blendshapes
     400004: body
@@ -189,6 +195,12 @@ ModelImporter:
     400180: spine2
     400182: spine3
     400184: umbilicalCatheter
+    400186: chestTarget
+    400188: deleteBeforeBake_grp
+    400190: IVTarget
+    400192: left
+    400194: mouthTarget
+    400196: persp1
     2300000: L_eye 1
     2300002: R_eye 1
     3300000: L_eye 1
