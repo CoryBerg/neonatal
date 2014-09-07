@@ -6,7 +6,6 @@ public class RespiratoryCase : MonoBehaviour {
 	public Breathing babyBreath;
 	public bool isCorrect = false;
 	public float timer = 0.0f;
-	public Transform mouthTarget;
 	public int bpm;
 	public int currentState = 0;
 	public string heartRate, Sp02, bloodPressure, temperature;
@@ -23,7 +22,7 @@ public class RespiratoryCase : MonoBehaviour {
 	protected float decompTimer, deathTimer;
 	protected SWP_HeartRateMonitor heartMonitor;
 
-	private GameObject ett, vt;
+	private GameObject ett, vt, mouthTarget;
 
 	protected virtual void Awake() {
         if (ArmAnimatorController.Instance == null) {
@@ -31,6 +30,7 @@ public class RespiratoryCase : MonoBehaviour {
         }
         ett = ArmAnimatorController.Instance.ett;
 		vt = ArmAnimatorController.Instance.vt;
+		mouthTarget = ArmAnimatorController.Instance.mouthTarget;
 		babyBreath = GameObject.FindGameObjectWithTag ("Baby").GetComponent<Breathing> ();
 		babyBody = GameObject.FindGameObjectWithTag("BabyBody");
 		heartMonitor = GameObject.Find("HeartMonitor").GetComponent<SWP_HeartRateMonitor> ();
@@ -40,7 +40,6 @@ public class RespiratoryCase : MonoBehaviour {
         babyMaterial = babyBody.renderer.material;
 
         StartCoroutine(LipsOff(3f));
-		mouthTarget = GameObject.Find ("mouthTarget").transform;
 
 		EttVtPositioning ();
 	}
@@ -49,10 +48,10 @@ public class RespiratoryCase : MonoBehaviour {
 		float x = 0.002780795f,
 		y = -0.06677689f,
 		z = -0.1790561f;
-		ett.transform.parent = mouthTarget;
+		ett.transform.parent = mouthTarget.transform;
 		ett.transform.localEulerAngles = new Vector3 (90, 0, 0);
 		ett.transform.localPosition = new Vector3 (x, y, z);
-		vt.transform.parent = ett.transform;
+		//vt.transform.parent = ett.transform;
 	}
 
 	protected virtual void Start() {

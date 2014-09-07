@@ -4,7 +4,7 @@ using System.Collections;
 public class ArmAnimatorController : MonoBehaviour {
 	public static ArmAnimatorController Instance;
 	public AudioClip armMove;
-	public GameObject ett, vt;
+	public GameObject ett, vt, mouthTarget, EttLeftHandTarget;
 
 	private Animator animator;
 	private ArmAnimationContainer animations;
@@ -20,18 +20,39 @@ public class ArmAnimatorController : MonoBehaviour {
 		animations = new ArmAnimationContainer ();
 		animator = GetComponent<Animator> ();
         startingParent = this.transform.parent;
+
+		//vt.transform.parent = ett.transform;
         print("AWAKE END");
 	}
 
 	// Called every frame
 	void Update() {
+		float px, py, pz,
+			  rx, ry, rz;
 		if (animator.GetCurrentAnimatorStateInfo (0).IsName ("Remove ETT")) {
-			float x = 357.3963f;
-			float y = 223.2345f;
-			float z = 147.7629f;
-			ett.transform.parent = GameObject.Find("L_Hand").transform;
-			ett.transform.position = new Vector3(x,y,z);
-			vt.transform.parent = GameObject.Find("mesh_grp").transform;
+			ett.transform.parent = EttLeftHandTarget.transform;
+			ett.transform.localPosition = Vector3.zero;
+		} else if (animator.GetCurrentAnimatorStateInfo (0).IsName ("Insert Laryngoscope")) {
+			ett.transform.parent = null;
+		} else if (animator.GetCurrentAnimatorStateInfo (0).IsName ("Replace ETT")) {
+			px = -0.1747731f;
+			py = -0.2780856f;
+			pz = -0.3187726f;
+			rx = 39.43434f;
+			ry = 0;
+			rz = 328.235f;
+
+			ett.transform.parent = EttLeftHandTarget.transform;
+			ett.transform.localPosition = new Vector3(px, py, pz);
+			ett.transform.localEulerAngles = new Vector3(rx, ry, rz);
+		} else if (animator.GetCurrentAnimatorStateInfo (0).IsName ("Finish Intubation")) {
+			px = 0.002780795f;
+			py = -0.06677689f;
+			pz = -0.1790561f;
+
+			ett.transform.parent = mouthTarget.transform;
+			ett.transform.localEulerAngles = new Vector3 (90, 0, 0);
+			ett.transform.localPosition = new Vector3 (px, py, pz);
 		}
 	}
 
