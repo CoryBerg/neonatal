@@ -5,7 +5,10 @@ public class ChestCompressionController : MonoBehaviour {
 	public dfPanel mainPanel;
 
 	public void HideMainButtons() {
-		ButtonChange(false);
+        ButtonChange(false);
+        Camera.main.animation["chestCompZoom"].time = 0;
+        Camera.main.animation["chestCompZoom"].speed = 1.0f;
+        Camera.main.animation.Play("chestCompZoom");
 	}
 
 	void ButtonChange(bool on) {

@@ -105,7 +105,11 @@ public class ArmAnimatorController : MonoBehaviour {
 			Debug.Log("Animation DNE");
 			return;
 		}
-
+        if (animName == "EndCC") {
+            Camera.main.animation["chestCompZoom"].time = Camera.main.animation["chestCompZoom"].length;
+            Camera.main.animation["chestCompZoom"].speed = -1.0f;
+            Camera.main.animation.Play("chestCompZoom");
+        }
 		GameObject arms = GameObject.FindGameObjectWithTag ("Arms");
 		AudioSource.PlayClipAtPoint (armMove, arms.transform.position);
 		animator.SetTrigger (animName);
