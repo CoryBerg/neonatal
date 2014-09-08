@@ -80,7 +80,8 @@ public class TransilluminationLeft : MonoBehaviour {
 	IEnumerator OpperationProcess (float delay) {
 
 		//Step 3: Flash Light Comes In
-		yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(1);
+        flashLight.animation["flashLightFlyIn"].time = 0;
 		flashLight.animation ["flashLightFlyIn"].speed = 1f;
 		flashLight.animation.Play("flashLightFlyIn");
 
@@ -88,7 +89,8 @@ public class TransilluminationLeft : MonoBehaviour {
 		yield return new WaitForSeconds(delay);
 
 
-		//Step 4: Flash Light Flys Out
+        //Step 4: Flash Light Flys Out
+        flashLight.animation ["flashLightFlyIn"].time = flashLight.animation ["flashLightFlyIn"].length;
 		flashLight.animation ["flashLightFlyIn"].speed = -1f;
 		flashLight.animation.Play("flashLightFlyIn");
 		yield return new WaitForSeconds(0.25f);
@@ -102,7 +104,8 @@ public class TransilluminationLeft : MonoBehaviour {
 		//Step 5: Camera rows back
 		
 		print ("Going out");
-		this.animation ["transilluminateCamZoom"].speed = -.5f;
+        this.animation["transilluminateCamZoom"].time = this.animation["transilluminateCamZoom"].length;
+		this.animation ["transilluminateCamZoom"].speed = -1f;
 		CamAnimate ();
 		
 		cameraBlip.fieldOfView = blipDefaulyFocus;
