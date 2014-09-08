@@ -181,11 +181,11 @@ public class RespiratoryCase : MonoBehaviour {
 		// Both lungs working
 		babyBreath.both = true;
 
-        Invoke("ChangeScene", 60.0f);
+        Invoke("ChangeScene", 15.0f);
 
         StartCoroutine(LipsOff(3f));
 
-		UpdateMonitor(60f);
+		UpdateMonitor(15f);
 	}
 	
 	// No needle decomp by 10 min (5+5, regardless of interations or lack thereof) or needle decomp in incorrect location
