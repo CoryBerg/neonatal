@@ -31,7 +31,10 @@ public class RespiratoryCase : MonoBehaviour {
         ett = ArmAnimatorController.Instance.ett;
 		vt = ArmAnimatorController.Instance.vt;
 		mouthTarget = ArmAnimatorController.Instance.mouthTarget;
-		babyBreath = GameObject.FindGameObjectWithTag ("Baby").GetComponent<Breathing> ();
+		babyBreath = GameObject.Find("baby").GetComponent<Breathing> ();
+        if (babyBreath == null) {
+            print("WHY NULL.");
+        }
 		babyBody = GameObject.FindGameObjectWithTag("BabyBody");
 		heartMonitor = GameObject.Find("HeartMonitor").GetComponent<SWP_HeartRateMonitor> ();
 		InitialState ();
@@ -184,10 +187,10 @@ public class RespiratoryCase : MonoBehaviour {
         Invoke("ChangeScene", 15.0f);
 
         StartCoroutine(LipsOff(3f));
-
+        BabyAnimatorController.Instance.SetRecovery();
 		UpdateMonitor(15f);
 	}
-	
+
 	// No needle decomp by 10 min (5+5, regardless of interations or lack thereof) or needle decomp in incorrect location
 	protected virtual void BabyDeath() {
 		currentState = 3;

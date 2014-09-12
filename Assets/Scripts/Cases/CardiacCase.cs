@@ -51,6 +51,7 @@ public class CardiacCase : RespiratoryCase {
 		// cyanosis disabled
         Invoke("ChangeScene", 3.0f);
 
+        BabyAnimatorController.Instance.SetRecovery();
         StartCoroutine(LipsOff(3f));
 		UpdateMonitor();
 	}
