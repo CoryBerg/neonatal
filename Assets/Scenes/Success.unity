@@ -809,6 +809,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentCase: 0
+  babyAlive: 0
 --- !u!4 &890234229
 Transform:
   m_ObjectHideFlags: 0
@@ -1103,7 +1104,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1182958976
 Transform:
   m_ObjectHideFlags: 0
@@ -1170,6 +1171,7 @@ GameObject:
   - 4: {fileID: 1204195222}
   - 114: {fileID: 1204195224}
   - 65: {fileID: 1204195223}
+  - 114: {fileID: 1204195225}
   m_Layer: 8
   m_Name: Label 1
   m_TagString: Untagged
@@ -1282,6 +1284,21 @@ MonoBehaviour:
     m_Bottom: 0
   tabSize: 48
   tabStops: 
+--- !u!114 &1204195225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1204195221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ada6f74d213b5bb4cbbe59fa3c434aeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CaseToShow: 0
+  labelToModify: {fileID: 0}
+  text: {fileID: 0}
+  value: Appropriately administered prostaglandin drip
 --- !u!1 &1204249315
 GameObject:
   m_ObjectHideFlags: 0
@@ -1385,6 +1402,7 @@ MonoBehaviour:
   Heart1: {fileID: 8300000, guid: e2d32f2b7c196534fbd0574934a04124, type: 3}
   Heart2: {fileID: 8300000, guid: e486690a11ef54a41a716560bbc771ea, type: 3}
   Flatline: {fileID: 8300000, guid: aac17062d8d0572478682f6db05ddc08, type: 3}
+  BlipOffset: {x: 0, y: 0, z: 0}
 --- !u!4 &1204249318
 Transform:
   m_ObjectHideFlags: 0
@@ -1586,7 +1604,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1786363756}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .00166666671, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: .00166666671, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1912507243}
@@ -1877,15 +1895,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: d1c2a76937786474b8e0df3cd5fe6ef2, type: 2}
       propertyPath: layout.margins.left
-      value: 520
+      value: 414
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: d1c2a76937786474b8e0df3cd5fe6ef2, type: 2}
       propertyPath: layout.margins.right
-      value: 308
+      value: 414
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: d1c2a76937786474b8e0df3cd5fe6ef2, type: 2}
       propertyPath: renderOrder
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: d1c2a76937786474b8e0df3cd5fe6ef2, type: 2}
       propertyPath: m_Name

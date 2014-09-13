@@ -296,7 +296,8 @@ MonoBehaviour:
   labelToModify: {fileID: 0}
   text: {fileID: 0}
   value: One day old male infant born at 36 weeks gestation who was admitted to the
-    NICU for suspected neonatal sepsis.
+    NICU for suspected neonatal sepsis, transferred intubated from an outside hospital
+    for acute decompensation.
 --- !u!1 &199010812
 GameObject:
   m_ObjectHideFlags: 0

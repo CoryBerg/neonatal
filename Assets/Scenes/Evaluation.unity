@@ -871,7 +871,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 375420064}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .00130208337, y: .00130208337, z: 0}
+  m_LocalPosition: {x: 0, y: .00130208337, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1092662327}
@@ -1157,7 +1157,7 @@ MonoBehaviour:
   disabledColor:
     serializedVersion: 2
     rgba: 4294967295
-  size: {x: 16, y: 49.1080971}
+  size: {x: 16, y: 51.8235283}
   minSize: {x: 0, y: 0}
   maxSize: {x: 0, y: 0}
   clipChildren: 0
@@ -1170,7 +1170,7 @@ MonoBehaviour:
       left: 0
       top: -3.99609375
       right: 0
-      bottom: 253.888
+      bottom: 251.172562
     owner: {fileID: 577067131}
   renderOrder: 11
   isLocalized: 0
@@ -1191,8 +1191,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: .0416666679, y: .127885669, z: .00100000005}
-  m_Center: {x: .020833334, y: -.0639428347, z: 0}
+  m_Size: {x: .0416666679, y: .134957105, z: .00100000005}
+  m_Center: {x: .020833334, y: -.0674785525, z: 0}
 --- !u!1 &590039776
 GameObject:
   m_ObjectHideFlags: 0
@@ -1736,8 +1736,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.46875, y: 5.7578125, z: .00100000005}
-  m_Center: {x: 0, y: -2.87890625, z: 0}
+  m_Size: {x: 1.46875, y: 5.40104198, z: .00100000005}
+  m_Center: {x: 0, y: -2.70052099, z: 0}
 --- !u!114 &983559292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1762,7 +1762,7 @@ MonoBehaviour:
   disabledColor:
     serializedVersion: 2
     rgba: 4294967295
-  size: {x: 564, y: 2211}
+  size: {x: 564, y: 2074}
   minSize: {x: 0, y: 0}
   maxSize: {x: 0, y: 0}
   clipChildren: 0
@@ -1775,7 +1775,7 @@ MonoBehaviour:
       left: 6
       top: 3
       right: 7
-      bottom: -1910
+      bottom: -1773
     owner: {fileID: 983559292}
   renderOrder: 3
   isLocalized: 0
@@ -1789,85 +1789,75 @@ MonoBehaviour:
   autoSize: 0
   autoHeight: 1
   wordWrap: 1
-  text: "A.  Respiratory Case\n\nDiagnosis:  Tension Pneumothorax\nRisk factors: Meconium
-    aspiration, Respiratory Distress Syndrome (i.e. surfactant deficiency) or any
-    other pulmonary disease requiring high ventilatory pressures (increased PIP and
-    PEEP), idiopathic ( asymptomatic small pneumothoraces occurring around the time
-    of delivery)\n\nClinical Presentation:  As in this case scenario, the infant will
-    initially present with decreasing oxygen saturations, tachypnea and tachycardia.
-    \ The differential diagnosis based solely on this initial constellation of vital
-    signs alone is very broad, and would include a variety of both cardiac, respiratory
-    and infectious etiologies.  One of the key distinguishing features of a tension
-    pneumothorax, however, is the rapidity with which the clinical pictures changes
-    with this diagnosis, whereas most cardiac and infectious etiologies have a more
-    gradual onset and presentation.  Diagnosis can be made based on clinical exam
-    findings alone, with absent breath sounds on one side of the chest.    \nDiagnostic
-    workup:  As mentioned above, the diagnosis of a tension pneumothorax is made based
+  text: "Respiratory Case\r\n\nDiagnosis: Tension Pneumothorax\r\n\nRisk factors:
+    Meconium aspiration, Respiratory Distress Syndrome (i.e. surfactant deficiency)
+    or any other pulmonary disease requiring high ventilatory pressures (increased
+    PIP and PEEP), idiopathic (asymptomatic small pneumothoraces occurring around
+    the time of delivery)\r\n\nClinical Presentation: As in this case scenario, the
+    infant will initially present with decreasing oxygen saturations, tachypnea and
+    tachycardia. The differential diagnosis based solely on this initial constellation
+    of vital signs alone is very broad, and would include a variety of both cardiac,
+    respiratory and infectious etiologies. One of the key distinguishing features
+    of a tension pneumothorax, however, is the rapidity with which the clinical pictures
+    changes with this diagnosis, whereas most cardiac and infectious etiologies have
+    a more gradual onset and presentation. Diagnosis can be made based on clinical
+    exam findings alone, with absent breath sounds on one side of the chest.\n\nDiagnostic
+    workup: As mentioned above, the diagnosis of a tension pneumothorax is made based
     on clinical exam findings, but other additional tests may confirm the diagnosis
-    if there is question as to the etiology of the clinical presentation.  Transillumination
+    if there is question as to the etiology of the clinical presentation. Transillumination
     of the chest wall with a light source is one of the quickest interventions which
-    may be employed.  Once a light source is applied to the affected side of the chest,
+    may be employed. Once a light source is applied to the affected side of the chest,
     the chest wall will become very bright and translucent, as the corresponding lung
-    tissue is not present to absorb the lightwaves.  Chest X Ray will also confirm
+    tissue is not present to absorb the lightwaves. Chest X Ray will also confirm
     the diagnosis by demonstrating a large area of dark air outside of the lung tissue
     (as evidenced by the lack of pulmonary vascular markings to the periphery of the
     chest wall), and will also show signs of tracheal and mediastinal deviation away
-    from the affected side.  However, it is critical to know that a Chest X Ray should
+    from the affected side. However, it is critical to know that a Chest X Ray should
     not delay appropriate treatment interventions for patient\u2019s who demonstrate
-    clinical signs and symptoms consistent with a tension pneumothorax.  It may be
+    clinical signs and symptoms consistent with a tension pneumothorax. It may be
     used once the patient is more stable in order to further delineate the extent
     of the pneumothorax, and to monitor for its reaccumulation after proper intervention
-    has taken place.   Laboratory studies such as an ABG may confirm the diagnosis
-    and show signs of both respiratory and metabolic acidosis, but, again, should
-    not delay timely intervention.  \n\nTreatment and interventions:  Needle decompression
+    has taken place. Laboratory studies such as an ABG may confirm the diagnosis and
+    show signs of both respiratory and metabolic acidosis, but, again, should not
+    delay timely intervention.\n\nTreatment and interventions: Needle decompression
     with a butterfly needle or angiocatheter attached to a syringe is the appropriate
-    intervention for patient\u2019s who demonstrate signs and symptoms consistent
-    with a tension pneumothorax.  In order to set up for the needle decompression,
-    a butterfly needle  or angiocatheter should be connected to a syringe with a two
-    way stop-cock connection inbetween.  The second intercostal space in the midclavicular
-    line should be palpated, and the skin at this site should be cleaned with a small
-    amount of iodine containing solution applied topically.  After the skin site is
-    cleaned, the needle should be advance into this space, and once the needle has
-    entered past the chest wall, air should be noted to exit the catheter into the
-    syringe.  The two way stop-cock allows for the air to be evacuated from the extrapleural
-    space while not allowing for further reaccumulation of the air.  \n\nContinued
-    care:   Some pneumothoraces may be treated definitively with emergent needle decompression,
+    intervention for patients who demonstrate signs and symptoms consistent with a
+    tension pneumothorax. In order to set up for the needle decompression, a butterfly
+    needle  or angiocatheter should be connected to a syringe with a two way stop-cock
+    connection inbetween. The second intercostal space in the midclavicular line should
+    be palpated, and the skin at this site should be cleaned with a small amount of
+    iodine containing solution applied topically. After the skin site is cleaned,
+    the needle should be advance into this space, and once the needle has entered
+    past the chest wall, air should be noted to exit the catheter into the syringe.
+    The two way stop-cock allows for the air to be evacuated from the extrapleural
+    space while not allowing for further reaccumulation of the air.\n\nContinued care:
+    Some pneumothoraces may be treated definitively with emergent needle decompression,
     whereas others may reaccumulate and cause continued cardiorespiratory instability
-    in the patient.  In the latter case, it may be necessary to place a chest tube
-    to allow for continued drainage of accumulated extrapleural air.  Chest tubes
-    should be inserted with the patient\u2019s affected side placed up, and advancing
-    the chest tube (using one of a variety of appropriate techniques) into the 4th
-    intercostal space in the midaxillary line. \n\n-Appropriate intervention:  Needle
-    decompression performed within 10 minutes\n          -Great job!  Needle decompression
-    is the appropriate treatment for patient\u2019s demonstrating signs and symptoms
-    of a tension pneumothorax.  \n-Failure to perform needle decompression within
-    10 minutes\n          - The patient in this scenario continued to decompensate
-    because needle decompression of the  patient\u2019s tension pneumothorax present
-    was not performed.  Air continued to accumulate in the extrapleural space,  pushing
-    the heart and other mediastinal structures away from the affected side and impeding
-    venous return and cardiac output, which caused the blood pressure to further drop.
-    \ As the affected lung was not able to participate in gas exchange, the patient\u2019s
-    oxygen saturation continued to fall as well.  \n\n-Fluid bolus administration:
-    \ While administering fluid boluses to a patient demonstrating signs of shock
-    from a tension pneumothorax may temporarily show some slight improvement in blood
-    pressure, this does not address the underlying issue at hand and will not result
-    in continued improvement of the patient\u2019s clinical status.\n--Dopamine, Dobutamine,
-    Milrinone, Hydrocortisone\xE0  While vasopressor agents may transiently increase
-    the patient\u2019s blood pressure, once again, this does not address the underlying
-    etiology of the patient\u2019s symptoms, and will not result in continued improvement
-    of the patient\u2019s clinical status.  \n -Lasix, mannitol, fentanyl, versed,
-    morphine \xE0  Diuretic agents and opioid agonists may decrease blood pressure
-    further, and are not indicated in the treatment of a tension pneumothorax. \n-propranolol-
-    Beta blocking agents act to slow the heart rate of the patient.  In the case of
-    a tension pneumothorax, administering a beta blocker will decrease the compensatory
-    increased heart rate required to maintain blood pressure in the patient, and will
-    result in further decompensation of the patient and further decrease in blood
-    pressure. \n - atropine-  This acetylcholine antagonist will result in worsening
-    tachycardia, and continued clinical decompensatioin. \n -digoxin, albumin, antibiotics
-    (ampicillin, gentamicin, vancomycin, cefotaxime), Phenobarbital, glucose OR  Administration
-    of Inhaled medications- albuterol, atrovent, racemic epinephrine\xE0  Administration
-    of these agents will not likely result in a change in the patient\u2019s clinical
-    status.      "
+    in the patient. In the latter case, it may be necessary to place a chest tube
+    to allow for continued drainage of accumulated extrapleural air. Chest tubes should
+    be inserted with the patient\u2019s affected side placed up, and advancing the
+    chest tube (using one of a variety of appropriate techniques) into the 4th intercostal
+    space in the midaxillary line.\n\nAppropriate intervention: Needle decompression
+    performed within 10 minutes\r.\n\n    Great job! Needle decompression is the appropriate
+    treatment for patients demonstrating signs and symptoms of a tension pneumothorax.
+    \n\nFailure to perform needle decompression within 10 minutes\r\n\n    The patient
+    in this scenario continued to decompensate because needle decompression of the
+    patient\u2019s tension pneumothorax present was not performed. Air continued to
+    accumulate in the extrapleural space, pushing the heart and other mediastinal
+    structures away from the affected side and impeding venous return and cardiac
+    output, which caused the blood pressure to further drop. As the affected lung
+    was not able to participate in gas exchange, the patient\u2019s oxygen saturation
+    continued to fall as well. \r\n\n    Fluid bolus administration While administering
+    fluid boluses to a patient demonstrating signs of shock from a tension pneumothorax
+    may temporarily show some slight improvement in blood pressure, this does not
+    address the underlying issue at hand and will not result in continued improvement
+    of the patient\u2019s clinical status.\r\n\n        Dopamine, Dobutamine, Hydrocortisone
+    While vasopressor agents may transiently increase the patient\u2019s blood pressure,
+    once again, this does not address the underlying etiology of the patient\u2019s
+    symptoms, and will not result in continued improvement of the patient\u2019s clinical
+    status.\r\n\n    Inhaled medications administration Albuterol, atrovent, racemic
+    epinephrine administration will not likely result in a change in the patient\u2019s
+    clinical status."
   bottomColor:
     serializedVersion: 2
     rgba: 4294967295
@@ -1910,56 +1900,7 @@ MonoBehaviour:
   CaseToShow: 0
   labelToModify: {fileID: 0}
   text: {fileID: 4900000, guid: 90334925b9718994d9787a5a1680d4f3, type: 3}
-  value: "B.  Cardiovascular Case\r\nDiagnosis:  Ductal Dependant Congenital Cyanotic
-    Heart Disease \r\nClinical Presentation:  Congenital heart disease lesions that
-    require flow through the ductus arteriosus to maintain normal blood pressure tend
-    to present within the first two weeks of life.  Patient\u2019s may present with
-    increased respiratory rate, and sudden onset of cyanosis and lethargy accompanied
-    by decreased oxygen saturation and decreased blood pressure. Because these lesions
-    require the presence of  a patent ductus arteriosus in order to support blood
-    flow to vital organs, once the ductus closes , these infants will display signs
-    and symptoms consistent with cardiovascular collapse.  (Continued as below)\r\nDiagnostic
-    workup: As below\r\nTreatment and interventions: As below\r\nContinued care: As
-    below\r\nInfants may present with tachypnea, sudden onset of cyanosis or pallor
-    that may worsen with crying, sweating with feeds, lethargy, or failure to thrive.
-    \ With the newborn\x92s first breath outside the uterus, pulmonary vascular resistance
-    (PVR) decreases due to the increase in oxygen tension, leading to an increase
-    in pulmonary blood flow.  PVR continues to decrease and the right ventricle reaches
-    adult pressures by day 10 of life.\r\nCongenital heart disease lesions that present
-    in the first two to three weeks of life are typically the ductal-dependent cardiac
-    lesions.  The patent ductus arteriosus had been sustaining blood flow for these
-    infants and when the ductus closes after birth, these infants suddenly become
-    ill.  Depending upon the underlying structural abnormality, these neonates will
-    present with either sudden cyanosis or signs of cardiovascular collapse.  With
-    certain lesions, the patent ductus arteriosus supplies the only adequate source
-    of blood flow to the lungs  (e.g. Tetralogy of Fallot or Tricuspid Atresia) \u2013
-    cyanotic congenital heart disease; in others, the newborn is dependent upon the
-    PDA to allow adequate blood flow to the body if the aorta is severely underdeveloped.
-    (e.g. coarctation of the aorta or hypoplastic left heart syndrome).  For example,
-    with coarctation of the aorta, right ventricular blood is ejected through the
-    patent ductus to supply the descending aorta, as it does during fetal life. Perfusion
-    of the lower body is then dependent on right ventricular output.\r\n \r\nThe cyanotic
-    infant should be placed on 100% oxygen. If the oxygen saturation increases significantly,
-    then the infant probably has pulmonary pathology.  If the oxygen saturation does
-    not increase, then consider a congenital heart disorder.  The more accurate way
-    to perform this test is to obtain a baseline ABG which is repeated after approximately
-    10 minutes of oxygen administration.  An increase in the PAO2 of 30 torr or more
-    or an increase in saturation of greater than 10% implies a pulmonary process.\r\n
-    \r\nIf ductal-dependent congenital heart disease is suspected, then a prostaglandin
-    E1 infusion (PGE1) should be initiated at a rate of 0.05-0.1ug/kg/minute.  Prostaglandin
-    is a very potent vasodilator and will have immediate effects on the ductus.  Improvement
-    is usually seen within fifteen minutes; however, the practitioner should be prepared
-    to intubate since there is an approximately 12% incidence of apnea following PGE1
-    initiation. Other complications of prostaglandin use include fever, hypotension
-    and seizures.\r\nAlways consider sepsis, and have a low threshold to empirically
-    treat for it pending a more thorough work-up.\r\n \r\nThe differential diagnosis
-    of congenital heart diseases that cause congestive heart failure include not only
-    the left-to-right intracardiac shuns but also hypoplastic left ventricle, coarctation
-    of the aorta, truncus arteriosus, endocardial cushion defect, patent ductus arteriosus
-    (PDA), and aortic stenosis (6,7).  Time of presentation of each lesion is listed
-    in Table 5.   If the patient has congestive heart failure furosemide (1 mg/kg)
-    should be administered with the possible addition of digoxin, morphine, dobutamine
-    and dopamine.\r\n"
+  value: 
 --- !u!1 &1092662326
 GameObject:
   m_ObjectHideFlags: 0
@@ -2660,7 +2601,7 @@ MonoBehaviour:
   orientation: 1
   rawValue: 0
   minValue: 0
-  maxValue: 2211
+  maxValue: 2074
   stepSize: 1
   scrollSize: 298
   increment: 1
