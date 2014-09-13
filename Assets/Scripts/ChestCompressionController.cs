@@ -3,12 +3,15 @@ using System.Collections;
 
 public class ChestCompressionController : MonoBehaviour {
 	public dfPanel mainPanel;
+	public Camera[] cameras;
 
 	public void HideMainButtons() {
         ButtonChange(false);
-        Camera.main.animation["chestCompZoom"].time = 0;
-        Camera.main.animation["chestCompZoom"].speed = 1.0f;
-        Camera.main.animation.Play("chestCompZoom");
+		foreach (Camera camera in cameras) {
+			camera.animation ["chestCompZoom"].time = 0;
+			camera.animation ["chestCompZoom"].speed = 1.0f;
+			camera.animation.Play ("chestCompZoom");
+		}
 	}
 
 	void ButtonChange(bool on) {

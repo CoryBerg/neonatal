@@ -5,6 +5,7 @@ public class ArmAnimatorController : MonoBehaviour {
 	public static ArmAnimatorController Instance;
 	public AudioClip armMove;
 	public GameObject ett, vt, mouthTarget, EttLeftHandTarget;
+	public Camera[] cameras;
 
 	private Animator animator;
 	private ArmAnimationContainer animations;
@@ -106,9 +107,11 @@ public class ArmAnimatorController : MonoBehaviour {
 			return;
 		}
         if (animName == "EndCC") {
-            Camera.main.animation["chestCompZoom"].time = Camera.main.animation["chestCompZoom"].length;
-            Camera.main.animation["chestCompZoom"].speed = -1.0f;
-            Camera.main.animation.Play("chestCompZoom");
+		foreach (Camera camera in cameras) {
+			camera.animation["chestCompZoom"].time = camera.animation["chestCompZoom"].length;
+			camera.animation["chestCompZoom"].speed = -1.0f;
+			camera.animation.Play("chestCompZoom");
+		}
         }
 		GameObject arms = GameObject.FindGameObjectWithTag ("Arms");
 		AudioSource.PlayClipAtPoint (armMove, arms.transform.position);
