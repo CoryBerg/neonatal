@@ -1607,8 +1607,8 @@ ModelImporter:
     - serializedVersion: 16
       name: Head
       takeName: Take 001
-      firstFrame: 250
-      lastFrame: 750
+      firstFrame: 126
+      lastFrame: 1067
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -1630,6 +1630,10 @@ ModelImporter:
       transformMask:
       - path: 
         weight: 1
+      - path: faceTape
+        weight: 1
+      - path: left
+        weight: 1
       - path: m_baby_kg_7_baby_geo
         weight: 1
       - path: m_baby_kg_7_baby_geo/blendshapes
@@ -1649,6 +1653,8 @@ ModelImporter:
       - path: m_baby_kg_7_baby_geo/umbilicalCatheter/catheterCord
         weight: 1
       - path: m_baby_kg_7_baby_geo/umbilicalCatheter/catheterTape
+        weight: 1
+      - path: persp1
         weight: 1
       - path: root
         weight: 1
@@ -1678,58 +1684,60 @@ ModelImporter:
         weight: 1
       - path: root/spine1/spine2
         weight: 1
+      - path: root/spine1/spine2/chestTarget
+        weight: 1
       - path: root/spine1/spine2/spine3
         weight: 1
       - path: root/spine1/spine2/spine3/L_clavicle
-        weight: 1
+        weight: 0
       - path: root/spine1/spine2/spine3/L_clavicle/L_shoulder
-        weight: 1
+        weight: 0
       - path: root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow
-        weight: 1
+        weight: 0
       - path: root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist
-        weight: 1
+        weight: 0
       - path: root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand
-        weight: 1
+        weight: 0
       - path: root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_index_a
-        weight: 1
+        weight: 0
       - path: root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_index_a/L_index_b
-        weight: 1
+        weight: 0
       - path: root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_index_a/L_index_b/L_index_c
-        weight: 1
+        weight: 0
       - path: root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_index_a/L_index_b/L_index_c/L_indexEnd
-        weight: 1
+        weight: 0
       - path: root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_middle_a
-        weight: 1
+        weight: 0
       - path: root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_middle_a/L_middle_b
-        weight: 1
+        weight: 0
       - path: root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_middle_a/L_middle_b/L_middle_c
-        weight: 1
+        weight: 0
       - path: root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_middle_a/L_middle_b/L_middle_c/L_middleEnd
-        weight: 1
+        weight: 0
       - path: root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_pinky_a
-        weight: 1
+        weight: 0
       - path: root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_pinky_a/L_pinky_b
-        weight: 1
+        weight: 0
       - path: root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_pinky_a/L_pinky_b/L_pinky_c
-        weight: 1
+        weight: 0
       - path: root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_pinky_a/L_pinky_b/L_pinky_c/L_pinkyEnd
-        weight: 1
+        weight: 0
       - path: root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_ring_a
-        weight: 1
+        weight: 0
       - path: root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_ring_a/L_ring_b
-        weight: 1
+        weight: 0
       - path: root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_ring_a/L_ring_b/L_ring_c
-        weight: 1
+        weight: 0
       - path: root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_ring_a/L_ring_b/L_ring_c/L_ringEnd
-        weight: 1
+        weight: 0
       - path: root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_thumb_a
-        weight: 1
+        weight: 0
       - path: root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_thumb_a/L_thumb_b
-        weight: 1
+        weight: 0
       - path: root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_thumb_a/L_thumb_b/L_thumb_c
-        weight: 1
+        weight: 0
       - path: root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_thumb_a/L_thumb_b/L_thumb_c/L_thumbEnd
-        weight: 1
+        weight: 0
       - path: root/spine1/spine2/spine3/neck
         weight: 1
       - path: root/spine1/spine2/spine3/neck/head
@@ -1739,6 +1747,8 @@ ModelImporter:
       - path: root/spine1/spine2/spine3/neck/head/jaw
         weight: 1
       - path: root/spine1/spine2/spine3/neck/head/jaw/jawEnd
+        weight: 1
+      - path: root/spine1/spine2/spine3/neck/head/jaw/jawEnd/mouthTarget
         weight: 1
       - path: root/spine1/spine2/spine3/neck/head/L_btmLid
         weight: 1
@@ -1751,6 +1761,88 @@ ModelImporter:
       - path: root/spine1/spine2/spine3/neck/head/L_topLid
         weight: 1
       - path: root/spine1/spine2/spine3/neck/head/L_topLid/L_topLid_end
+        weight: 1
+      - path: root/spine1/spine2/spine3/neck/head/m_endotrachealTube3
+        weight: 1
+      - path: root/spine1/spine2/spine3/neck/head/m_endotrachealTube3/vt_01_o
+        weight: 1
+      - path: root/spine1/spine2/spine3/neck/head/m_endotrachealTube3/vt_01_o/vt_01_cont
+        weight: 1
+      - path: root/spine1/spine2/spine3/neck/head/m_endotrachealTube3/vt_01_o/vt_01_cont/vt_02_o
+        weight: 1
+      - path: root/spine1/spine2/spine3/neck/head/m_endotrachealTube3/vt_01_o/vt_01_cont/vt_02_o/vt_02_cont
+        weight: 1
+      - path: root/spine1/spine2/spine3/neck/head/m_endotrachealTube3/vt_01_o/vt_01_cont/vt_02_o/vt_02_cont/vt_03_o
+        weight: 1
+      - path: root/spine1/spine2/spine3/neck/head/m_endotrachealTube3/vt_01_o/vt_01_cont/vt_02_o/vt_02_cont/vt_03_o/vt_03_cont
+        weight: 1
+      - path: root/spine1/spine2/spine3/neck/head/m_endotrachealTube3/vt_01_o/vt_01_cont/vt_02_o/vt_02_cont/vt_03_o/vt_03_cont/vt_04_o
+        weight: 1
+      - path: root/spine1/spine2/spine3/neck/head/m_endotrachealTube3/vt_01_o/vt_01_cont/vt_02_o/vt_02_cont/vt_03_o/vt_03_cont/vt_04_o/vt_04_cont
+        weight: 1
+      - path: root/spine1/spine2/spine3/neck/head/m_endotrachealTube3/vt_01_o/vt_01_cont/vt_02_o/vt_02_cont/vt_03_o/vt_03_cont/vt_04_o/vt_04_cont/vt_05_o
+        weight: 1
+      - path: root/spine1/spine2/spine3/neck/head/m_endotrachealTube3/vt_01_o/vt_01_cont/vt_02_o/vt_02_cont/vt_03_o/vt_03_cont/vt_04_o/vt_04_cont/vt_05_o/vt_05_cont
+        weight: 1
+      - path: root/spine1/spine2/spine3/neck/head/m_endotrachealTube3/vt_01_o/vt_01_cont/vt_02_o/vt_02_cont/vt_03_o/vt_03_cont/vt_04_o/vt_04_cont/vt_05_o/vt_05_cont/vt_06_o
+        weight: 1
+      - path: root/spine1/spine2/spine3/neck/head/m_endotrachealTube3/vt_01_o/vt_01_cont/vt_02_o/vt_02_cont/vt_03_o/vt_03_cont/vt_04_o/vt_04_cont/vt_05_o/vt_05_cont/vt_06_o/vt_06_cont
+        weight: 1
+      - path: root/spine1/spine2/spine3/neck/head/m_endotrachealTube3/vt_01_o/vt_01_cont/vt_02_o/vt_02_cont/vt_03_o/vt_03_cont/vt_04_o/vt_04_cont/vt_05_o/vt_05_cont/vt_06_o/vt_06_cont/vt_07_o
+        weight: 1
+      - path: root/spine1/spine2/spine3/neck/head/m_endotrachealTube3/vt_01_o/vt_01_cont/vt_02_o/vt_02_cont/vt_03_o/vt_03_cont/vt_04_o/vt_04_cont/vt_05_o/vt_05_cont/vt_06_o/vt_06_cont/vt_07_o/vt_07_cont
+        weight: 1
+      - path: root/spine1/spine2/spine3/neck/head/m_endotrachealTube3/vt_01_o/vt_01_cont/vt_02_o/vt_02_cont/vt_03_o/vt_03_cont/vt_04_o/vt_04_cont/vt_05_o/vt_05_cont/vt_06_o/vt_06_cont/vt_07_o/vt_07_cont/vt_08_o
+        weight: 1
+      - path: root/spine1/spine2/spine3/neck/head/m_endotrachealTube3/vt_01_o/vt_01_cont/vt_02_o/vt_02_cont/vt_03_o/vt_03_cont/vt_04_o/vt_04_cont/vt_05_o/vt_05_cont/vt_06_o/vt_06_cont/vt_07_o/vt_07_cont/vt_08_o/vt_08_cont
+        weight: 1
+      - path: root/spine1/spine2/spine3/neck/head/m_endotrachealTube3/vt_01_o/vt_01_cont/vt_02_o/vt_02_cont/vt_03_o/vt_03_cont/vt_04_o/vt_04_cont/vt_05_o/vt_05_cont/vt_06_o/vt_06_cont/vt_07_o/vt_07_cont/vt_08_o/vt_08_cont/vt_09_o
+        weight: 1
+      - path: root/spine1/spine2/spine3/neck/head/m_endotrachealTube3/vt_01_o/vt_01_cont/vt_02_o/vt_02_cont/vt_03_o/vt_03_cont/vt_04_o/vt_04_cont/vt_05_o/vt_05_cont/vt_06_o/vt_06_cont/vt_07_o/vt_07_cont/vt_08_o/vt_08_cont/vt_09_o/vt_09_cont
+        weight: 1
+      - path: root/spine1/spine2/spine3/neck/head/m_endotrachealTube3/vt_01_o/vt_01_cont/vt_02_o/vt_02_cont/vt_03_o/vt_03_cont/vt_04_o/vt_04_cont/vt_05_o/vt_05_cont/vt_06_o/vt_06_cont/vt_07_o/vt_07_cont/vt_08_o/vt_08_cont/vt_09_o/vt_09_cont/vt_10_o
+        weight: 1
+      - path: root/spine1/spine2/spine3/neck/head/m_endotrachealTube3/vt_01_o/vt_01_cont/vt_02_o/vt_02_cont/vt_03_o/vt_03_cont/vt_04_o/vt_04_cont/vt_05_o/vt_05_cont/vt_06_o/vt_06_cont/vt_07_o/vt_07_cont/vt_08_o/vt_08_cont/vt_09_o/vt_09_cont/vt_10_o/vt_10_cont
+        weight: 1
+      - path: root/spine1/spine2/spine3/neck/head/m_endotrachealTube3/vt_01_o/vt_01_cont/vt_02_o/vt_02_cont/vt_03_o/vt_03_cont/vt_04_o/vt_04_cont/vt_05_o/vt_05_cont/vt_06_o/vt_06_cont/vt_07_o/vt_07_cont/vt_08_o/vt_08_cont/vt_09_o/vt_09_cont/vt_10_o/vt_10_cont/vt_11_o
+        weight: 1
+      - path: root/spine1/spine2/spine3/neck/head/m_endotrachealTube3/vt_01_o/vt_01_cont/vt_02_o/vt_02_cont/vt_03_o/vt_03_cont/vt_04_o/vt_04_cont/vt_05_o/vt_05_cont/vt_06_o/vt_06_cont/vt_07_o/vt_07_cont/vt_08_o/vt_08_cont/vt_09_o/vt_09_cont/vt_10_o/vt_10_cont/vt_11_o/vt_11_cont
+        weight: 1
+      - path: root/spine1/spine2/spine3/neck/head/m_endotrachealTube3/vt_01_o/vt_01_cont/vt_02_o/vt_02_cont/vt_03_o/vt_03_cont/vt_04_o/vt_04_cont/vt_05_o/vt_05_cont/vt_06_o/vt_06_cont/vt_07_o/vt_07_cont/vt_08_o/vt_08_cont/vt_09_o/vt_09_cont/vt_10_o/vt_10_cont/vt_11_o/vt_11_cont/vt_12_o
+        weight: 1
+      - path: root/spine1/spine2/spine3/neck/head/m_endotrachealTube3/vt_01_o/vt_01_cont/vt_02_o/vt_02_cont/vt_03_o/vt_03_cont/vt_04_o/vt_04_cont/vt_05_o/vt_05_cont/vt_06_o/vt_06_cont/vt_07_o/vt_07_cont/vt_08_o/vt_08_cont/vt_09_o/vt_09_cont/vt_10_o/vt_10_cont/vt_11_o/vt_11_cont/vt_12_o/vt_12_cont
+        weight: 1
+      - path: root/spine1/spine2/spine3/neck/head/m_endotrachealTube3/vt_01_o/vt_01_cont/vt_02_o/vt_02_cont/vt_03_o/vt_03_cont/vt_04_o/vt_04_cont/vt_05_o/vt_05_cont/vt_06_o/vt_06_cont/vt_07_o/vt_07_cont/vt_08_o/vt_08_cont/vt_09_o/vt_09_cont/vt_10_o/vt_10_cont/vt_11_o/vt_11_cont/vt_12_o/vt_12_cont/vt_13_o
+        weight: 1
+      - path: root/spine1/spine2/spine3/neck/head/m_endotrachealTube3/vt_01_o/vt_01_cont/vt_02_o/vt_02_cont/vt_03_o/vt_03_cont/vt_04_o/vt_04_cont/vt_05_o/vt_05_cont/vt_06_o/vt_06_cont/vt_07_o/vt_07_cont/vt_08_o/vt_08_cont/vt_09_o/vt_09_cont/vt_10_o/vt_10_cont/vt_11_o/vt_11_cont/vt_12_o/vt_12_cont/vt_13_o/vt_13_cont
+        weight: 1
+      - path: root/spine1/spine2/spine3/neck/head/m_endotrachealTube3/vt_01_o/vt_01_cont/vt_02_o/vt_02_cont/vt_03_o/vt_03_cont/vt_04_o/vt_04_cont/vt_05_o/vt_05_cont/vt_06_o/vt_06_cont/vt_07_o/vt_07_cont/vt_08_o/vt_08_cont/vt_09_o/vt_09_cont/vt_10_o/vt_10_cont/vt_11_o/vt_11_cont/vt_12_o/vt_12_cont/vt_13_o/vt_13_cont/vt_14_o
+        weight: 1
+      - path: root/spine1/spine2/spine3/neck/head/m_endotrachealTube3/vt_01_o/vt_01_cont/vt_02_o/vt_02_cont/vt_03_o/vt_03_cont/vt_04_o/vt_04_cont/vt_05_o/vt_05_cont/vt_06_o/vt_06_cont/vt_07_o/vt_07_cont/vt_08_o/vt_08_cont/vt_09_o/vt_09_cont/vt_10_o/vt_10_cont/vt_11_o/vt_11_cont/vt_12_o/vt_12_cont/vt_13_o/vt_13_cont/vt_14_o/vt_14_cont
+        weight: 1
+      - path: root/spine1/spine2/spine3/neck/head/m_endotrachealTube3/vt_01_o/vt_01_cont/vt_02_o/vt_02_cont/vt_03_o/vt_03_cont/vt_04_o/vt_04_cont/vt_05_o/vt_05_cont/vt_06_o/vt_06_cont/vt_07_o/vt_07_cont/vt_08_o/vt_08_cont/vt_09_o/vt_09_cont/vt_10_o/vt_10_cont/vt_11_o/vt_11_cont/vt_12_o/vt_12_cont/vt_13_o/vt_13_cont/vt_14_o/vt_14_cont/vt_15_o
+        weight: 1
+      - path: root/spine1/spine2/spine3/neck/head/m_endotrachealTube3/vt_01_o/vt_01_cont/vt_02_o/vt_02_cont/vt_03_o/vt_03_cont/vt_04_o/vt_04_cont/vt_05_o/vt_05_cont/vt_06_o/vt_06_cont/vt_07_o/vt_07_cont/vt_08_o/vt_08_cont/vt_09_o/vt_09_cont/vt_10_o/vt_10_cont/vt_11_o/vt_11_cont/vt_12_o/vt_12_cont/vt_13_o/vt_13_cont/vt_14_o/vt_14_cont/vt_15_o/vt_15_cont
+        weight: 1
+      - path: root/spine1/spine2/spine3/neck/head/m_endotrachealTube3/vt_01_o/vt_01_cont/vt_02_o/vt_02_cont/vt_03_o/vt_03_cont/vt_04_o/vt_04_cont/vt_05_o/vt_05_cont/vt_06_o/vt_06_cont/vt_07_o/vt_07_cont/vt_08_o/vt_08_cont/vt_09_o/vt_09_cont/vt_10_o/vt_10_cont/vt_11_o/vt_11_cont/vt_12_o/vt_12_cont/vt_13_o/vt_13_cont/vt_14_o/vt_14_cont/vt_15_o/vt_15_cont/vt_16_o
+        weight: 1
+      - path: root/spine1/spine2/spine3/neck/head/m_endotrachealTube3/vt_01_o/vt_01_cont/vt_02_o/vt_02_cont/vt_03_o/vt_03_cont/vt_04_o/vt_04_cont/vt_05_o/vt_05_cont/vt_06_o/vt_06_cont/vt_07_o/vt_07_cont/vt_08_o/vt_08_cont/vt_09_o/vt_09_cont/vt_10_o/vt_10_cont/vt_11_o/vt_11_cont/vt_12_o/vt_12_cont/vt_13_o/vt_13_cont/vt_14_o/vt_14_cont/vt_15_o/vt_15_cont/vt_16_o/vt_16_cont
+        weight: 1
+      - path: root/spine1/spine2/spine3/neck/head/m_endotrachealTube3/vt_01_o/vt_01_cont/vt_02_o/vt_02_cont/vt_03_o/vt_03_cont/vt_04_o/vt_04_cont/vt_05_o/vt_05_cont/vt_06_o/vt_06_cont/vt_07_o/vt_07_cont/vt_08_o/vt_08_cont/vt_09_o/vt_09_cont/vt_10_o/vt_10_cont/vt_11_o/vt_11_cont/vt_12_o/vt_12_cont/vt_13_o/vt_13_cont/vt_14_o/vt_14_cont/vt_15_o/vt_15_cont/vt_16_o/vt_16_cont/vt_17_o
+        weight: 1
+      - path: root/spine1/spine2/spine3/neck/head/m_endotrachealTube3/vt_01_o/vt_01_cont/vt_02_o/vt_02_cont/vt_03_o/vt_03_cont/vt_04_o/vt_04_cont/vt_05_o/vt_05_cont/vt_06_o/vt_06_cont/vt_07_o/vt_07_cont/vt_08_o/vt_08_cont/vt_09_o/vt_09_cont/vt_10_o/vt_10_cont/vt_11_o/vt_11_cont/vt_12_o/vt_12_cont/vt_13_o/vt_13_cont/vt_14_o/vt_14_cont/vt_15_o/vt_15_cont/vt_16_o/vt_16_cont/vt_17_o/vt_17_cont
+        weight: 1
+      - path: root/spine1/spine2/spine3/neck/head/m_endotrachealTube3/vt_01_o/vt_01_cont/vt_02_o/vt_02_cont/vt_03_o/vt_03_cont/vt_04_o/vt_04_cont/vt_05_o/vt_05_cont/vt_06_o/vt_06_cont/vt_07_o/vt_07_cont/vt_08_o/vt_08_cont/vt_09_o/vt_09_cont/vt_10_o/vt_10_cont/vt_11_o/vt_11_cont/vt_12_o/vt_12_cont/vt_13_o/vt_13_cont/vt_14_o/vt_14_cont/vt_15_o/vt_15_cont/vt_16_o/vt_16_cont/vt_17_o/vt_17_cont/vt_18_o
+        weight: 1
+      - path: root/spine1/spine2/spine3/neck/head/m_endotrachealTube3/vt_01_o/vt_01_cont/vt_02_o/vt_02_cont/vt_03_o/vt_03_cont/vt_04_o/vt_04_cont/vt_05_o/vt_05_cont/vt_06_o/vt_06_cont/vt_07_o/vt_07_cont/vt_08_o/vt_08_cont/vt_09_o/vt_09_cont/vt_10_o/vt_10_cont/vt_11_o/vt_11_cont/vt_12_o/vt_12_cont/vt_13_o/vt_13_cont/vt_14_o/vt_14_cont/vt_15_o/vt_15_cont/vt_16_o/vt_16_cont/vt_17_o/vt_17_cont/vt_18_o/vt_18_cont
+        weight: 1
+      - path: root/spine1/spine2/spine3/neck/head/m_endotrachealTube3/vt_01_o/vt_01_cont/vt_02_o/vt_02_cont/vt_03_o/vt_03_cont/vt_04_o/vt_04_cont/vt_05_o/vt_05_cont/vt_06_o/vt_06_cont/vt_07_o/vt_07_cont/vt_08_o/vt_08_cont/vt_09_o/vt_09_cont/vt_10_o/vt_10_cont/vt_11_o/vt_11_cont/vt_12_o/vt_12_cont/vt_13_o/vt_13_cont/vt_14_o/vt_14_cont/vt_15_o/vt_15_cont/vt_16_o/vt_16_cont/vt_17_o/vt_17_cont/vt_18_o/vt_18_cont/vt_19_o
+        weight: 1
+      - path: root/spine1/spine2/spine3/neck/head/m_endotrachealTube3/vt_01_o/vt_01_cont/vt_02_o/vt_02_cont/vt_03_o/vt_03_cont/vt_04_o/vt_04_cont/vt_05_o/vt_05_cont/vt_06_o/vt_06_cont/vt_07_o/vt_07_cont/vt_08_o/vt_08_cont/vt_09_o/vt_09_cont/vt_10_o/vt_10_cont/vt_11_o/vt_11_cont/vt_12_o/vt_12_cont/vt_13_o/vt_13_cont/vt_14_o/vt_14_cont/vt_15_o/vt_15_cont/vt_16_o/vt_16_cont/vt_17_o/vt_17_cont/vt_18_o/vt_18_cont/vt_19_o/vt_19_cont
+        weight: 1
+      - path: root/spine1/spine2/spine3/neck/head/m_endotrachealTube3/vt_01_o/vt_01_cont/vt_02_o/vt_02_cont/vt_03_o/vt_03_cont/vt_04_o/vt_04_cont/vt_05_o/vt_05_cont/vt_06_o/vt_06_cont/vt_07_o/vt_07_cont/vt_08_o/vt_08_cont/vt_09_o/vt_09_cont/vt_10_o/vt_10_cont/vt_11_o/vt_11_cont/vt_12_o/vt_12_cont/vt_13_o/vt_13_cont/vt_14_o/vt_14_cont/vt_15_o/vt_15_cont/vt_16_o/vt_16_cont/vt_17_o/vt_17_cont/vt_18_o/vt_18_cont/vt_19_o/vt_19_cont/vt_20_o
+        weight: 1
+      - path: root/spine1/spine2/spine3/neck/head/m_endotrachealTube3/vt_01_o/vt_01_cont/vt_02_o/vt_02_cont/vt_03_o/vt_03_cont/vt_04_o/vt_04_cont/vt_05_o/vt_05_cont/vt_06_o/vt_06_cont/vt_07_o/vt_07_cont/vt_08_o/vt_08_cont/vt_09_o/vt_09_cont/vt_10_o/vt_10_cont/vt_11_o/vt_11_cont/vt_12_o/vt_12_cont/vt_13_o/vt_13_cont/vt_14_o/vt_14_cont/vt_15_o/vt_15_cont/vt_16_o/vt_16_cont/vt_17_o/vt_17_cont/vt_18_o/vt_18_cont/vt_19_o/vt_19_cont/vt_20_o/vt_20_cont
         weight: 1
       - path: root/spine1/spine2/spine3/neck/head/R_btmRid
         weight: 1
@@ -1765,55 +1857,57 @@ ModelImporter:
       - path: root/spine1/spine2/spine3/neck/head/R_topRid/R_topRid_end
         weight: 1
       - path: root/spine1/spine2/spine3/R_clavicle
-        weight: 1
+        weight: 0
       - path: root/spine1/spine2/spine3/R_clavicle/R_shoulder
-        weight: 1
+        weight: 0
       - path: root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow
-        weight: 1
+        weight: 0
+      - path: root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/IVTarget
+        weight: 0
       - path: root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist
-        weight: 1
+        weight: 0
       - path: root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand
-        weight: 1
+        weight: 0
       - path: root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_index_a
-        weight: 1
+        weight: 0
       - path: root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_index_a/R_index_b
-        weight: 1
+        weight: 0
       - path: root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_index_a/R_index_b/R_index_c
-        weight: 1
+        weight: 0
       - path: root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_index_a/R_index_b/R_index_c/R_indexEnd
-        weight: 1
+        weight: 0
       - path: root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_middle_a
-        weight: 1
+        weight: 0
       - path: root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_middle_a/R_middle_b
-        weight: 1
+        weight: 0
       - path: root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_middle_a/R_middle_b/R_middle_c
-        weight: 1
+        weight: 0
       - path: root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_middle_a/R_middle_b/R_middle_c/R_middleEnd
-        weight: 1
+        weight: 0
       - path: root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_pinky_a
-        weight: 1
+        weight: 0
       - path: root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_pinky_a/R_pinky_b
-        weight: 1
+        weight: 0
       - path: root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_pinky_a/R_pinky_b/R_pinky_c
-        weight: 1
+        weight: 0
       - path: root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_pinky_a/R_pinky_b/R_pinky_c/R_pinkyEnd
-        weight: 1
+        weight: 0
       - path: root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_ring_a
-        weight: 1
+        weight: 0
       - path: root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_ring_a/R_ring_b
-        weight: 1
+        weight: 0
       - path: root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_ring_a/R_ring_b/R_ring_c
-        weight: 1
+        weight: 0
       - path: root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_ring_a/R_ring_b/R_ring_c/R_ringEnd
-        weight: 1
+        weight: 0
       - path: root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_thumb_a
-        weight: 1
+        weight: 0
       - path: root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_thumb_a/R_thumb_b
-        weight: 1
+        weight: 0
       - path: root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_thumb_a/R_thumb_b/R_thumb_c
-        weight: 1
+        weight: 0
       - path: root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_thumb_a/R_thumb_b/R_thumb_c/R_thumbEnd
-        weight: 1
+        weight: 0
       maskType: 0
       maskSource: {instanceID: 0}
     isReadable: 1

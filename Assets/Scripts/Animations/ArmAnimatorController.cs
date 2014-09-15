@@ -4,7 +4,7 @@ using System.Collections;
 public class ArmAnimatorController : MonoBehaviour {
 	public static ArmAnimatorController Instance;
 	public AudioClip armMove;
-	public GameObject ett, vt, mouthTarget, EttLeftHandTarget;
+	public GameObject ett, vt, bagAndMask, mouthTarget, EttLeftHandTarget;
 	public Camera[] cameras;
 
 	private Animator animator;
@@ -33,27 +33,18 @@ public class ArmAnimatorController : MonoBehaviour {
 		if (animator.GetCurrentAnimatorStateInfo (0).IsName ("ETT -> Hand")) {
 			ett.transform.parent = EttLeftHandTarget.transform;
 			ett.transform.localPosition = Vector3.zero;
-		} else if (animator.GetCurrentAnimatorStateInfo (0).IsName ("Insert Laryngoscope")) {
-			ett.transform.parent = null;
+		} else if (animator.GetCurrentAnimatorStateInfo (0).IsName ("Enter bagging")) {
+			bagAndMask.SetActive(true);
+		} else if (animator.GetCurrentAnimatorStateInfo (0).IsName ("Remove ETT")) {
+			bagAndMask.SetActive(false);
 		} else if (animator.GetCurrentAnimatorStateInfo (0).IsName ("ETT -> Baby")) {
-			px = -0.1747731f;
-			py = -0.2780856f;
-			pz = -0.3187726f;
-			rx = 39.43434f;
-			ry = 0;
-			rz = 328.235f;
-
-			ett.transform.parent = EttLeftHandTarget.transform;
-			ett.transform.localPosition = new Vector3(px, py, pz);
-			ett.transform.localEulerAngles = new Vector3(rx, ry, rz);
-		} else if (animator.GetCurrentAnimatorStateInfo (0).IsName ("Finish Intubation")) {
 			px = 0.002780795f;
 			py = -0.06677689f;
 			pz = -0.1790561f;
 
 			ett.transform.parent = mouthTarget.transform;
 			ett.transform.localEulerAngles = new Vector3 (90, 0, 0);
-			ett.transform.localPosition = new Vector3 (px, py, pz);
+			ett.transform.localPosition = Vector3.zero;
 		}
 	}
 
