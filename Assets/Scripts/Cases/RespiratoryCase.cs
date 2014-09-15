@@ -31,7 +31,7 @@ public class RespiratoryCase : MonoBehaviour {
         ett = ArmAnimatorController.Instance.ett;
 		vt = ArmAnimatorController.Instance.vt;
 		mouthTarget = ArmAnimatorController.Instance.mouthTarget;
-		babyBreath = GameObject.Find("baby").GetComponent<Breathing> ();
+		babyBreath = GameObject.FindGameObjectWithTag ("Baby").GetComponent<Breathing> ();
         if (babyBreath == null) {
             print("WHY NULL.");
         }

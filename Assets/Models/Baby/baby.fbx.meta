@@ -102,6 +102,48 @@ ModelImporter:
     100192: left
     100194: mouthTarget
     100196: persp1
+    100198: faceTape
+    100200: m_endotrachealTube3
+    100202: vt_01_cont
+    100204: vt_01_o
+    100206: vt_02_cont
+    100208: vt_02_o
+    100210: vt_03_cont
+    100212: vt_03_o
+    100214: vt_04_cont
+    100216: vt_04_o
+    100218: vt_05_cont
+    100220: vt_05_o
+    100222: vt_06_cont
+    100224: vt_06_o
+    100226: vt_07_cont
+    100228: vt_07_o
+    100230: vt_08_cont
+    100232: vt_08_o
+    100234: vt_09_cont
+    100236: vt_09_o
+    100238: vt_10_cont
+    100240: vt_10_o
+    100242: vt_11_cont
+    100244: vt_11_o
+    100246: vt_12_cont
+    100248: vt_12_o
+    100250: vt_13_cont
+    100252: vt_13_o
+    100254: vt_14_cont
+    100256: vt_14_o
+    100258: vt_15_cont
+    100260: vt_15_o
+    100262: vt_16_cont
+    100264: vt_16_o
+    100266: vt_17_cont
+    100268: vt_17_o
+    100270: vt_18_cont
+    100272: vt_18_o
+    100274: vt_19_cont
+    100276: vt_19_o
+    100278: vt_20_cont
+    100280: vt_20_o
     400000: //RootNode
     400002: blendshapes
     400004: body
@@ -201,10 +243,56 @@ ModelImporter:
     400192: left
     400194: mouthTarget
     400196: persp1
+    400198: faceTape
+    400200: m_endotrachealTube3
+    400202: vt_01_cont
+    400204: vt_01_o
+    400206: vt_02_cont
+    400208: vt_02_o
+    400210: vt_03_cont
+    400212: vt_03_o
+    400214: vt_04_cont
+    400216: vt_04_o
+    400218: vt_05_cont
+    400220: vt_05_o
+    400222: vt_06_cont
+    400224: vt_06_o
+    400226: vt_07_cont
+    400228: vt_07_o
+    400230: vt_08_cont
+    400232: vt_08_o
+    400234: vt_09_cont
+    400236: vt_09_o
+    400238: vt_10_cont
+    400240: vt_10_o
+    400242: vt_11_cont
+    400244: vt_11_o
+    400246: vt_12_cont
+    400248: vt_12_o
+    400250: vt_13_cont
+    400252: vt_13_o
+    400254: vt_14_cont
+    400256: vt_14_o
+    400258: vt_15_cont
+    400260: vt_15_o
+    400262: vt_16_cont
+    400264: vt_16_o
+    400266: vt_17_cont
+    400268: vt_17_o
+    400270: vt_18_cont
+    400272: vt_18_o
+    400274: vt_19_cont
+    400276: vt_19_o
+    400278: vt_20_cont
+    400280: vt_20_o
     2300000: L_eye 1
     2300002: R_eye 1
+    2300004: faceTape
+    2300006: m_endotrachealTube3
     3300000: L_eye 1
     3300002: R_eye 1
+    3300004: faceTape
+    3300006: m_endotrachealTube3
     4300000: diaper
     4300002: catheterCord
     4300004: catheterTape
@@ -213,6 +301,8 @@ ModelImporter:
     4300010: body
     4300012: L_eye
     4300014: R_eye
+    4300016: faceTape
+    4300018: m_endotrachealTube3
     7400000: -> Flex
     7400002: Flex Idle
     7400004: <- Flex

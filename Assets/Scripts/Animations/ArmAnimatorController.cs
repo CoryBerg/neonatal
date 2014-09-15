@@ -30,12 +30,12 @@ public class ArmAnimatorController : MonoBehaviour {
 	void Update() {
 		float px, py, pz,
 			  rx, ry, rz;
-		if (animator.GetCurrentAnimatorStateInfo (0).IsName ("Remove ETT")) {
+		if (animator.GetCurrentAnimatorStateInfo (0).IsName ("ETT -> Hand")) {
 			ett.transform.parent = EttLeftHandTarget.transform;
 			ett.transform.localPosition = Vector3.zero;
 		} else if (animator.GetCurrentAnimatorStateInfo (0).IsName ("Insert Laryngoscope")) {
 			ett.transform.parent = null;
-		} else if (animator.GetCurrentAnimatorStateInfo (0).IsName ("Replace ETT")) {
+		} else if (animator.GetCurrentAnimatorStateInfo (0).IsName ("ETT -> Baby")) {
 			px = -0.1747731f;
 			py = -0.2780856f;
 			pz = -0.3187726f;
