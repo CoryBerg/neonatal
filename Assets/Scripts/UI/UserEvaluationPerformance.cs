@@ -79,6 +79,7 @@ public class UserEvaluationPerformance : MonoBehaviour {
 		if(CaseHandler.Instance.babyAlive == false) {
 			UILogger.ButtonsPressed.Add ("TheBabyDied");
 		}
+		List<string> displayedKeys = new List<string>();
 		if(UILogger.ButtonsPressed != null) {
 			string textVal = string.Format("{0:D}. {1}", 1, UILogger.ButtonsPressed[0]);
 			int c = 1;
@@ -86,23 +87,27 @@ public class UserEvaluationPerformance : MonoBehaviour {
 				if(UILogger.ButtonsPressed[i].Contains("Exit") || ! _translationDict.ContainsKey(UILogger.ButtonsPressed[i])) {
 					continue;
 				}
+				string displayKey = _translationDict[UILogger.ButtonsPressed[i]];
+				if(displayedKeys.Contains(displayKey)) {
+					continue;
+				}
 				GameObject labelInst = (GameObject)dfGUIManager.Instantiate(labelPrefab);
 				labelInst.transform.parent = this.transform;
 				dfLabel lbl = labelInst.GetComponent<dfLabel>();
 				lbl.Position = root.transform.position + new Vector3(0,-offset * (c - 1));
-				string v = _translationDict[UILogger.ButtonsPressed[i]];
-				string tooltip = _effectiveInterventionDict["Debug"] + " " + v;
-				if(_effectiveInterventionDict.ContainsKey(v)) {
+				displayedKeys.Add(displayKey);
+				string tooltip = _effectiveInterventionDict["Debug"] + " " + displayKey;
+				if(_effectiveInterventionDict.ContainsKey(displayKey)) {
 					lbl.Color = Color.green;
-					tooltip = _effectiveInterventionDict[v];
-				} else if(_ineffectiveInterventionDict.ContainsKey(v)) {
+					tooltip = _effectiveInterventionDict[displayKey];
+				} else if(_ineffectiveInterventionDict.ContainsKey(displayKey)) {
 					lbl.Color = Color.yellow;
-					tooltip = _ineffectiveInterventionDict[v];
+					tooltip = _ineffectiveInterventionDict[displayKey];
 				} else {
 					lbl.Color = Color.red;
-					tooltip = _inappropriateInterventionDict[v];
+					tooltip = _inappropriateInterventionDict[displayKey];
 				}
-				textVal = string.Format("{0:D}. {1}",c,v);
+				textVal = string.Format("{0:D}. {1}",c,displayKey);
 				lbl.Text = textVal;
 				lbl.Tooltip = tooltip;
 				c++;
