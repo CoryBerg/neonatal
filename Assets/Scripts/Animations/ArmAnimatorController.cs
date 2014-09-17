@@ -72,15 +72,16 @@ public class ArmAnimatorController : MonoBehaviour {
             return;
         }
         print("Steth Begin");
+		animator.SetBool("InSteth", true);
+		inSteth = true;
 		transform.parent = target;
 		transform.localPosition = Vector3.zero;
 		ArmItemsContainer.Instance.NewAnimation ("ButtonSteth");
         animator.SetTrigger("ButtonSteth");
-        animator.SetBool("InSteth", true);
-        inSteth = true;
 	}
 
     public void FinishSteth() {
+		transform.parent = null;
         animator.SetBool("InSteth", false);
         inSteth = false;
         print("Steth Finsh");
