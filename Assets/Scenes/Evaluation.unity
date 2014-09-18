@@ -3270,7 +3270,7 @@ MonoBehaviour:
     margins:
       left: 0
       top: -0
-      right: 8
+      right: 5
       bottom: 53
     owner: {fileID: 1883187144}
   renderOrder: 8
@@ -3336,7 +3336,19 @@ MonoBehaviour:
   CaseToShow: 0
   labelToModify: {fileID: 0}
   text: {fileID: 0}
-  value: 1. Prostaglandin Drip
+  value: '1. Use Stethoscope
+
+    2. Hyperoxia Test
+
+    3. Suction the Baby
+
+    4. ABG
+
+    5. Attach ETT
+
+    6. Blood Culture
+
+    7. Prostaglandin Infusion'
 --- !u!1 &1908613694
 GameObject:
   m_ObjectHideFlags: 0

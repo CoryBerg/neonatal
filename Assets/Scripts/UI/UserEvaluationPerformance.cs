@@ -35,10 +35,12 @@ public class UserEvaluationPerformance : MonoBehaviour {
 		{"ButtonBloCul","Blood Culture"},
 		{"ButtonCBC","CBC Test"},
 		{"ButtonInitialABG","ABG Test"},
+		{"ButtonHyperTest","Hyperoxia Test"},
+		{"ButtonProstaglandin","Prostaglandin Drip"},
 		{"Debug","Nothing"}
 	};
-
-	static Dictionary<string, string> _effectiveInterventionDict = new Dictionary<string, string>
+	
+	static Dictionary<string, string> _effectiveRespInterventionDict = new Dictionary<string, string>
 	{
 		{"Stethoscope","You appropriately examined the baby’s chest using a stethoscope, as physical exam should be one of the first steps taken to address any patient demonstrating an acute change in clinical status.  The right side of the patient’ chest clearly demonstrated breath sounds, however, breath sounds were absent on the left side of the chest.  Absent breath sounds on one side of the chest should alert the clinician to the possibility of a pneumothorax on the affected side."},
 		{"Debug","Tooltip not implemented!"},
@@ -47,7 +49,7 @@ public class UserEvaluationPerformance : MonoBehaviour {
 		{"Transilluminate Chest","You correctly decided that transillumination of the chest wall would be an important step in the diagnostic work up of this infant.  When the light source was applied to the axillary region of the left side of the infant’s chest, that side of the chest appeared very bright (as opposed to the right side of the patient’s chest, which only brightened a small amount when the light source was applied).  The finding of the two sides of the chest differing in their appearance in response to a light source is suggestive that the infant may have a pneumothorax on the affected side."},
 		{"Needle Decompression","Appropriately performed needle decompression (2nd intercostal space in midclavicular line) performed within 15 minutes.  Excellent job!  You correctly recognized that this infant was suffering from a tension pneumothorax and that the only effective treatment is prompt needle decompression of the affected side of the chest.  Needle decompression is properly performed by introducing a needle into the second intercostal space in the midclavicular line on the affected side, with subsequent release of the trapped air in the extrapleural space."}
 	};
-	static Dictionary<string, string> _ineffectiveInterventionDict = new Dictionary<string, string>
+	static Dictionary<string, string> _ineffectiveRespInterventionDict = new Dictionary<string, string>
 	{
 		{"Nothing","Filler"},
 		{"ABG Test","You ordered an ABG as part of your diagnostic workup.  The results of the ABG showed a mixed respiratory and metabolic acidosis, which did not necessarily aid in diagnosing the etiology of the patient’s hypoxemia and respiratory distress."},
@@ -61,7 +63,7 @@ public class UserEvaluationPerformance : MonoBehaviour {
 		{"No Needle","No needle decompression by 15 minutes (regardless of any other intervention attempted/ medication administered).  Unfortunately, this patient’s tension pneumothorax was not addressed within a timely fashion, and therefore the patient continued to display further clinical deterioration.  As air continued to accumulate in the extrapleural space, the mediastinal structures continued to shift, further exacerbating the patient’s already low venous return to the heart and subsequently, cardiac output.  Therefore, the patient’s blood pressure continued to drop, the patient became more tachycardic, and oxygen saturations continued to deteriorate.   A tension pneumothorax should be addressed in a very prompt manner, as only a matter of minutes may mean the difference between life and death."},
 		{"X-Ray","Chest X Ray. The chest X ray showed absent lung markings on the left side of the chest, indication the presence of a left sided pneumothorax.  Furthermore, the mediastinal structures appear shifted to the opposite side of the chest, further suggesting the presence of a tension pneumothorax. It is important to note, however, that chest X ray should not be relied upon in order to diagnose a tension pneumothorax as this may delay and interfere with prompt life-saving intervention, thereby causing further clinical deterioration and even death."}
 	};
-	static Dictionary<string, string> _inappropriateInterventionDict = new Dictionary<string, string>
+	static Dictionary<string, string> _inappropriateRespInterventionDict = new Dictionary<string, string>
 	{
 		{"Nothing","Filler"},
 		{"Chest Compression","Chest compression performed. This patient displays tachycardia, not bradycardia, and therefore chest compressions are not indicated.  Chest compressions are indicated when the patient’s heart rate falls below 60bpm."},
@@ -69,6 +71,25 @@ public class UserEvaluationPerformance : MonoBehaviour {
 		{"ECHO Test","ECHO Test Performed. In an acutely unstable patient such as this patient, physical exam should reveal the primary disturbance, and an ECHO is not indicated as it would only delay treatment to this critically ill infant."},
 		{"Baby Died","Needle decompression attempted in inappropriate location. Needle decompression should only be performed in the second intercostal space in the midclavicular line on the affected side of the chest."}
 	};
+	static Dictionary<string, string> _effectiveCardioInterventionDict = new Dictionary<string, string>
+	{
+		{"Stethoscope","You appropriately examined the baby’s chest using a stethoscope, as physical exam should be one of the first steps taken to address any patient demonstrating an acute change in clinical status.  Although auscultation did not reveal any abnormalities in this patient (as not all ducts will produce a murmur, depending on the size of the duct), it nevertheless provided important information in aiding to rule out a respiratory etiology for the patient’s hypoxia."},
+		{"Suction the Baby","Suctioning a ventilated infant who is displaying hypoxia is certainly an important measure to uncover the underlying etiology of an acute respiratory decompensation.  In this case, however, suctioning did not change the infant’s clinical picture as it is not a helpful measure in treating desaturation secondary to a ductal dependent cardiac lesion."},
+		{"Attach ETT","Bag and tube ventilation in a decompensating mechanically ventilated patient is another important measure to take.  However, this will not improve the clinical status in an infant with a ductal dependent congenital heart lesion."},
+		{"ABG Test","You ordered an ABG as part of your diagnostic workup.  The results of the ABG showed a metabolic acidosis, which can help to rule out a respiratory etiology in this case, as the patient’s ventilation status was normal."},
+		{"Blood Culture","although this infant did not have sepsis, sending a blood culture in an acutely decompensating infant to rule out sepsis is an important laboratory test to send.  Always consider sepsis, and have a low threshold to empirically treat for it pending a more thorough work-up."},
+		{"Hyperoxia Test","The hyperoxia test is an excellent way to distinguish between a cardiac and respiratory etiology in a patient presenting with hypoxia.  The cyanotic infant should be placed on 100% oxygen via non re-breather mask for 10-20 minutes. If the PaO2 on an ABG increases significantly >150mmHg , then the infant probably has pulmonary pathology.  If the PaO2 does not increase, then the likely hood of a Congenital Cyanotic Heart disease is extremely high."},
+		{"Prostaglandin Drip","Excellent job!  You correctly recognized that this infant was suffering from a ductal-dependent cardiac lesion and initial management is prompt initiation of a prostaglandin infusion to keep the ductus open. Congenital heart disease lesions that present in the first two to three weeks of life are typically ductal-dependent cardiac lesions.  The patent ductus arteriosus had been sustaining blood flow for these infants, and when the ductus closes after birth, these infants suddenly become ill.  Depending upon the underlying structural abnormality, these neonates will present with either sudden cyanosis or signs of cardiovascular collapse. If ductal-dependent congenital heart disease is suspected, prostaglandin E1 infusion (PGE1) should be initiated at a rate 0.05µg/kg/min initially then reduced to 0.01-0.05 ug/kg/minute.  Prostaglandin is a very potent vasodilator and will have immediate effects on the ductus.  Improvement is usually seen within fifteen minutes; however, the practitioner should be prepared to intubate since there is an approximately 12% incidence of apnea following PGE1 initiation."}
+	};
+	static Dictionary<string, string> _ineffectiveCardioInterventionDict = new Dictionary<string, string>
+	{
+
+	};
+	static Dictionary<string, string> _inappropriateCardioInterventionDict = new Dictionary<string, string>
+	{
+
+	};
+
 	// Use this for initialization
 	void Start () {
 //		For Debugging in scene...
@@ -96,16 +117,16 @@ public class UserEvaluationPerformance : MonoBehaviour {
 				dfLabel lbl = labelInst.GetComponent<dfLabel>();
 				lbl.Position = root.transform.position + new Vector3(0,-offset * (c - 1));
 				displayedKeys.Add(displayKey);
-				string tooltip = _effectiveInterventionDict["Debug"] + " " + displayKey;
-				if(_effectiveInterventionDict.ContainsKey(displayKey)) {
+				string tooltip = _effectiveRespInterventionDict["Debug"] + " " + displayKey;
+				if(_effectiveRespInterventionDict.ContainsKey(displayKey)) {
 					lbl.Color = Color.green;
-					tooltip = _effectiveInterventionDict[displayKey];
-				} else if(_ineffectiveInterventionDict.ContainsKey(displayKey)) {
+					tooltip = _effectiveRespInterventionDict[displayKey];
+				} else if(_ineffectiveRespInterventionDict.ContainsKey(displayKey)) {
 					lbl.Color = Color.yellow;
-					tooltip = _ineffectiveInterventionDict[displayKey];
+					tooltip = _ineffectiveRespInterventionDict[displayKey];
 				} else {
 					lbl.Color = Color.red;
-					tooltip = _inappropriateInterventionDict[displayKey];
+					tooltip = _inappropriateRespInterventionDict[displayKey];
 				}
 				textVal = string.Format("{0:D}. {1}",c,displayKey);
 				lbl.Text = textVal;
