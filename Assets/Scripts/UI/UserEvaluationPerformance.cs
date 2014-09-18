@@ -37,6 +37,7 @@ public class UserEvaluationPerformance : MonoBehaviour {
 		{"ButtonInitialABG","ABG Test"},
 		{"ButtonHyperTest","Hyperoxia Test"},
 		{"ButtonProstaglandin","Prostaglandin Drip"},
+		{"ButtonInhaled","Inhaled Medications"},
 		{"Debug","Nothing"}
 	};
 	
@@ -73,6 +74,7 @@ public class UserEvaluationPerformance : MonoBehaviour {
 	};
 	static Dictionary<string, string> _effectiveCardioInterventionDict = new Dictionary<string, string>
 	{
+		{"Debug","Tooltip not implemented!"},
 		{"Stethoscope","You appropriately examined the baby’s chest using a stethoscope, as physical exam should be one of the first steps taken to address any patient demonstrating an acute change in clinical status.  Although auscultation did not reveal any abnormalities in this patient (as not all ducts will produce a murmur, depending on the size of the duct), it nevertheless provided important information in aiding to rule out a respiratory etiology for the patient’s hypoxia."},
 		{"Suction the Baby","Suctioning a ventilated infant who is displaying hypoxia is certainly an important measure to uncover the underlying etiology of an acute respiratory decompensation.  In this case, however, suctioning did not change the infant’s clinical picture as it is not a helpful measure in treating desaturation secondary to a ductal dependent cardiac lesion."},
 		{"Attach ETT","Bag and tube ventilation in a decompensating mechanically ventilated patient is another important measure to take.  However, this will not improve the clinical status in an infant with a ductal dependent congenital heart lesion."},
@@ -83,11 +85,22 @@ public class UserEvaluationPerformance : MonoBehaviour {
 	};
 	static Dictionary<string, string> _ineffectiveCardioInterventionDict = new Dictionary<string, string>
 	{
-
+		{"X-Ray","The chest X ray in this case did not contribute any additional information to the diagnosis of this patient. In addition, it is important to note that chest X ray should not be relied upon in order to diagnose an acutely decompensating patient as this may delay and interfere with prompt life-saving intervention, thereby causing further clinical deterioration and even death. However a chest x-ray is partially beneficial in confirming ET-tube position, reviewing cardiothoracic ratio while ruling out pneumonia."},
+		{"CBC Test","The results of the CBC were not particularly helpful or revealing of any particular diagnosis in this case."},
+		{"Glucose Test","The blood glucose in this infant was normal."},
+		{"BMP Test","The BMP in this case revealed a low bicarbonate value as a result of the metabolic acidosis which this patient developed."},
+		{"ECHO Test","Although an ECHO would likely reveal the cause of the acute clinical decompensation, it should not be relied upon in an acutely unstable patient as it would delay the initiation of treatment for this critically ill infant."},
+		{"EKG Test","You chose to perform an EKG on this patient, which demonstrated sinus tachycardia at 180bpm.  While this test may have been helpful in ruling out an arrhythmia as the cause for the acute cardiovascular decompensation, it may ultimately delay care if relied upon prior to initiating treatment. It is important to note that EKGs can help diagnosis complete A-V canal and Tricupid Atresia by revealing superior axis deviation."},
+		{"Intubation","Any mechanically ventilated patient who displays an acute change in respiratory status should be thoroughly evaluated.  The possibility that the endotracheal tube has become displaced should be considered, and if no other cause for the acute decompensation is found, reintubation of the infant is a reasonable option."},
+		{"Normal Saline","In this patient, the cause of hypotension and tachycardia was inadequate cardiac output secondary to the closing ductus arteriosus.  Although a large fluid bolus may temporarily increase the blood pressure, this will not result in a resolution of the underlying issue and blood pressure will then continue to fall."},
+		{"BP Medication","Inotropes and steroids are excellent medications for treating hypotention from multiple etiologies.  Often times this reversal is permanent, but occasionally may be temporal depending on the primary cause. In this case, however, although blood pressure increased slightly and temporarily, these medications cannot reverse the underlying etiology of the fallen blood pressure and as a result, the blood pressure will then continue to fall."},
+		{"Transilluminate Chest","Although transillumination of the chest wall may reveal a pneumothorax as the cause for cyanosis and desaturation, this infant demonstrated clear breath sounds bilaterally, and therefore transillumination is not a necessary step in the diagnostic workup of this patient."}
 	};
 	static Dictionary<string, string> _inappropriateCardioInterventionDict = new Dictionary<string, string>
 	{
-
+		{"Needle Decompression","This patient did not have a tension pneumothorax, therefore needle decompression was not an appropriate part of the management for this patient."},
+		{"Inhaled Medications","This patient demonstrated clear breath sounds, which is not consistent with an acute episode of bronchoconstriction.  Waiting for the completion of an inhaled medication treatment to end may also delay and interfere with life-saving interventions and cause further clinical deterioration of the patient."},
+		{"Chest Compression","This patient displays tachycardia, not bradycardia, and therefore chest compressions are not indicated.  Chest compressions are indicated when the patient’s heart rate falls below 60bpm."}
 	};
 
 	// Use this for initialization
@@ -99,6 +112,14 @@ public class UserEvaluationPerformance : MonoBehaviour {
 //		}
 		if(CaseHandler.Instance.babyAlive == false) {
 			UILogger.ButtonsPressed.Add ("TheBabyDied");
+		}
+		Dictionary<string,string> effective = _effectiveRespInterventionDict;
+		Dictionary<string,string> ineffective = _ineffectiveRespInterventionDict;
+		Dictionary<string,string> inappropriate = _inappropriateRespInterventionDict;
+		if(CaseHandler.Instance.currentCase == NeonatalCase.Cardiac) {
+			effective = _effectiveCardioInterventionDict;
+			ineffective = _ineffectiveCardioInterventionDict;
+			inappropriate = _inappropriateCardioInterventionDict;
 		}
 		List<string> displayedKeys = new List<string>();
 		if(UILogger.ButtonsPressed != null) {
@@ -117,16 +138,16 @@ public class UserEvaluationPerformance : MonoBehaviour {
 				dfLabel lbl = labelInst.GetComponent<dfLabel>();
 				lbl.Position = root.transform.position + new Vector3(0,-offset * (c - 1));
 				displayedKeys.Add(displayKey);
-				string tooltip = _effectiveRespInterventionDict["Debug"] + " " + displayKey;
-				if(_effectiveRespInterventionDict.ContainsKey(displayKey)) {
+				string tooltip = effective["Debug"] + " " + displayKey;
+				if(effective.ContainsKey(displayKey)) {
 					lbl.Color = Color.green;
-					tooltip = _effectiveRespInterventionDict[displayKey];
-				} else if(_ineffectiveRespInterventionDict.ContainsKey(displayKey)) {
+					tooltip = effective[displayKey];
+				} else if(ineffective.ContainsKey(displayKey)) {
 					lbl.Color = Color.yellow;
-					tooltip = _ineffectiveRespInterventionDict[displayKey];
+					tooltip = ineffective[displayKey];
 				} else {
 					lbl.Color = Color.red;
-					tooltip = _inappropriateRespInterventionDict[displayKey];
+					tooltip = inappropriate[displayKey];
 				}
 				textVal = string.Format("{0:D}. {1}",c,displayKey);
 				lbl.Text = textVal;
