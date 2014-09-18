@@ -10375,7 +10375,7 @@ Transform:
   m_GameObject: {fileID: 422203437}
   m_LocalRotation: {x: 0, y: 0, z: -.000308999995, w: 1}
   m_LocalPosition: {x: 0, y: -.400000006, z: 0}
-  m_LocalScale: {x: 1.00000024, y: .999964952, z: 1}
+  m_LocalScale: {x: 1.00000024, y: .999964476, z: 1}
   m_Children: []
   m_Father: {fileID: 1585641692}
 --- !u!65 &422203440
@@ -14137,7 +14137,7 @@ Transform:
   m_GameObject: {fileID: 640738026}
   m_LocalRotation: {x: 0, y: 0, z: -.000308999995, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.00000024, y: .999964893, z: 1}
+  m_LocalScale: {x: 1.00000024, y: .999964416, z: 1}
   m_Children: []
   m_Father: {fileID: 1585641692}
 --- !u!65 &640738029
@@ -14301,7 +14301,7 @@ Transform:
   m_GameObject: {fileID: 661242089}
   m_LocalRotation: {x: 0, y: 0, z: -.000308999995, w: 1}
   m_LocalPosition: {x: 0, y: -.600000024, z: 0}
-  m_LocalScale: {x: 1.00000024, y: .999964952, z: 1}
+  m_LocalScale: {x: 1.00000024, y: .999964476, z: 1}
   m_Children: []
   m_Father: {fileID: 1585641692}
 --- !u!65 &661242092
@@ -16075,7 +16075,7 @@ Transform:
   m_GameObject: {fileID: 751934915}
   m_LocalRotation: {x: 0, y: 0, z: -.000308999995, w: 1}
   m_LocalPosition: {x: .0100002289, y: -.800000012, z: 0}
-  m_LocalScale: {x: 1.00000024, y: .999964952, z: 1}
+  m_LocalScale: {x: 1.00000024, y: .999964476, z: 1}
   m_Children: []
   m_Father: {fileID: 1585641692}
 --- !u!65 &751934918
@@ -16707,7 +16707,7 @@ Transform:
   m_GameObject: {fileID: 807570698}
   m_LocalRotation: {x: 0, y: 0, z: -.000308999995, w: 1}
   m_LocalPosition: {x: -.611667633, y: -.666666687, z: 0}
-  m_LocalScale: {x: 1.00000024, y: .999969423, z: 1}
+  m_LocalScale: {x: 1.00000024, y: .999968946, z: 1}
   m_Children: []
   m_Father: {fileID: 323160162}
 --- !u!65 &807570700
@@ -17767,7 +17767,7 @@ Transform:
   m_GameObject: {fileID: 849193159}
   m_LocalRotation: {x: 0, y: 0, z: -.000308999995, w: 1}
   m_LocalPosition: {x: .721666336, y: -.666666687, z: 0}
-  m_LocalScale: {x: 1.00000024, y: .999969423, z: 1}
+  m_LocalScale: {x: 1.00000024, y: .999968946, z: 1}
   m_Children: []
   m_Father: {fileID: 323160162}
 --- !u!65 &849193161
@@ -18074,6 +18074,7 @@ GameObject:
   - 114: {fileID: 878351541}
   - 114: {fileID: 878351540}
   - 114: {fileID: 878351539}
+  - 114: {fileID: 878351544}
   m_Layer: 8
   m_Name: ButtonExitChestExam
   m_TagString: Untagged
@@ -18251,6 +18252,23 @@ MonoBehaviour:
   shadowOffset: {x: 1, y: -1}
   autoSize: 0
   clickWhenSpacePressed: 1
+--- !u!114 &878351544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 878351537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec4b6d41893ad6e499d2ffcefa532575, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DataSource:
+    Component: {fileID: 878351543}
+    MemberName: Click
+  DataTarget:
+    Component: {fileID: 1585641694}
+    MemberName: Show
 --- !u!1 &878575452
 GameObject:
   m_ObjectHideFlags: 0
@@ -23320,7 +23338,7 @@ Transform:
   m_GameObject: {fileID: 1075319798}
   m_LocalRotation: {x: 0, y: 0, z: -.000308999995, w: 1}
   m_LocalPosition: {x: 0, y: -.199999988, z: 0}
-  m_LocalScale: {x: 1.00000024, y: .999964893, z: 1}
+  m_LocalScale: {x: 1.00000024, y: .999964416, z: 1}
   m_Children: []
   m_Father: {fileID: 1585641692}
 --- !u!65 &1075319801
@@ -38826,6 +38844,7 @@ GameObject:
   - 114: {fileID: 1769697668}
   - 114: {fileID: 1769697669}
   - 114: {fileID: 1769697670}
+  - 114: {fileID: 1769697671}
   m_Layer: 8
   m_Name: ButtonVisual
   m_TagString: Untagged
@@ -39014,7 +39033,7 @@ MonoBehaviour:
     Component: {fileID: 1769697667}
     MemberName: Click
   DataTarget:
-    Component: {fileID: 889491933}
+    Component: {fileID: 878351543}
     MemberName: Show
 --- !u!114 &1769697670
 MonoBehaviour:
@@ -39031,8 +39050,25 @@ MonoBehaviour:
     Component: {fileID: 1769697667}
     MemberName: Click
   DataTarget:
-    Component: {fileID: 0}
-    MemberName: HideItems
+    Component: {fileID: 1769697667}
+    MemberName: BringToFront
+--- !u!114 &1769697671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1769697662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec4b6d41893ad6e499d2ffcefa532575, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DataSource:
+    Component: {fileID: 1769697667}
+    MemberName: Click
+  DataTarget:
+    Component: {fileID: 1585641694}
+    MemberName: Hide
 --- !u!1 &1772593912
 GameObject:
   m_ObjectHideFlags: 0

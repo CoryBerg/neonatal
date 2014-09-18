@@ -87,6 +87,15 @@ public class ArmAnimatorController : MonoBehaviour {
         print("Steth Finsh");
     }
 
+	IEnumerator CamDelay() {
+		yield return new WaitForSeconds(1.5f);
+		foreach (Camera camera in cameras) {
+			camera.animation["chestCompZoom"].time = camera.animation["chestCompZoom"].length;
+			camera.animation["chestCompZoom"].speed = -1.0f;
+			camera.animation.Play("chestCompZoom");
+		}
+	}
+
 	// Triggers mechanim state for animation
 	public void TriggerAnimation(string animation) {
 		doOnce = true;
@@ -99,11 +108,7 @@ public class ArmAnimatorController : MonoBehaviour {
 			return;
 		}
         if (animName == "EndCC") {
-		foreach (Camera camera in cameras) {
-			camera.animation["chestCompZoom"].time = camera.animation["chestCompZoom"].length;
-			camera.animation["chestCompZoom"].speed = -1.0f;
-			camera.animation.Play("chestCompZoom");
-		}
+			StartCoroutine(CamDelay());
         }
 		GameObject arms = GameObject.FindGameObjectWithTag ("Arms");
 		AudioSource.PlayClipAtPoint (armMove, arms.transform.position);

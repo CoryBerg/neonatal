@@ -15,7 +15,6 @@ public class FaceExam : MonoBehaviour {
 	}
 
 	public void Off() {
-		
 		Camera.main.animation ["faceExam"].speed = -1f;
 		Camera.main.animation["faceExam"].time = Camera.main.animation["faceExam"].length;
 		Camera.main.animation.Play("faceExam");

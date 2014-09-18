@@ -871,7 +871,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 375420064}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: .00130208337, z: 0}
+  m_LocalPosition: {x: .00130208337, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1092662327}
@@ -2781,7 +2781,7 @@ MonoBehaviour:
   isInteractive: 1
   tooltip: 
   pivot: 1
-  zindex: -1
+  zindex: 0
   color:
     serializedVersion: 2
     rgba: 4294967295
@@ -3232,8 +3232,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: .739583373, y: .369791687, z: .00100000005}
-  m_Center: {x: .369791687, y: -.184895843, z: 0}
+  m_Size: {x: .747395873, y: .369791687, z: .00100000005}
+  m_Center: {x: .373697937, y: -.184895843, z: 0}
 --- !u!114 &1883187144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3254,11 +3254,11 @@ MonoBehaviour:
   zindex: 0
   color:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4278255360
   disabledColor:
     serializedVersion: 2
     rgba: 4294967295
-  size: {x: 284, y: 142}
+  size: {x: 287, y: 142}
   minSize: {x: 0, y: 0}
   maxSize: {x: 0, y: 0}
   clipChildren: 0
@@ -3285,15 +3285,15 @@ MonoBehaviour:
   autoSize: 1
   autoHeight: 0
   wordWrap: 0
-  text: '1. Needle Decompression
+  text: '1. Use Stethoscope
 
-    2. Use Stethoscope
+    2. Transillumnate Chest
 
-    3. Transillumnate Chest
+    3. Suction the Baby
 
-    4. Suction the Baby
+    4. Attach ETT
 
-    5. Attach ETT'
+    5. Needle Decompression'
   bottomColor:
     serializedVersion: 2
     rgba: 4294967295
