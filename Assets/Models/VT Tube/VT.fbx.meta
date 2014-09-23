@@ -1,0 +1,113 @@
+fileFormatVersion: 2
+guid: a73385672842f3a4abf38c15b49a599a
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: deleteBeforeBake_grp
+    100002: joints_grp
+    100004: m_endotrchealTube_kg_3_ETT_ventilatorTube
+    100006: mesh_grp
+    100008: //RootNode
+    100010: vt_01_j
+    100012: vt_02_j
+    100014: vt_03_j
+    100016: vt_04_j
+    100018: vt_05_j
+    100020: vt_06_j
+    100022: vt_07_j
+    100024: vt_08_j
+    100026: vt_09_j1
+    100028: vt_10_j
+    100030: vt_11_j
+    100032: vt_12_j
+    100034: vt_13_j
+    100036: vt_14_j
+    100038: vt_15_j
+    100040: vt_16_j
+    100042: vt_17_j
+    100044: vt_18_j
+    100046: vt_19_j
+    100048: vt_20_j
+    100050: vt_21_j
+    400000: deleteBeforeBake_grp
+    400002: joints_grp
+    400004: m_endotrchealTube_kg_3_ETT_ventilatorTube
+    400006: mesh_grp
+    400008: //RootNode
+    400010: vt_01_j
+    400012: vt_02_j
+    400014: vt_03_j
+    400016: vt_04_j
+    400018: vt_05_j
+    400020: vt_06_j
+    400022: vt_07_j
+    400024: vt_08_j
+    400026: vt_09_j1
+    400028: vt_10_j
+    400030: vt_11_j
+    400032: vt_12_j
+    400034: vt_13_j
+    400036: vt_14_j
+    400038: vt_15_j
+    400040: vt_16_j
+    400042: vt_17_j
+    400044: vt_18_j
+    400046: vt_19_j
+    400048: vt_20_j
+    400050: vt_21_j
+    4300000: m_endotrchealTube_kg_3_ETT_ventilatorTube
+    9500000: //RootNode
+    13700000: m_endotrchealTube_kg_3_ETT_ventilatorTube
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

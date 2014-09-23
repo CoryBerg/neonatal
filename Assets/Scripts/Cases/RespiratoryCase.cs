@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 // Also acting as parent class for all cases
@@ -22,14 +22,13 @@ public class RespiratoryCase : MonoBehaviour {
 	protected float decompTimer, deathTimer;
 	protected SWP_HeartRateMonitor heartMonitor;
 
-	private GameObject ett, vt, mouthTarget;
+	private GameObject babyEtt, mouthTarget;
 
 	protected virtual void Awake() {
         if (ArmAnimatorController.Instance == null) {
             print("AHH");
         }
-        ett = ArmAnimatorController.Instance.ett;
-		vt = ArmAnimatorController.Instance.vt;
+        babyEtt = ArmAnimatorController.Instance.babyEtt;
 		mouthTarget = ArmAnimatorController.Instance.mouthTarget;
 		babyBreath = GameObject.FindGameObjectWithTag ("Baby").GetComponent<Breathing> ();
         if (babyBreath == null) {
@@ -48,13 +47,7 @@ public class RespiratoryCase : MonoBehaviour {
 	}
 
 	private void EttVtPositioning() {
-		float x = 0.002780795f,
-		y = -0.06677689f,
-		z = -0.1790561f;
-		ett.transform.parent = mouthTarget.transform;
-		ett.transform.localEulerAngles = new Vector3 (90, 0, 0);
-		ett.transform.localPosition = new Vector3 (x, y, z);
-		//vt.transform.parent = ett.transform;
+		babyEtt.SetActive (true);
 	}
 
 	protected virtual void Start() {

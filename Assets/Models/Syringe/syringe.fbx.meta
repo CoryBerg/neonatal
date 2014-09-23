@@ -3,24 +3,27 @@ guid: 32aa88edfc18ffd49ad8471a031739d2
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
-    100000: case_mesh
-    100002: needle_mesh
-    100004: plunger_mesh
-    100006: //RootNode
-    400000: case_mesh
-    400002: needle_mesh
-    400004: plunger_mesh
-    400006: //RootNode
-    2300000: case_mesh
-    2300002: needle_mesh
-    2300004: plunger_mesh
-    3300000: case_mesh
-    3300002: needle_mesh
-    3300004: plunger_mesh
-    4300000: case_mesh
-    4300002: needle_mesh
-    4300004: plunger_mesh
+    100000: //RootNode
+    100002: syringe01_ctrl
+    100004: syringe01_j
+    100006: syringe01_o
+    100008: syringe02_ctrl
+    100010: syringe02_j
+    100012: syringe02_o
+    100014: syringe_mesh
+    100016: syringeMaster_grp
+    400000: //RootNode
+    400002: syringe01_ctrl
+    400004: syringe01_j
+    400006: syringe01_o
+    400008: syringe02_ctrl
+    400010: syringe02_j
+    400012: syringe02_o
+    400014: syringe_mesh
+    400016: syringeMaster_grp
+    4300000: syringe_mesh
     9500000: //RootNode
+    13700000: syringe_mesh
   materials:
     importMaterials: 1
     materialName: 0
@@ -39,7 +42,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: .00999999978
+    globalScale: .0599999987
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1

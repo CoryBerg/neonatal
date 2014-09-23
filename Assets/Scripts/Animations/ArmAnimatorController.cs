@@ -4,10 +4,11 @@ using System.Collections;
 public class ArmAnimatorController : MonoBehaviour {
 	public static ArmAnimatorController Instance;
 	public AudioClip armMove;
-	public GameObject ett, vt, bagAndMask, mouthTarget, EttLeftHandTarget, needle1, needle2;
-	public Camera[] cameras;
+	public GameObject babyEtt, armEtt, bagAndMask, leftHand, mouthTarget, needle1, needle2;
+	public Camera camera;
 
 	private Animator animator;
+	private AnimatorStateManager animatorStateManager;
 	private ArmAnimationContainer animations;
 	private Transform startingParent;
 	private Vector3 startingLocalPos;
@@ -16,42 +17,27 @@ public class ArmAnimatorController : MonoBehaviour {
 	// Use this for initialization
     void Awake() {
         print("AWAKE START");
+		animatorStateManager = new AnimatorStateManager () {
+			babyEtt = this.babyEtt,
+			armEtt = this.armEtt,
+			bagAndMask = this.bagAndMask,
+			leftHand = this.leftHand,
+			mouthTarget = this.mouthTarget,
+			needle1 = this.needle1,
+			needle2 = this.needle2
+		};
         startingLocalPos = this.transform.localPosition;
 		Instance = this;
 		animations = new ArmAnimationContainer ();
 		animator = GetComponent<Animator> ();
         startingParent = this.transform.parent;
 
-		//vt.transform.parent = ett.transform;
         print("AWAKE END");
 	}
 
 	// Called every frame
 	void Update() {
-		float px, py, pz,
-			  rx, ry, rz;
-		if (animator.GetCurrentAnimatorStateInfo (0).IsName ("ETT -> Hand")) {
-			ett.transform.parent = EttLeftHandTarget.transform;
-			ett.transform.localPosition = Vector3.zero;
-		} else if (animator.GetCurrentAnimatorStateInfo (0).IsName ("Enter bagging")) {
-			bagAndMask.SetActive(true);
-		} else if (animator.GetCurrentAnimatorStateInfo (0).IsName ("Remove ETT")) {
-			bagAndMask.SetActive(false);
-		} else if (animator.GetCurrentAnimatorStateInfo (0).IsName ("ETT -> Baby")) {
-			px = 0.002780795f;
-			py = -0.06677689f;
-			pz = -0.1790561f;
-
-			ett.transform.parent = mouthTarget.transform;
-			ett.transform.localEulerAngles = new Vector3 (90, 0, 0);
-			ett.transform.localPosition = Vector3.zero;
-		} else if (animator.GetCurrentAnimatorStateInfo (0).IsName ("Swap Needle")) {
-			needle1.SetActive (false);
-			needle2.SetActive (true);
-		} else if (animator.GetCurrentAnimatorStateInfo (0).IsName ("Exit Needle Decomp")) {
-			needle1.SetActive (true);
-			needle2.SetActive (false);
-		}
+		animatorStateManager.CheckMecanimState(animator.GetCurrentAnimatorStateInfo(0));
 	}
 
 	void ResetArms() {
@@ -95,11 +81,9 @@ public class ArmAnimatorController : MonoBehaviour {
 
 	IEnumerator CamDelay() {
 		yield return new WaitForSeconds(1.5f);
-		foreach (Camera camera in cameras) {
-			camera.animation["chestCompZoom"].time = camera.animation["chestCompZoom"].length;
-			camera.animation["chestCompZoom"].speed = -1.0f;
-			camera.animation.Play("chestCompZoom");
-		}
+		camera.animation["chestCompZoom"].time = camera.animation["chestCompZoom"].length;
+		camera.animation["chestCompZoom"].speed = -1.0f;
+		camera.animation.Play("chestCompZoom");
 	}
 
 	// Triggers mechanim state for animation
