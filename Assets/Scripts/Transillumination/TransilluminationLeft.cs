@@ -13,7 +13,6 @@ public class TransilluminationLeft : MonoBehaviour {
 	public float normal = 58.1f;
 	public float smooth = 10f;
 	public Camera cameraMain ;
-	public Camera cameraBlip ;
 
 	public Light light1, light2;
 	private float oneDefaultIntensity, twoDefaultIntensity, blipDefaulyFocus;
@@ -25,7 +24,6 @@ public class TransilluminationLeft : MonoBehaviour {
 	void Awake () {
 		oneDefaultIntensity = light1.intensity;
 		twoDefaultIntensity = light2.intensity;
-		blipDefaulyFocus = cameraBlip.fieldOfView;
 	}
 
 	public void BeginToggle() {
@@ -64,9 +62,7 @@ public class TransilluminationLeft : MonoBehaviour {
 		print ("Going in");
 		this.animation ["transilluminateCamZoom"].speed = 1f;
 		CamAnimate ();
-		
-		cameraBlip.fieldOfView = zoom;
-		
+
 		//step 2: Lights go out
 		
 		light1.intensity = 0.05f;
@@ -107,9 +103,7 @@ public class TransilluminationLeft : MonoBehaviour {
         this.animation["transilluminateCamZoom"].time = this.animation["transilluminateCamZoom"].length;
 		this.animation ["transilluminateCamZoom"].speed = -1f;
 		CamAnimate ();
-		
-		cameraBlip.fieldOfView = blipDefaulyFocus;
-		
+
 		//Step 6: Lghits go back on
 		
 		light1.intensity = oneDefaultIntensity;

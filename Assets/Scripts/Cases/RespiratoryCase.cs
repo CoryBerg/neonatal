@@ -22,32 +22,38 @@ public class RespiratoryCase : MonoBehaviour {
 	protected float decompTimer, deathTimer;
 	protected SWP_HeartRateMonitor heartMonitor;
 
-	private GameObject babyEtt, mouthTarget;
+	private GameObject babyEtt, mouthTarget, vt;
 
 	protected virtual void Awake() {
-        if (ArmAnimatorController.Instance == null) {
-            print("AHH");
-        }
-        babyEtt = ArmAnimatorController.Instance.babyEtt;
-		mouthTarget = ArmAnimatorController.Instance.mouthTarget;
 		babyBreath = GameObject.FindGameObjectWithTag ("Baby").GetComponent<Breathing> ();
         if (babyBreath == null) {
             print("WHY NULL.");
         }
+
 		babyBody = GameObject.FindGameObjectWithTag("BabyBody");
+		babyMaterial = babyBody.renderer.material;
+
 		heartMonitor = GameObject.Find("HeartMonitor").GetComponent<SWP_HeartRateMonitor> ();
+
 		InitialState ();
 		decompTimer = 600f;
 		deathTimer = 900f;
-        babyMaterial = babyBody.renderer.material;
 
-        StartCoroutine(LipsOff(3f));
+        StartCoroutine(LipsOn(3f));
+
+		if (ArmAnimatorController.Instance == null) {
+			print("AHH");
+		}
+		babyEtt = ArmAnimatorController.Instance.babyEtt;
+		mouthTarget = ArmAnimatorController.Instance.mouthTarget;
+		vt = ArmAnimatorController.Instance.vt;
 
 		EttVtPositioning ();
 	}
 
 	private void EttVtPositioning() {
 		babyEtt.SetActive (true);
+		vt.transform.parent = babyEtt.transform;
 	}
 
 	protected virtual void Start() {
@@ -70,7 +76,7 @@ public class RespiratoryCase : MonoBehaviour {
 		while(time < decompTimer) {
 			time += Time.deltaTime;
 			yield return 0;
-		} // Wait 300 seconds, if still in state 0--decomp the baby.
+		}
 		if(currentState == 0) {
 			FurtherDecomp();
 		}
@@ -110,9 +116,7 @@ public class RespiratoryCase : MonoBehaviour {
 
 		babyBody = GameObject.FindGameObjectWithTag("BabyBody");
         babyMaterial = babyBody.renderer.material;
-
-        StartCoroutine(LipsOff(3f));
-
+		
 		UpdateMonitor();
 	}
 	
@@ -132,9 +136,7 @@ public class RespiratoryCase : MonoBehaviour {
 		heartRate = "220";
 
         StartCoroutine(LipsOn(3f));
-
-		//babyMaterial.SetFloat ("_Blend", 1.0f); // Blue Lips
-
+		
 		UpdateMonitor();
 	}
 
@@ -154,7 +156,7 @@ public class RespiratoryCase : MonoBehaviour {
     protected IEnumerator LipsOff(float t) {
         float start = t;
         while (t > 0) {
-            t -= Time.deltaTime;
+            t -= Time.deltaTime/4;
             SetBlend(t / start);
             yield return null;
         }
@@ -188,26 +190,15 @@ public class RespiratoryCase : MonoBehaviour {
 	protected virtual void BabyDeath() {
 		currentState = 3;
 		
-		// Lethargic
-		// No chest retrations
-		// No nasal flaring
-		// No grunting
-		
-		// SpO2 30%
 		Sp02 = "30%";
 		// Cyanosis enabled
-		// Respiratory rate 60 breathes/min
 		babyBreath.respRate = 0f;
-		// Blood pressure 15/5 mmHg
 		bloodPressure = "15/5";
-		// Heart rate 250 bpm
 		bpm = 0;
 		heartRate = "0";
-		// Pusle strength absent
-		
-		// END SCENARIO WITH FAIL
 
-        Invoke("ChangeScene", 3.0f);
+		// END SCENARIO WITH FAIL
+        Invoke("ChangeScene", 15.0f);
 
         StartCoroutine(LipsOn(3f));
 		UpdateMonitor();

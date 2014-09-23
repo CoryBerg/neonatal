@@ -11,8 +11,7 @@ public class TransilluminationRight : MonoBehaviour {
 	public float normal = 58.1f;
 	public float smooth = 10f;
 	public Camera cameraMain ;
-	public Camera cameraBlip ;
-	
+
 	public Light light1, light2;
 	
 	public float delay = 4f;
