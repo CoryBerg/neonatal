@@ -4,7 +4,7 @@ using System.Collections;
 public class ArmAnimatorController : MonoBehaviour {
 	public static ArmAnimatorController Instance;
 	public AudioClip armMove;
-	public GameObject ett, vt, bagAndMask, mouthTarget, EttLeftHandTarget;
+	public GameObject ett, vt, bagAndMask, mouthTarget, EttLeftHandTarget, needle1, needle2;
 	public Camera[] cameras;
 
 	private Animator animator;
@@ -45,6 +45,12 @@ public class ArmAnimatorController : MonoBehaviour {
 			ett.transform.parent = mouthTarget.transform;
 			ett.transform.localEulerAngles = new Vector3 (90, 0, 0);
 			ett.transform.localPosition = Vector3.zero;
+		} else if (animator.GetCurrentAnimatorStateInfo (0).IsName ("Swap Needle")) {
+			needle1.SetActive (false);
+			needle2.SetActive (true);
+		} else if (animator.GetCurrentAnimatorStateInfo (0).IsName ("Exit Needle Decomp")) {
+			needle1.SetActive (true);
+			needle2.SetActive (false);
 		}
 	}
 
