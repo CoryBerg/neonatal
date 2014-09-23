@@ -2,16 +2,16 @@
 using System.Collections;
 
 public class AnimatorStateManager {
-	public GameObject babyEtt, armEtt, bagAndMask, leftHand, mouthTarget, EttLeftHandTarget, needle1, needle2;
+	public GameObject babyEtt, armEtt, vt, bagAndMask, leftHand, mouthTarget, EttLeftHandTarget, needle1, needle2;
 
 	public void CheckMecanimState (AnimatorStateInfo stateInfo) {
 		if (stateInfo.IsName ("ETT -> Hand")) {
 			babyEtt.SetActive (false);
 			armEtt.SetActive (true);
 		} else if (stateInfo.IsName ("Enter bagging")) {
-			bagAndMask.SetActive(true);
+			bagAndMask.SetActive (true);
 		} else if (stateInfo.IsName ("Remove ETT")) {
-			bagAndMask.SetActive(false);
+			bagAndMask.SetActive (false);
 		} else if (stateInfo.IsName ("ETT -> Baby")) {
 			babyEtt.SetActive (true);
 			armEtt.SetActive (false);
@@ -21,6 +21,10 @@ public class AnimatorStateManager {
 		} else if (stateInfo.IsName ("Exit Needle Decomp")) {
 			needle1.SetActive (true);
 			needle2.SetActive (false);
+		} else if (stateInfo.IsName ("Suction")) {
+			vt.SetActive (false);
+		} else if (stateInfo.IsName("Exit Suction")) {
+			vt.SetActive(true);
 		}
 	}
 }

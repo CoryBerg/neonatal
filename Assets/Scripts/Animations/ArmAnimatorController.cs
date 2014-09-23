@@ -4,7 +4,7 @@ using System.Collections;
 public class ArmAnimatorController : MonoBehaviour {
 	public static ArmAnimatorController Instance;
 	public AudioClip armMove;
-	public GameObject babyEtt, armEtt, bagAndMask, leftHand, mouthTarget, needle1, needle2;
+	public GameObject babyEtt, armEtt, vt, bagAndMask, leftHand, mouthTarget, needle1, needle2;
 	public Camera camera;
 
 	private Animator animator;
@@ -20,6 +20,7 @@ public class ArmAnimatorController : MonoBehaviour {
 		animatorStateManager = new AnimatorStateManager () {
 			babyEtt = this.babyEtt,
 			armEtt = this.armEtt,
+			vt = this.vt,
 			bagAndMask = this.bagAndMask,
 			leftHand = this.leftHand,
 			mouthTarget = this.mouthTarget,
