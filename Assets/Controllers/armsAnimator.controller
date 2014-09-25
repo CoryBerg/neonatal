@@ -871,7 +871,7 @@ State:
   m_ObjectHideFlags: 3
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Replace VT 0
+  m_Name: Exit Intubation
   m_Speed: 1
   m_CycleOffset: 0
   m_Motions:
@@ -1023,22 +1023,6 @@ StateMachine:
   m_ChildStateMachinePosition: []
   m_OrderedTransitions:
     data:
-      first: {fileID: 110298210}
-      second:
-      - {fileID: 110157297}
-    data:
-      first: {fileID: 110234752}
-      second:
-      - {fileID: 110141146}
-    data:
-      first: {fileID: 110288538}
-      second:
-      - {fileID: 110110305}
-    data:
-      first: {fileID: 110227818}
-      second:
-      - {fileID: 110170976}
-    data:
       first: {fileID: 0}
       second: []
     data:
@@ -1126,6 +1110,22 @@ StateMachine:
       first: {fileID: 110264943}
       second:
       - {fileID: 110109378}
+    data:
+      first: {fileID: 110227818}
+      second:
+      - {fileID: 110170976}
+    data:
+      first: {fileID: 110288538}
+      second:
+      - {fileID: 110110305}
+    data:
+      first: {fileID: 110234752}
+      second:
+      - {fileID: 110141146}
+    data:
+      first: {fileID: 110298210}
+      second:
+      - {fileID: 110157297}
   m_MotionSetCount: 1
   m_AnyStatePosition: {x: -48, y: -156, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}

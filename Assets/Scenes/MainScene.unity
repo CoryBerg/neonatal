@@ -10219,7 +10219,7 @@ Transform:
   m_GameObject: {fileID: 422203437}
   m_LocalRotation: {x: 0, y: 0, z: -.000308999995, w: 1}
   m_LocalPosition: {x: 0, y: -.400000006, z: 0}
-  m_LocalScale: {x: 1.00000024, y: .999958038, z: 1}
+  m_LocalScale: {x: 1.00000024, y: .999956608, z: 1}
   m_Children: []
   m_Father: {fileID: 1585641692}
 --- !u!65 &422203440
@@ -13805,10 +13805,10 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: e773281c06b5e024db5e1a4f549afe5d, type: 2}
-  - {fileID: 2100000, guid: 02253e4da6363e747b265af6bbd1a954, type: 3}
-  - {fileID: 2100000, guid: 15ec4961902cc5e41bf37d7b73a08882, type: 3}
-  - {fileID: 2100000, guid: b524d7a0bdaa57b49a90a71f6ecbac59, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -14292,7 +14292,7 @@ Transform:
   m_GameObject: {fileID: 640738026}
   m_LocalRotation: {x: 0, y: 0, z: -.000308999995, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.00000024, y: .999957979, z: 1}
+  m_LocalScale: {x: 1.00000024, y: .999956548, z: 1}
   m_Children: []
   m_Father: {fileID: 1585641692}
 --- !u!65 &640738029
@@ -14456,7 +14456,7 @@ Transform:
   m_GameObject: {fileID: 661242089}
   m_LocalRotation: {x: 0, y: 0, z: -.000308999995, w: 1}
   m_LocalPosition: {x: 0, y: -.600000024, z: 0}
-  m_LocalScale: {x: 1.00000024, y: .999958038, z: 1}
+  m_LocalScale: {x: 1.00000024, y: .999956608, z: 1}
   m_Children: []
   m_Father: {fileID: 1585641692}
 --- !u!65 &661242092
@@ -16251,7 +16251,6 @@ GameObject:
   - 20: {fileID: 748527628}
   - 124: {fileID: 748527627}
   - 92: {fileID: 748527626}
-  - 81: {fileID: 748527625}
   m_Layer: 0
   m_Name: ChestCamera
   m_TagString: Untagged
@@ -16259,13 +16258,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!81 &748527625
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 748527624}
-  m_Enabled: 1
 --- !u!92 &748527626
 Behaviour:
   m_ObjectHideFlags: 0
@@ -16442,7 +16434,7 @@ Transform:
   m_GameObject: {fileID: 751934915}
   m_LocalRotation: {x: 0, y: 0, z: -.000308999995, w: 1}
   m_LocalPosition: {x: .0100002289, y: -.800000012, z: 0}
-  m_LocalScale: {x: 1.00000024, y: .999958038, z: 1}
+  m_LocalScale: {x: 1.00000024, y: .999956608, z: 1}
   m_Children: []
   m_Father: {fileID: 1585641692}
 --- !u!65 &751934918
@@ -17051,7 +17043,7 @@ Transform:
   m_GameObject: {fileID: 807570698}
   m_LocalRotation: {x: 0, y: 0, z: -.000308999995, w: 1}
   m_LocalPosition: {x: -.611667633, y: -.666666687, z: 0}
-  m_LocalScale: {x: 1.00000024, y: .999962509, z: 1}
+  m_LocalScale: {x: 1.00000024, y: .999961078, z: 1}
   m_Children: []
   m_Father: {fileID: 323160162}
 --- !u!65 &807570700
@@ -18092,7 +18084,7 @@ Transform:
   m_GameObject: {fileID: 849193159}
   m_LocalRotation: {x: 0, y: 0, z: -.000308999995, w: 1}
   m_LocalPosition: {x: .721666336, y: -.666666687, z: 0}
-  m_LocalScale: {x: 1.00000024, y: .999962509, z: 1}
+  m_LocalScale: {x: 1.00000024, y: .999961078, z: 1}
   m_Children: []
   m_Father: {fileID: 323160162}
 --- !u!65 &849193161
@@ -23711,7 +23703,7 @@ Transform:
   m_GameObject: {fileID: 1075319798}
   m_LocalRotation: {x: 0, y: 0, z: -.000308999995, w: 1}
   m_LocalPosition: {x: 0, y: -.199999988, z: 0}
-  m_LocalScale: {x: 1.00000024, y: .999957979, z: 1}
+  m_LocalScale: {x: 1.00000024, y: .999956548, z: 1}
   m_Children: []
   m_Father: {fileID: 1585641692}
 --- !u!65 &1075319801
@@ -38562,14 +38554,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   armMove: {fileID: 8300000, guid: 3a736cd1f07b25a4fa50550cdb5d1513, type: 3}
-  babyEtt: {fileID: 439865112}
   armEtt: {fileID: 366339876}
-  vt: {fileID: 1319252938}
+  babyEtt: {fileID: 439865112}
   bagAndMask: {fileID: 1049778915}
+  iv: {fileID: 1935086707}
+  laryn: {fileID: 1125951068}
   leftHand: {fileID: 1488636252}
   mouthTarget: {fileID: 683311995}
   needle1: {fileID: 358604925}
   needle2: {fileID: 1527226818}
+  vt: {fileID: 1319252938}
   camera: {fileID: 1947075976}
 --- !u!95 &1742342469
 Animator:
@@ -39944,7 +39938,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 1947075976}
-  blipCamera: {fileID: 0}
   chestCamera: {fileID: 748527628}
 --- !u!114 &1769697669
 MonoBehaviour:

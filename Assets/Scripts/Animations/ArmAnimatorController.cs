@@ -4,7 +4,7 @@ using System.Collections;
 public class ArmAnimatorController : MonoBehaviour {
 	public static ArmAnimatorController Instance;
 	public AudioClip armMove;
-	public GameObject babyEtt, armEtt, vt, bagAndMask, leftHand, mouthTarget, needle1, needle2;
+	public GameObject armEtt, babyEtt, bagAndMask, iv, laryn, leftHand, mouthTarget, needle1, needle2, vt;
 	public Camera camera;
 
 	private Animator animator;
@@ -18,14 +18,16 @@ public class ArmAnimatorController : MonoBehaviour {
     void Awake() {
         print("AWAKE START");
 		animatorStateManager = new AnimatorStateManager () {
-			babyEtt = this.babyEtt,
 			armEtt = this.armEtt,
-			vt = this.vt,
+			babyEtt = this.babyEtt,
 			bagAndMask = this.bagAndMask,
+			iv = this.iv,
+			laryn = this.laryn,
 			leftHand = this.leftHand,
 			mouthTarget = this.mouthTarget,
 			needle1 = this.needle1,
-			needle2 = this.needle2
+			needle2 = this.needle2,
+			vt = this.vt
 		};
         startingLocalPos = this.transform.localPosition;
 		Instance = this;
