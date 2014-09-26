@@ -436,7 +436,7 @@ MonoBehaviour:
       right: 414
       bottom: 70
     owner: {fileID: 544434513}
-  renderOrder: 2
+  renderOrder: 1
   isLocalized: 0
   hotZoneScale: {x: 1, y: 1}
   atlas: {fileID: 11400000, guid: 061b63b910d71734eb8a953efb83a358, type: 2}
@@ -642,144 +642,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1494054511}
   m_GameObject: {fileID: 625488063}
   m_Mesh: {fileID: 4300000, guid: b9639db6269184c15ae595e37a862b3d, type: 3}
---- !u!1 &839115323
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100002, guid: c67a85ef02d58498bafd51dc0753cdbc, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 839115324}
-  - 114: {fileID: 839115326}
-  - 65: {fileID: 839115325}
-  m_Layer: 8
-  m_Name: Button
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &839115324
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400002, guid: c67a85ef02d58498bafd51dc0753cdbc, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 839115323}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.522155762, y: -.690132141, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1912507243}
---- !u!65 &839115325
-BoxCollider:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 6500002, guid: c67a85ef02d58498bafd51dc0753cdbc,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 839115323}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0, y: 0, z: .00100000005}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &839115326
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400002, guid: c67a85ef02d58498bafd51dc0753cdbc,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 839115323}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e2d87d87d0197634796d0454f524dd4a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  anchorStyle: 5
-  isEnabled: 1
-  isVisible: 1
-  isInteractive: 1
-  tooltip: 
-  pivot: 0
-  zindex: -1
-  color:
-    serializedVersion: 2
-    rgba: 4294967295
-  disabledColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  size: {x: 0, y: 0}
-  minSize: {x: 0, y: 0}
-  maxSize: {x: 0, y: 0}
-  clipChildren: 0
-  tabIndex: -1
-  canFocus: 0
-  autoFocus: 0
-  layout:
-    anchorStyle: 5
-    margins:
-      left: 323
-      top: 507
-      right: 637
-      bottom: 93
-    owner: {fileID: 839115326}
-  renderOrder: 1
-  isLocalized: 0
-  hotZoneScale: {x: 1, y: 1}
-  atlas: {fileID: 11400000, guid: 061b63b910d71734eb8a953efb83a358, type: 2}
-  backgroundSprite: 
-  hoverSprite: 
-  disabledSprite: 
-  focusSprite: 
-  font: {fileID: 11400000, guid: 2a81b54b5f7b64244a608964d52d89e3, type: 2}
-  pressedSprite: 
-  state: 0
-  group: {fileID: 0}
-  text: 
-  textAlign: 1
-  vertAlign: 1
-  normalColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  textColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  hoverText:
-    serializedVersion: 2
-    rgba: 4294967295
-  pressedText:
-    serializedVersion: 2
-    rgba: 4294967295
-  focusText:
-    serializedVersion: 2
-    rgba: 4294967295
-  disabledText:
-    serializedVersion: 2
-    rgba: 4294967295
-  hoverColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  pressedColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  focusColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  textScale: 1
-  textScaleMode: 0
-  wordWrap: 0
-  padding:
-    m_Left: 0
-    m_Right: 0
-    m_Top: 0
-    m_Bottom: 0
-  textShadow: 0
-  shadowColor:
-    serializedVersion: 2
-    rgba: 4278190080
-  shadowOffset: {x: 1, y: -1}
-  autoSize: 0
-  clickWhenSpacePressed: 1
 --- !u!1 &890234227
 GameObject:
   m_ObjectHideFlags: 0
@@ -976,7 +838,7 @@ MonoBehaviour:
       right: 143
       bottom: 433
     owner: {fileID: 1114018082}
-  renderOrder: 4
+  renderOrder: 3
   isLocalized: 0
   hotZoneScale: {x: 1, y: 1}
   atlas: {fileID: 11400000, guid: 061b63b910d71734eb8a953efb83a358, type: 2}
@@ -1243,7 +1105,7 @@ MonoBehaviour:
       right: 182
       bottom: 160
     owner: {fileID: 1204195224}
-  renderOrder: 3
+  renderOrder: 2
   isLocalized: 0
   hotZoneScale: {x: 1, y: 1}
   atlas: {fileID: 11400000, guid: 061b63b910d71734eb8a953efb83a358, type: 2}
@@ -1297,6 +1159,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CaseToShow: 0
   labelToModify: {fileID: 0}
+  buttonToModify: {fileID: 0}
   text: {fileID: 0}
   value: Appropriately administered prostaglandin drip
 --- !u!1 &1204249315
@@ -1559,7 +1422,6 @@ GameObject:
   - 4: {fileID: 1786363758}
   - 20: {fileID: 1786363757}
   - 114: {fileID: 1786363759}
-  - 114: {fileID: 1786363760}
   m_Layer: 0
   m_Name: UI Camera
   m_TagString: Untagged
@@ -1618,17 +1480,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 365c41e0d51e92a42a3a628739c6386a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1786363760
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1786363756}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ff751cc63dff4b47bd5f1cc5a2962d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1799648978
@@ -1844,7 +1695,6 @@ Transform:
   m_LocalPosition: {x: 0, y: -17.9374161, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 839115324}
   - {fileID: 544434510}
   - {fileID: 1204195222}
   - {fileID: 1114018080}

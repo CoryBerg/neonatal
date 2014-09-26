@@ -7,13 +7,11 @@ public class BabyAnimatorController : MonoBehaviour {
     public Animator AnimComponent {
         get { return animator; }
     }
-	private BabyAnimationContainer animations;
 	public static BabyAnimatorController Instance;
 
 	// Use this for initialization
 	void Awake() {
 		Instance = this;
-		animations = new BabyAnimationContainer ();
 		animator = GetComponent<Animator> ();
         animator.speed = 0f;
 	}
@@ -46,11 +44,5 @@ public class BabyAnimatorController : MonoBehaviour {
 			animator.SetTrigger (animation);
 		}
         StartCoroutine(Intubate());
-		//float t = animations.GetAnimation(animation);
-		//if(t == BabyAnimationContainer.ANIM_SENTINEL) {
-		//	print ("Baby animation not found.");
-		//	return;
-		//}
-		//animator.SetFloat ("State", t);
 	}
 }

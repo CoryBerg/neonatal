@@ -5,14 +5,13 @@ public class ArmAnimatorController : MonoBehaviour {
 	public static ArmAnimatorController Instance;
 	public AudioClip armMove;
 	public GameObject armEtt, babyEtt, bagAndMask, iv, laryn, leftHand, mouthTarget, needle1, needle2, vt;
-	public Camera camera;
+	public Camera mainCamera;
 
 	private Animator animator;
 	private AnimatorStateManager animatorStateManager;
 	private ArmAnimationContainer animations;
 	private Transform startingParent;
 	private Vector3 startingLocalPos;
-	private bool doOnce = true;
     private bool inSteth = false;
 	// Use this for initialization
     void Awake() {
@@ -84,14 +83,13 @@ public class ArmAnimatorController : MonoBehaviour {
 
 	IEnumerator CamDelay() {
 		yield return new WaitForSeconds(1.5f);
-		camera.animation["chestCompZoom"].time = camera.animation["chestCompZoom"].length;
-		camera.animation["chestCompZoom"].speed = -1.0f;
-		camera.animation.Play("chestCompZoom");
+		mainCamera.animation["chestCompZoom"].time = mainCamera.animation["chestCompZoom"].length;
+		mainCamera.animation["chestCompZoom"].speed = -1.0f;
+		mainCamera.animation.Play("chestCompZoom");
 	}
 
 	// Triggers mechanim state for animation
 	public void TriggerAnimation(string animation) {
-		doOnce = true;
 		ResetArms();
 		ArmItemsContainer.Instance.NewAnimation (animation);
 		
