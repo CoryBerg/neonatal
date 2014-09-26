@@ -23,6 +23,7 @@ public class BabyAnimatorController : MonoBehaviour {
     IEnumerator Recovery() {
         float t = 0;
         while(t < 10f) {
+            t += Time.deltaTime;
             SetSpeed(t / 10f);
             yield return null;
         }
