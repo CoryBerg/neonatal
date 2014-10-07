@@ -133,22 +133,39 @@ public class UserEvaluationPerformance : MonoBehaviour {
 				if(displayedKeys.Contains(displayKey)) {
 					continue;
 				}
+				displayedKeys.Add(displayKey);
+				Color lblC;
+				string tooltip = effective["Debug"] + " " + displayKey;
+				if(effective.ContainsKey(displayKey)) {
+					lblC = Color.green;
+					try {
+						tooltip = effective[displayKey];
+					} catch(KeyNotFoundException e) {
+						print(e.Message + ": " + displayKey);
+						continue;
+					}
+				} else if(ineffective.ContainsKey(displayKey)) {
+					lblC = Color.yellow;
+					try {
+						tooltip = ineffective[displayKey];
+					} catch(KeyNotFoundException e) {
+						print(e.Message + ": " + displayKey);
+						continue;
+					}
+				} else {
+					lblC = Color.red;
+					try {
+						tooltip = inappropriate[displayKey];
+					} catch(KeyNotFoundException e) {
+						print(e.Message + ": " + displayKey);
+						continue;
+					}
+				}
 				GameObject labelInst = (GameObject)dfGUIManager.Instantiate(labelPrefab);
 				labelInst.transform.parent = this.transform;
 				dfLabel lbl = labelInst.GetComponent<dfLabel>();
+				lbl.Color = lblC;
 				lbl.Position = root.transform.position + new Vector3(0,-offset * (c - 1));
-				displayedKeys.Add(displayKey);
-				string tooltip = effective["Debug"] + " " + displayKey;
-				if(effective.ContainsKey(displayKey)) {
-					lbl.Color = Color.green;
-					tooltip = effective[displayKey];
-				} else if(ineffective.ContainsKey(displayKey)) {
-					lbl.Color = Color.yellow;
-					tooltip = ineffective[displayKey];
-				} else {
-					lbl.Color = Color.red;
-					tooltip = inappropriate[displayKey];
-				}
 				textVal = string.Format("{0:D}. {1}",c,displayKey);
 				lbl.Text = textVal;
 				lbl.Tooltip = tooltip;
