@@ -50,8 +50,9 @@ public class ArmAnimatorController : MonoBehaviour {
     IEnumerator MoveTo(Vector3 tar) {
         Vector3 start = transform.position;
         float t = 0f;
-        while(t < .82f) {
-            float lVal = t / 2f;
+		float moveTime = .82f;
+		while(t < moveTime) {
+			float lVal = t / moveTime;
             transform.position = Vector3.Lerp(start,tar,lVal);
             t += Time.deltaTime;
             yield return null;
