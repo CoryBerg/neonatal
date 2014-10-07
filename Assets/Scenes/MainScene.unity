@@ -14145,7 +14145,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 0
   serializedVersion: 2
-  m_Size: {x: .383333355, y: .0799999982, z: .00100000005}
+  m_Size: {x: 0, y: 0, z: 0}
   m_Center: {x: .191666678, y: -.0399999991, z: 0}
 --- !u!114 &627774184
 MonoBehaviour:
@@ -19894,7 +19894,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 896265258}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .00166666671, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 615988969}
@@ -22274,7 +22274,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 0
   serializedVersion: 2
-  m_Size: {x: .25666666, y: .086666666, z: .00100000005}
+  m_Size: {x: 0, y: 0, z: 0}
   m_Center: {x: .12833333, y: -.043333333, z: 0}
 --- !u!114 &1004104027
 MonoBehaviour:
@@ -23540,7 +23540,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 0
   serializedVersion: 2
-  m_Size: {x: 1.19666672, y: .606666684, z: .00100000005}
+  m_Size: {x: 0, y: 0, z: 0}
   m_Center: {x: .598333359, y: -.303333342, z: 0}
 --- !u!114 &1070247592
 MonoBehaviour:
@@ -23593,7 +23593,7 @@ MonoBehaviour:
   autoSize: 0
   autoHeight: 0
   wordWrap: 1
-  text: 'Initial ABG: 7.23/70/60/20/-5'
+  text: "Initial ABG: 7.23/70/60/20/-5 \nSubsequent ABG: 7.25/68/80/20/-4"
   bottomColor:
     serializedVersion: 2
     rgba: 4294967295
@@ -26215,7 +26215,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 0
   serializedVersion: 2
-  m_Size: {x: .853333354, y: .0816666707, z: .00100000005}
+  m_Size: {x: 0, y: 0, z: 0}
   m_Center: {x: .426666677, y: -.0408333354, z: 0}
 --- !u!114 &1180207309
 MonoBehaviour:
@@ -38475,7 +38475,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 0
   serializedVersion: 2
-  m_Size: {x: .0466666669, y: .0500000007, z: .00100000005}
+  m_Size: {x: 0, y: 0, z: 0}
   m_Center: {x: .0233333334, y: -.0250000004, z: 0}
 --- !u!114 &1717235300
 MonoBehaviour:
@@ -46577,7 +46577,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 0
   serializedVersion: 2
-  m_Size: {x: 1.90666676, y: 1.29000008, z: .00100000005}
+  m_Size: {x: 0, y: 0, z: 0}
   m_Center: {x: .953333378, y: -.645000041, z: 0}
 --- !u!1 &2003857020
 GameObject:
