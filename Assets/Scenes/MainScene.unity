@@ -5427,11 +5427,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 261018184}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.41974831, y: -.683976531, z: 0}
+  m_LocalPosition: {x: .726213455, y: -.681909084, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1428794598}
-  m_RootOrder: 0
+  m_RootOrder: 2
 --- !u!114 &261018186
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5489,8 +5489,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 0
   serializedVersion: 2
-  m_Size: {x: .600000024, y: .173333287, z: .00100000005}
-  m_Center: {x: .300000012, y: -.0866666436, z: 0}
+  m_Size: {x: .600000024, y: .173333243, z: .00100000005}
+  m_Center: {x: .300000012, y: -.0866666213, z: 0}
 --- !u!114 &261018190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5516,7 +5516,7 @@ MonoBehaviour:
   disabledColor:
     serializedVersion: 2
     rgba: 4294967295
-  size: {x: 180, y: 51.9999847}
+  size: {x: 180, y: 51.9999695}
   minSize: {x: 0, y: 0}
   maxSize: {x: 0, y: 0}
   clipChildren: 0
@@ -5526,10 +5526,10 @@ MonoBehaviour:
   layout:
     anchorStyle: 5
     margins:
-      left: 425.924316
-      top: 205.192947
-      right: -384.924316
-      bottom: -203.192932
+      left: 217.864258
+      top: 204.572723
+      right: -176.864258
+      bottom: -202.572693
     owner: {fileID: 261018190}
   renderOrder: 224
   isLocalized: 0
@@ -7949,11 +7949,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 340679973}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.704936981, y: -.683976531, z: 0}
+  m_LocalPosition: {x: .0129051208, y: -.681909204, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1428794598}
-  m_RootOrder: 1
+  m_RootOrder: 3
 --- !u!114 &340679975
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8011,8 +8011,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 0
   serializedVersion: 2
-  m_Size: {x: .600000024, y: .173333287, z: .00100000005}
-  m_Center: {x: .300000012, y: -.0866666436, z: 0}
+  m_Size: {x: .600000024, y: .173333332, z: .00100000005}
+  m_Center: {x: .300000012, y: -.086666666, z: 0}
 --- !u!114 &340679979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8031,14 +8031,14 @@ MonoBehaviour:
   isInteractive: 1
   tooltip: 
   pivot: 0
-  zindex: 4
+  zindex: 2
   color:
     serializedVersion: 2
     rgba: 4294967295
   disabledColor:
     serializedVersion: 2
     rgba: 4294967295
-  size: {x: 180, y: 51.9999847}
+  size: {x: 180, y: 52}
   minSize: {x: 0, y: 0}
   maxSize: {x: 0, y: 0}
   clipChildren: 0
@@ -8048,12 +8048,12 @@ MonoBehaviour:
   layout:
     anchorStyle: 5
     margins:
-      left: -211.480957
-      top: 205.192947
-      right: 252.480957
-      bottom: -203.192932
+      left: 3.87158203
+      top: 204.572754
+      right: 37.128418
+      bottom: -202.572754
     owner: {fileID: 340679979}
-  renderOrder: 228
+  renderOrder: 226
   isLocalized: 0
   hotZoneScale: {x: 1, y: 1}
   atlas: {fileID: 11400000, guid: 061b63b910d71734eb8a953efb83a358, type: 2}
@@ -10326,7 +10326,7 @@ Transform:
   m_GameObject: {fileID: 422203437}
   m_LocalRotation: {x: 0, y: 0, z: -.000308999995, w: 1}
   m_LocalPosition: {x: 0, y: -.400000006, z: 0}
-  m_LocalScale: {x: 1.00000024, y: .999953866, z: 1}
+  m_LocalScale: {x: 1.00000024, y: .999953747, z: 1}
   m_Children: []
   m_Father: {fileID: 1585641692}
   m_RootOrder: 0
@@ -11593,7 +11593,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &488623550
 Transform:
   m_ObjectHideFlags: 0
@@ -11605,7 +11605,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1428794598}
-  m_RootOrder: 2
+  m_RootOrder: 0
 --- !u!114 &488623551
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11715,7 +11715,7 @@ MonoBehaviour:
   focusSprite: button-hilite
   font: {fileID: 11400000, guid: 2a81b54b5f7b64244a608964d52d89e3, type: 2}
   pressedSprite: button-normal
-  state: 0
+  state: 4
   group: {fileID: 0}
   text: Use stethoscope     (Lower Left)
   textAlign: 1
@@ -13958,10 +13958,10 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2100000, guid: e773281c06b5e024db5e1a4f549afe5d, type: 2}
+  - {fileID: 2100000, guid: 02253e4da6363e747b265af6bbd1a954, type: 3}
+  - {fileID: 2100000, guid: 15ec4961902cc5e41bf37d7b73a08882, type: 3}
+  - {fileID: 2100000, guid: b524d7a0bdaa57b49a90a71f6ecbac59, type: 3}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -14449,7 +14449,7 @@ Transform:
   m_GameObject: {fileID: 640738026}
   m_LocalRotation: {x: 0, y: 0, z: -.000308999995, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.00000024, y: .999953806, z: 1}
+  m_LocalScale: {x: 1.00000024, y: .999953687, z: 1}
   m_Children: []
   m_Father: {fileID: 1585641692}
   m_RootOrder: 1
@@ -14615,7 +14615,7 @@ Transform:
   m_GameObject: {fileID: 661242089}
   m_LocalRotation: {x: 0, y: 0, z: -.000308999995, w: 1}
   m_LocalPosition: {x: 0, y: -.600000024, z: 0}
-  m_LocalScale: {x: 1.00000024, y: .999953866, z: 1}
+  m_LocalScale: {x: 1.00000024, y: .999953747, z: 1}
   m_Children: []
   m_Father: {fileID: 1585641692}
   m_RootOrder: 2
@@ -16620,7 +16620,7 @@ Transform:
   m_GameObject: {fileID: 751934915}
   m_LocalRotation: {x: 0, y: 0, z: -.000308999995, w: 1}
   m_LocalPosition: {x: .0100002289, y: -.800000012, z: 0}
-  m_LocalScale: {x: 1.00000024, y: .999953866, z: 1}
+  m_LocalScale: {x: 1.00000024, y: .999953747, z: 1}
   m_Children: []
   m_Father: {fileID: 1585641692}
   m_RootOrder: 3
@@ -17238,7 +17238,7 @@ Transform:
   m_GameObject: {fileID: 807570698}
   m_LocalRotation: {x: 0, y: 0, z: -.000308999995, w: 1}
   m_LocalPosition: {x: -.611667633, y: -.666666687, z: 0}
-  m_LocalScale: {x: 1.00000024, y: .999958336, z: 1}
+  m_LocalScale: {x: 1.00000024, y: .999958217, z: 1}
   m_Children: []
   m_Father: {fileID: 323160162}
   m_RootOrder: 0
@@ -18292,7 +18292,7 @@ Transform:
   m_GameObject: {fileID: 849193159}
   m_LocalRotation: {x: 0, y: 0, z: -.000308999995, w: 1}
   m_LocalPosition: {x: .721666336, y: -.666666687, z: 0}
-  m_LocalScale: {x: 1.00000024, y: .999958336, z: 1}
+  m_LocalScale: {x: 1.00000024, y: .999958217, z: 1}
   m_Children: []
   m_Father: {fileID: 323160162}
   m_RootOrder: 1
@@ -23973,7 +23973,7 @@ Transform:
   m_GameObject: {fileID: 1075319798}
   m_LocalRotation: {x: 0, y: 0, z: -.000308999995, w: 1}
   m_LocalPosition: {x: 0, y: -.199999988, z: 0}
-  m_LocalScale: {x: 1.00000024, y: .999953806, z: 1}
+  m_LocalScale: {x: 1.00000024, y: .999953687, z: 1}
   m_Children: []
   m_Father: {fileID: 1585641692}
   m_RootOrder: 4
@@ -31836,10 +31836,10 @@ Transform:
   m_LocalPosition: {x: -.667631149, y: -.00322824717, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 261018185}
-  - {fileID: 340679974}
   - {fileID: 488623550}
   - {fileID: 1490358241}
+  - {fileID: 261018185}
+  - {fileID: 340679974}
   - {fileID: 1580391392}
   m_Father: {fileID: 615988969}
   m_RootOrder: 21
@@ -32614,7 +32614,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1490358241
 Transform:
   m_ObjectHideFlags: 0
@@ -32626,7 +32626,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1428794598}
-  m_RootOrder: 3
+  m_RootOrder: 1
 --- !u!114 &1490358242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32736,7 +32736,7 @@ MonoBehaviour:
   focusSprite: button-hilite
   font: {fileID: 11400000, guid: 2a81b54b5f7b64244a608964d52d89e3, type: 2}
   pressedSprite: button-normal
-  state: 0
+  state: 4
   group: {fileID: 0}
   text: Use stethoscope     (Lower Right)
   textAlign: 1
@@ -35787,7 +35787,7 @@ MonoBehaviour:
   isInteractive: 1
   tooltip: 
   pivot: 0
-  zindex: 2
+  zindex: 1
   color:
     serializedVersion: 2
     rgba: 4294967295
@@ -35809,7 +35809,7 @@ MonoBehaviour:
       right: -95.0576172
       bottom: 250.900787
     owner: {fileID: 1580391396}
-  renderOrder: 226
+  renderOrder: 225
   isLocalized: 0
   hotZoneScale: {x: 1, y: 1}
   atlas: {fileID: 11400000, guid: 061b63b910d71734eb8a953efb83a358, type: 2}
