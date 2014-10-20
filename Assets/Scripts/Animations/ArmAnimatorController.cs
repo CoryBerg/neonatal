@@ -83,6 +83,7 @@ public class ArmAnimatorController : MonoBehaviour {
 		transform.parent = null;
         animator.SetBool("InSteth", false);
         inSteth = false;
+		ResetArms ();
         print("Steth Finsh");
     }
 
