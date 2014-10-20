@@ -4,7 +4,7 @@ using System.Collections;
 public class ArmAnimatorController : MonoBehaviour {
 	public static ArmAnimatorController Instance;
 	public AudioClip armMove;
-	public GameObject armEtt, babyEtt, bagAndMask, iv, laryn, leftHand, mouthTarget, needle1, needle2, vt;
+	public GameObject armEtt, babyEtt, bagAndMask, ettJoint, iv, jointsGroup, laryn, needle1, needle2, vt, vtJoint;
 	public Camera mainCamera;
 
 	private Animator animator;
@@ -22,11 +22,10 @@ public class ArmAnimatorController : MonoBehaviour {
 			bagAndMask = this.bagAndMask,
 			iv = this.iv,
 			laryn = this.laryn,
-			leftHand = this.leftHand,
-			mouthTarget = this.mouthTarget,
 			needle1 = this.needle1,
 			needle2 = this.needle2,
-			vt = this.vt
+			vt = this.vt,
+			vtJoint = this.vtJoint
 		};
         startingLocalPos = this.transform.localPosition;
 		Instance = this;
@@ -60,6 +59,8 @@ public class ArmAnimatorController : MonoBehaviour {
     }
 
 	public void Stethescope(Transform target) {
+		vtJoint.transform.parent = ettJoint.transform;
+
         if (inSteth) {
             StopCoroutine("MoveTo");
             StartCoroutine(MoveTo(target.position));
@@ -76,6 +77,9 @@ public class ArmAnimatorController : MonoBehaviour {
 	}
 
     public void FinishSteth() {
+		vtJoint.transform.parent = jointsGroup.transform;
+		vtJoint.transform.localPosition = new Vector3(0.7489247f, 0.05975409f, 0.002217171f);
+
 		transform.parent = null;
         animator.SetBool("InSteth", false);
         inSteth = false;

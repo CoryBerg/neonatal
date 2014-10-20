@@ -22,7 +22,7 @@ public class RespiratoryCase : MonoBehaviour {
 	protected float decompTimer, deathTimer;
 	protected SWP_HeartRateMonitor heartMonitor;
 
-	private GameObject babyEtt, vt;
+	private GameObject babyEtt;
 
 	protected virtual void Awake() {
 		babyBreath = GameObject.FindGameObjectWithTag ("Baby").GetComponent<Breathing> ();
@@ -45,14 +45,12 @@ public class RespiratoryCase : MonoBehaviour {
 			print("AHH");
 		}
 		babyEtt = ArmAnimatorController.Instance.babyEtt;
-		vt = ArmAnimatorController.Instance.vt;
 
-		EttVtPositioning ();
+		EttPositioning ();
 	}
 
-	private void EttVtPositioning() {
+	private void EttPositioning() {
 		babyEtt.SetActive (true);
-		vt.transform.parent = babyEtt.transform;
 	}
 
 	protected virtual void Start() {

@@ -2,17 +2,18 @@
 using System.Collections;
 
 public class AnimatorStateManager {
-	public GameObject armEtt, babyEtt, bagAndMask, iv, laryn, leftHand, mouthTarget, needle1, needle2, vt;
+	public GameObject armEtt, babyEtt, bagAndMask, iv, laryn, needle1, needle2, vt, vtJoint;
 
 	public void CheckMecanimState (AnimatorStateInfo stateInfo) {
 		if (stateInfo.IsName ("Enter Intubation")) {
+			bagAndMask.SetActive (false);
 			laryn.SetActive (false);
 		} else if (stateInfo.IsName ("ETT -> Hand")) {
 			babyEtt.SetActive (false);
 			armEtt.SetActive (true);
 		} else if (stateInfo.IsName ("Enter bagging")) {
 			bagAndMask.SetActive (true);
-		} else if (stateInfo.IsName ("Remove ETT")) {
+		} else if (stateInfo.IsName ("Reintubation")) {
 			bagAndMask.SetActive (false);
 			laryn.SetActive (true);
 		} else if (stateInfo.IsName ("ETT -> Baby")) {
