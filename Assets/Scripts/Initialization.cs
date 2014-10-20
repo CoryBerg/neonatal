@@ -8,14 +8,8 @@ public class Initialization : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
-	 
-	   //if (PlayerPrefs.HasKey("buttonCount")
-           //{
-                PlayerPrefs.DeleteKey("buttonCount");
-           //}
-           
-      
+        PlayerPrefs.DeleteKey("buttonCount");
+		Caching.CleanCache ();
 	}
 	
 	// Update is called once per frame
