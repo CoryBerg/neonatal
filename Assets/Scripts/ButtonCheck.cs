@@ -22,7 +22,6 @@ public class ButtonCheck : MonoBehaviour {
 		if (showCurrentOperation) 
 		{
 			action = this.GetComponent<dfButton> ().Text;
-			StartCoroutine (ShowMessage ("Current Operation: " + action, 3));
 		}
 
 		clickCount += 1;
@@ -75,18 +74,5 @@ public class ButtonCheck : MonoBehaviour {
 		string text = builder.ToString ();
 
 		return text;
-	}
-
-
-
-
-	IEnumerator ShowMessage (string message, float delay) {
-
-		popup = GameObject.Find ("PopupMessage");
-
-		popup.GetComponent<dfLabel>().Text = message;
-		popup.GetComponent<dfLabel>().IsVisible = true;
-		yield return new WaitForSeconds(delay);
-		popup.GetComponent<dfLabel>().IsVisible = false;
 	}
 }
