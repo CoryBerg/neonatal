@@ -17,10 +17,13 @@ public class ArmAnimatorController : MonoBehaviour {
     void Awake() {
         print("AWAKE START");
 		animatorStateManager = new AnimatorStateManager () {
+			arms = this.transform,
 			armEtt = this.armEtt,
 			babyEtt = this.babyEtt,
 			bagAndMask = this.bagAndMask,
+			ettJoint = this.ettJoint,
 			iv = this.iv,
+			jointsGroup = this.jointsGroup,
 			laryn = this.laryn,
 			needle1 = this.needle1,
 			needle2 = this.needle2,
@@ -41,7 +44,7 @@ public class ArmAnimatorController : MonoBehaviour {
 		animatorStateManager.CheckMecanimState(animator.GetCurrentAnimatorStateInfo(0));
 	}
 
-	void ResetArms() {
+	public void ResetArms() {
 		this.transform.parent = startingParent;
 		this.transform.localPosition = startingLocalPos;
 	}
@@ -60,6 +63,13 @@ public class ArmAnimatorController : MonoBehaviour {
 
 	private void PlaySound(string target) {
 		Camera.main.audio.loop = true;
+
+		if (target == "StethTargetUL") {
+			Camera.main.audio.volume = 0.75f;
+		} else {
+			Camera.main.audio.volume = 0.25f;
+		}
+
 		Camera.main.audio.Play();
 	}
 
