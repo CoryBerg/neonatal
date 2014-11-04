@@ -67,7 +67,7 @@ public class ArmAnimatorController : MonoBehaviour {
 		if (target == "StethTargetUL") {
 			Camera.main.audio.volume = 0.75f;
 		} else {
-			Camera.main.audio.volume = 0.25f;
+			Camera.main.audio.volume = 0.15f;
 		}
 
 		Camera.main.audio.Play();

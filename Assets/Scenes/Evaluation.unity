@@ -488,11 +488,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 217313748}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fbe736d0e7bfa9b42b57a957b2c1ff89, type: 3}
+  m_Script: {fileID: 11500000, guid: 3b43a1196f8397347b663f024fbdd493, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CaseType: 0
-  loadNext: 1
+  LevelName: MainMenu
 --- !u!65 &217313751
 BoxCollider:
   m_ObjectHideFlags: 2
@@ -556,7 +555,7 @@ MonoBehaviour:
   pressedSprite: button-hilite
   state: 0
   group: {fileID: 0}
-  text: Next Scenario
+  text: Select Scenario
   textAlign: 1
   vertAlign: 1
   normalColor:
@@ -2778,9 +2777,9 @@ Transform:
   - {fileID: 1312697034}
   - {fileID: 1373859963}
   - {fileID: 1386605511}
+  - {fileID: 1794653515}
   - {fileID: 1843105690}
   - {fileID: 1908613695}
-  - {fileID: 1794653515}
   m_Father: {fileID: 1092662327}
   m_RootOrder: 1
 --- !u!65 &1542916651
@@ -3136,7 +3135,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1542916650}
-  m_RootOrder: 9
+  m_RootOrder: 7
 --- !u!65 &1794653516
 BoxCollider:
   m_ObjectHideFlags: 2
@@ -3257,7 +3256,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1542916650}
-  m_RootOrder: 7
+  m_RootOrder: 8
 --- !u!65 &1843105691
 BoxCollider:
   m_ObjectHideFlags: 2
@@ -3428,8 +3427,8 @@ MonoBehaviour:
     margins:
       left: 0
       top: -0
-      right: 5
-      bottom: 53
+      right: 4
+      bottom: 79
     owner: {fileID: 1883187144}
   renderOrder: 9
   isLocalized: 0
@@ -3533,7 +3532,7 @@ Transform:
   m_Children:
   - {fileID: 983559290}
   m_Father: {fileID: 1542916650}
-  m_RootOrder: 8
+  m_RootOrder: 9
 --- !u!65 &1908613696
 BoxCollider:
   m_ObjectHideFlags: 2
