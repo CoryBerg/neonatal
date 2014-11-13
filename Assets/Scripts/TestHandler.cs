@@ -41,6 +41,23 @@ public class TestHandler : MonoBehaviour {
 		}
 	}
 
+    public void Toast(string toast) {
+        StartCoroutine(GenericToast(toast));
+    }
+
+    public IEnumerator GenericToast(string toast) {
+
+        lbl.Text = toast;
+        // This tweening will be buggy.
+        if (!tweener.IsPlaying) {
+            tweener.Play();
+        }
+        yield return new WaitForSeconds(4.5f);
+        if (!reverseTweener.IsPlaying) {
+            reverseTweener.Play();
+        }
+    }
+
 	IEnumerator DoTest(TestStuff aTest) {
 		TestsCompleted[aTest.name] = false;
 		

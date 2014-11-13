@@ -49,6 +49,11 @@ public class RespiratoryCase : MonoBehaviour {
 		EttPositioning ();
 	}
 
+    private IEnumerator WarningCoroutine() {
+        yield return new WaitForSeconds(deathTimer - 60f * 5f); // 5 minutes before failure...
+        TestHandler.Instance.Toast("The baby is looking worse.");
+    }
+
 	private void EttPositioning() {
 		babyEtt.SetActive (true);
 	}
@@ -57,6 +62,7 @@ public class RespiratoryCase : MonoBehaviour {
 		StartCoroutine(DecompState());
 		StartCoroutine(DeathCondition());
 		StartCoroutine(WinCondition());
+        StartCoroutine(WarningCoroutine());
 	}
 
 	protected virtual IEnumerator WinCondition() {
