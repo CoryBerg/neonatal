@@ -1,0 +1,2188 @@
+fileFormatVersion: 2
+guid: 0148f1ab19012d048b044c2d83cd50df
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: blendshapes
+    100004: body
+    100006: catheterCord
+    100008: catheterTape
+    100010: chestTarget
+    100012: diaper
+    100014: faceTape
+    100016: head
+    100018: headEnd
+    100020: IV_spot
+    100022: ivInput_mesh
+    100024: ivTape_mesh
+    100026: IVTarget
+    100028: jaw
+    100030: jawEnd
+    100032: L_ankle
+    100034: L_ball
+    100036: L_btmLid
+    100038: L_btmLid_end
+    100040: L_clavicle
+    100042: L_elbow
+    100044: L_eye
+    100046: L_eye 1
+    100048: L_hand
+    100050: L_hip
+    100052: L_index_a
+    100054: L_index_b
+    100056: L_index_c
+    100058: L_indexEnd
+    100060: L_knee
+    100062: L_middle_a
+    100064: L_middle_b
+    100066: L_middle_c
+    100068: L_middleEnd
+    100070: L_pinky_a
+    100072: L_pinky_b
+    100074: L_pinky_c
+    100076: L_pinkyEnd
+    100078: L_ring_a
+    100080: L_ring_b
+    100082: L_ring_c
+    100084: L_ringEnd
+    100086: L_shoulder
+    100088: L_thumb_a
+    100090: L_thumb_b
+    100092: L_thumb_c
+    100094: L_thumbEnd
+    100096: L_toe
+    100098: L_topLid
+    100100: L_topLid_end
+    100102: L_wrist
+    100104: left
+    100106: m_baby_kg_7_baby_geo
+    100108: mouthTarget
+    100110: neck
+    100112: pelvis
+    100114: R_ankle
+    100116: R_ball
+    100118: R_btmRid
+    100120: R_btmRid_end
+    100122: R_clavicle
+    100124: R_elbow
+    100126: R_eye
+    100128: R_eye 1
+    100130: R_hand
+    100132: R_hip
+    100134: R_index_a
+    100136: R_index_b
+    100138: R_index_c
+    100140: R_indexEnd
+    100142: R_knee
+    100144: R_middle_a
+    100146: R_middle_b
+    100148: R_middle_c
+    100150: R_middleEnd
+    100152: R_pinky_a
+    100154: R_pinky_b
+    100156: R_pinky_c
+    100158: R_pinkyEnd
+    100160: R_ring_a
+    100162: R_ring_b
+    100164: R_ring_c
+    100166: R_ringEnd
+    100168: R_shoulder
+    100170: R_thumb_a
+    100172: R_thumb_b
+    100174: R_thumb_c
+    100176: R_thumbEnd
+    100178: R_toe
+    100180: R_topRid
+    100182: R_topRid_end
+    100184: R_wrist
+    100186: root
+    100188: spine1
+    100190: spine2
+    100192: spine3
+    100194: umb_j1
+    100196: umb_j10
+    100198: umb_j11
+    100200: umb_j12
+    100202: umb_j13
+    100204: umb_j14
+    100206: umb_j15
+    100208: umb_j16
+    100210: umb_j17
+    100212: umb_j18
+    100214: umb_j19
+    100216: umb_j2
+    100218: umb_j3
+    100220: umb_j4
+    100222: umb_j5
+    100224: umb_j6
+    100226: umb_j7
+    100228: umb_j8
+    100230: umb_j9
+    100232: umbilicalCatheter
+    100234: umbilicalCatheter1
+    100236: umbilicalRig
+    400000: //RootNode
+    400002: blendshapes
+    400004: body
+    400006: catheterCord
+    400008: catheterTape
+    400010: chestTarget
+    400012: diaper
+    400014: faceTape
+    400016: head
+    400018: headEnd
+    400020: IV_spot
+    400022: ivInput_mesh
+    400024: ivTape_mesh
+    400026: IVTarget
+    400028: jaw
+    400030: jawEnd
+    400032: L_ankle
+    400034: L_ball
+    400036: L_btmLid
+    400038: L_btmLid_end
+    400040: L_clavicle
+    400042: L_elbow
+    400044: L_eye
+    400046: L_eye 1
+    400048: L_hand
+    400050: L_hip
+    400052: L_index_a
+    400054: L_index_b
+    400056: L_index_c
+    400058: L_indexEnd
+    400060: L_knee
+    400062: L_middle_a
+    400064: L_middle_b
+    400066: L_middle_c
+    400068: L_middleEnd
+    400070: L_pinky_a
+    400072: L_pinky_b
+    400074: L_pinky_c
+    400076: L_pinkyEnd
+    400078: L_ring_a
+    400080: L_ring_b
+    400082: L_ring_c
+    400084: L_ringEnd
+    400086: L_shoulder
+    400088: L_thumb_a
+    400090: L_thumb_b
+    400092: L_thumb_c
+    400094: L_thumbEnd
+    400096: L_toe
+    400098: L_topLid
+    400100: L_topLid_end
+    400102: L_wrist
+    400104: left
+    400106: m_baby_kg_7_baby_geo
+    400108: mouthTarget
+    400110: neck
+    400112: pelvis
+    400114: R_ankle
+    400116: R_ball
+    400118: R_btmRid
+    400120: R_btmRid_end
+    400122: R_clavicle
+    400124: R_elbow
+    400126: R_eye
+    400128: R_eye 1
+    400130: R_hand
+    400132: R_hip
+    400134: R_index_a
+    400136: R_index_b
+    400138: R_index_c
+    400140: R_indexEnd
+    400142: R_knee
+    400144: R_middle_a
+    400146: R_middle_b
+    400148: R_middle_c
+    400150: R_middleEnd
+    400152: R_pinky_a
+    400154: R_pinky_b
+    400156: R_pinky_c
+    400158: R_pinkyEnd
+    400160: R_ring_a
+    400162: R_ring_b
+    400164: R_ring_c
+    400166: R_ringEnd
+    400168: R_shoulder
+    400170: R_thumb_a
+    400172: R_thumb_b
+    400174: R_thumb_c
+    400176: R_thumbEnd
+    400178: R_toe
+    400180: R_topRid
+    400182: R_topRid_end
+    400184: R_wrist
+    400186: root
+    400188: spine1
+    400190: spine2
+    400192: spine3
+    400194: umb_j1
+    400196: umb_j10
+    400198: umb_j11
+    400200: umb_j12
+    400202: umb_j13
+    400204: umb_j14
+    400206: umb_j15
+    400208: umb_j16
+    400210: umb_j17
+    400212: umb_j18
+    400214: umb_j19
+    400216: umb_j2
+    400218: umb_j3
+    400220: umb_j4
+    400222: umb_j5
+    400224: umb_j6
+    400226: umb_j7
+    400228: umb_j8
+    400230: umb_j9
+    400232: umbilicalCatheter
+    400234: umbilicalCatheter1
+    400236: umbilicalRig
+    2300000: faceTape
+    2300002: L_eye 1
+    2300004: R_eye 1
+    3300000: faceTape
+    3300002: L_eye 1
+    3300004: R_eye 1
+    4300000: diaper
+    4300002: catheterTape
+    4300004: ivInput_mesh
+    4300006: ivTape_mesh
+    4300008: body
+    4300010: faceTape
+    4300012: catheterCord
+    4300014: L_eye
+    4300016: R_eye
+    7400000: -> Flex
+    7400002: Flex Idle
+    7400004: <- Flex
+    7400006: -> Extend
+    7400008: Extend Idle
+    7400010: <- Extend
+    7400012: Head
+    9500000: //RootNode
+    13700000: body
+    13700002: catheterCord
+    13700004: catheterTape
+    13700006: diaper
+    13700008: ivInput_mesh
+    13700010: ivTape_mesh
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: -> Flex
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: left
+        weight: 1
+      - path: m_baby_kg_7_baby_geo
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/blendshapes
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/body
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/diaper
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/faceTape
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/IV_spot
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/IV_spot/ivInput_mesh
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/IV_spot/ivTape_mesh
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/L_hip
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/L_hip/L_knee
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/L_hip/L_knee/L_ankle
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/L_hip/L_knee/L_ankle/L_ball
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/L_hip/L_knee/L_ankle/L_ball/L_toe
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/R_hip
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/R_hip/R_knee
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/R_hip/R_knee/R_ankle
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/R_hip/R_knee/R_ankle/R_ball
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/R_hip/R_knee/R_ankle/R_ball/R_toe
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/chestTarget
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_index_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_index_a/L_index_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_index_a/L_index_b/L_index_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_index_a/L_index_b/L_index_c/L_indexEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_middle_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_middle_a/L_middle_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_middle_a/L_middle_b/L_middle_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_middle_a/L_middle_b/L_middle_c/L_middleEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_pinky_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_pinky_a/L_pinky_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_pinky_a/L_pinky_b/L_pinky_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_pinky_a/L_pinky_b/L_pinky_c/L_pinkyEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_ring_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_ring_a/L_ring_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_ring_a/L_ring_b/L_ring_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_ring_a/L_ring_b/L_ring_c/L_ringEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_thumb_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_thumb_a/L_thumb_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_thumb_a/L_thumb_b/L_thumb_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_thumb_a/L_thumb_b/L_thumb_c/L_thumbEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/headEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/jaw
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/jaw/jawEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/jaw/jawEnd/mouthTarget
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/L_btmLid
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/L_btmLid/L_btmLid_end
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/L_eye
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/L_eye/L_eye
+          1
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/L_topLid
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/L_topLid/L_topLid_end
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/R_btmRid
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/R_btmRid/R_btmRid_end
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/R_eye
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/R_eye/R_eye
+          1
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/R_topRid
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/R_topRid/R_topRid_end
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/IVTarget
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_index_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_index_a/R_index_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_index_a/R_index_b/R_index_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_index_a/R_index_b/R_index_c/R_indexEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_middle_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_middle_a/R_middle_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_middle_a/R_middle_b/R_middle_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_middle_a/R_middle_b/R_middle_c/R_middleEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_pinky_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_pinky_a/R_pinky_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_pinky_a/R_pinky_b/R_pinky_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_pinky_a/R_pinky_b/R_pinky_c/R_pinkyEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_ring_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_ring_a/R_ring_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_ring_a/R_ring_b/R_ring_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_ring_a/R_ring_b/R_ring_c/R_ringEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_thumb_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_thumb_a/R_thumb_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_thumb_a/R_thumb_b/R_thumb_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_thumb_a/R_thumb_b/R_thumb_c/R_thumbEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalCatheter
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalCatheter/catheterTape
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalCatheter1
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalCatheter1/catheterCord
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10/umb_j11
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10/umb_j11/umb_j12
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10/umb_j11/umb_j12/umb_j13
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10/umb_j11/umb_j12/umb_j13/umb_j14
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10/umb_j11/umb_j12/umb_j13/umb_j14/umb_j15
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10/umb_j11/umb_j12/umb_j13/umb_j14/umb_j15/umb_j16
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10/umb_j11/umb_j12/umb_j13/umb_j14/umb_j15/umb_j16/umb_j17
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10/umb_j11/umb_j12/umb_j13/umb_j14/umb_j15/umb_j16/umb_j17/umb_j18
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10/umb_j11/umb_j12/umb_j13/umb_j14/umb_j15/umb_j16/umb_j17/umb_j18/umb_j19
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Flex Idle
+      takeName: Take 001
+      firstFrame: 30
+      lastFrame: 100
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: left
+        weight: 1
+      - path: m_baby_kg_7_baby_geo
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/blendshapes
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/body
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/diaper
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/faceTape
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/IV_spot
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/IV_spot/ivInput_mesh
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/IV_spot/ivTape_mesh
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/L_hip
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/L_hip/L_knee
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/L_hip/L_knee/L_ankle
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/L_hip/L_knee/L_ankle/L_ball
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/L_hip/L_knee/L_ankle/L_ball/L_toe
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/R_hip
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/R_hip/R_knee
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/R_hip/R_knee/R_ankle
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/R_hip/R_knee/R_ankle/R_ball
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/R_hip/R_knee/R_ankle/R_ball/R_toe
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/chestTarget
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_index_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_index_a/L_index_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_index_a/L_index_b/L_index_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_index_a/L_index_b/L_index_c/L_indexEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_middle_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_middle_a/L_middle_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_middle_a/L_middle_b/L_middle_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_middle_a/L_middle_b/L_middle_c/L_middleEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_pinky_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_pinky_a/L_pinky_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_pinky_a/L_pinky_b/L_pinky_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_pinky_a/L_pinky_b/L_pinky_c/L_pinkyEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_ring_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_ring_a/L_ring_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_ring_a/L_ring_b/L_ring_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_ring_a/L_ring_b/L_ring_c/L_ringEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_thumb_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_thumb_a/L_thumb_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_thumb_a/L_thumb_b/L_thumb_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_thumb_a/L_thumb_b/L_thumb_c/L_thumbEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/headEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/jaw
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/jaw/jawEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/jaw/jawEnd/mouthTarget
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/L_btmLid
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/L_btmLid/L_btmLid_end
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/L_eye
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/L_eye/L_eye
+          1
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/L_topLid
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/L_topLid/L_topLid_end
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/R_btmRid
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/R_btmRid/R_btmRid_end
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/R_eye
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/R_eye/R_eye
+          1
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/R_topRid
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/R_topRid/R_topRid_end
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/IVTarget
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_index_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_index_a/R_index_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_index_a/R_index_b/R_index_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_index_a/R_index_b/R_index_c/R_indexEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_middle_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_middle_a/R_middle_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_middle_a/R_middle_b/R_middle_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_middle_a/R_middle_b/R_middle_c/R_middleEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_pinky_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_pinky_a/R_pinky_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_pinky_a/R_pinky_b/R_pinky_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_pinky_a/R_pinky_b/R_pinky_c/R_pinkyEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_ring_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_ring_a/R_ring_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_ring_a/R_ring_b/R_ring_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_ring_a/R_ring_b/R_ring_c/R_ringEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_thumb_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_thumb_a/R_thumb_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_thumb_a/R_thumb_b/R_thumb_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_thumb_a/R_thumb_b/R_thumb_c/R_thumbEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalCatheter
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalCatheter/catheterTape
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalCatheter1
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalCatheter1/catheterCord
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10/umb_j11
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10/umb_j11/umb_j12
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10/umb_j11/umb_j12/umb_j13
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10/umb_j11/umb_j12/umb_j13/umb_j14
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10/umb_j11/umb_j12/umb_j13/umb_j14/umb_j15
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10/umb_j11/umb_j12/umb_j13/umb_j14/umb_j15/umb_j16
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10/umb_j11/umb_j12/umb_j13/umb_j14/umb_j15/umb_j16/umb_j17
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10/umb_j11/umb_j12/umb_j13/umb_j14/umb_j15/umb_j16/umb_j17/umb_j18
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10/umb_j11/umb_j12/umb_j13/umb_j14/umb_j15/umb_j16/umb_j17/umb_j18/umb_j19
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: <- Flex
+      takeName: Take 001
+      firstFrame: 100
+      lastFrame: 128
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: left
+        weight: 1
+      - path: m_baby_kg_7_baby_geo
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/blendshapes
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/body
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/diaper
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/faceTape
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/IV_spot
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/IV_spot/ivInput_mesh
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/IV_spot/ivTape_mesh
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/L_hip
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/L_hip/L_knee
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/L_hip/L_knee/L_ankle
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/L_hip/L_knee/L_ankle/L_ball
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/L_hip/L_knee/L_ankle/L_ball/L_toe
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/R_hip
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/R_hip/R_knee
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/R_hip/R_knee/R_ankle
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/R_hip/R_knee/R_ankle/R_ball
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/R_hip/R_knee/R_ankle/R_ball/R_toe
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/chestTarget
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_index_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_index_a/L_index_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_index_a/L_index_b/L_index_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_index_a/L_index_b/L_index_c/L_indexEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_middle_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_middle_a/L_middle_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_middle_a/L_middle_b/L_middle_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_middle_a/L_middle_b/L_middle_c/L_middleEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_pinky_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_pinky_a/L_pinky_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_pinky_a/L_pinky_b/L_pinky_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_pinky_a/L_pinky_b/L_pinky_c/L_pinkyEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_ring_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_ring_a/L_ring_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_ring_a/L_ring_b/L_ring_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_ring_a/L_ring_b/L_ring_c/L_ringEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_thumb_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_thumb_a/L_thumb_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_thumb_a/L_thumb_b/L_thumb_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_thumb_a/L_thumb_b/L_thumb_c/L_thumbEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/headEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/jaw
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/jaw/jawEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/jaw/jawEnd/mouthTarget
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/L_btmLid
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/L_btmLid/L_btmLid_end
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/L_eye
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/L_eye/L_eye
+          1
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/L_topLid
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/L_topLid/L_topLid_end
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/R_btmRid
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/R_btmRid/R_btmRid_end
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/R_eye
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/R_eye/R_eye
+          1
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/R_topRid
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/R_topRid/R_topRid_end
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/IVTarget
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_index_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_index_a/R_index_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_index_a/R_index_b/R_index_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_index_a/R_index_b/R_index_c/R_indexEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_middle_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_middle_a/R_middle_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_middle_a/R_middle_b/R_middle_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_middle_a/R_middle_b/R_middle_c/R_middleEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_pinky_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_pinky_a/R_pinky_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_pinky_a/R_pinky_b/R_pinky_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_pinky_a/R_pinky_b/R_pinky_c/R_pinkyEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_ring_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_ring_a/R_ring_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_ring_a/R_ring_b/R_ring_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_ring_a/R_ring_b/R_ring_c/R_ringEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_thumb_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_thumb_a/R_thumb_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_thumb_a/R_thumb_b/R_thumb_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_thumb_a/R_thumb_b/R_thumb_c/R_thumbEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalCatheter
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalCatheter/catheterTape
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalCatheter1
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalCatheter1/catheterCord
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10/umb_j11
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10/umb_j11/umb_j12
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10/umb_j11/umb_j12/umb_j13
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10/umb_j11/umb_j12/umb_j13/umb_j14
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10/umb_j11/umb_j12/umb_j13/umb_j14/umb_j15
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10/umb_j11/umb_j12/umb_j13/umb_j14/umb_j15/umb_j16
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10/umb_j11/umb_j12/umb_j13/umb_j14/umb_j15/umb_j16/umb_j17
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10/umb_j11/umb_j12/umb_j13/umb_j14/umb_j15/umb_j16/umb_j17/umb_j18
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10/umb_j11/umb_j12/umb_j13/umb_j14/umb_j15/umb_j16/umb_j17/umb_j18/umb_j19
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: -> Extend
+      takeName: Take 001
+      firstFrame: 128
+      lastFrame: 158
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: left
+        weight: 1
+      - path: m_baby_kg_7_baby_geo
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/blendshapes
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/body
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/diaper
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/faceTape
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/IV_spot
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/IV_spot/ivInput_mesh
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/IV_spot/ivTape_mesh
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/L_hip
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/L_hip/L_knee
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/L_hip/L_knee/L_ankle
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/L_hip/L_knee/L_ankle/L_ball
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/L_hip/L_knee/L_ankle/L_ball/L_toe
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/R_hip
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/R_hip/R_knee
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/R_hip/R_knee/R_ankle
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/R_hip/R_knee/R_ankle/R_ball
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/R_hip/R_knee/R_ankle/R_ball/R_toe
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/chestTarget
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_index_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_index_a/L_index_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_index_a/L_index_b/L_index_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_index_a/L_index_b/L_index_c/L_indexEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_middle_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_middle_a/L_middle_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_middle_a/L_middle_b/L_middle_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_middle_a/L_middle_b/L_middle_c/L_middleEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_pinky_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_pinky_a/L_pinky_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_pinky_a/L_pinky_b/L_pinky_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_pinky_a/L_pinky_b/L_pinky_c/L_pinkyEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_ring_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_ring_a/L_ring_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_ring_a/L_ring_b/L_ring_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_ring_a/L_ring_b/L_ring_c/L_ringEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_thumb_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_thumb_a/L_thumb_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_thumb_a/L_thumb_b/L_thumb_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_thumb_a/L_thumb_b/L_thumb_c/L_thumbEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/headEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/jaw
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/jaw/jawEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/jaw/jawEnd/mouthTarget
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/L_btmLid
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/L_btmLid/L_btmLid_end
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/L_eye
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/L_eye/L_eye
+          1
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/L_topLid
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/L_topLid/L_topLid_end
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/R_btmRid
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/R_btmRid/R_btmRid_end
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/R_eye
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/R_eye/R_eye
+          1
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/R_topRid
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/R_topRid/R_topRid_end
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/IVTarget
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_index_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_index_a/R_index_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_index_a/R_index_b/R_index_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_index_a/R_index_b/R_index_c/R_indexEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_middle_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_middle_a/R_middle_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_middle_a/R_middle_b/R_middle_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_middle_a/R_middle_b/R_middle_c/R_middleEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_pinky_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_pinky_a/R_pinky_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_pinky_a/R_pinky_b/R_pinky_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_pinky_a/R_pinky_b/R_pinky_c/R_pinkyEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_ring_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_ring_a/R_ring_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_ring_a/R_ring_b/R_ring_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_ring_a/R_ring_b/R_ring_c/R_ringEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_thumb_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_thumb_a/R_thumb_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_thumb_a/R_thumb_b/R_thumb_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_thumb_a/R_thumb_b/R_thumb_c/R_thumbEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalCatheter
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalCatheter/catheterTape
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalCatheter1
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalCatheter1/catheterCord
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10/umb_j11
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10/umb_j11/umb_j12
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10/umb_j11/umb_j12/umb_j13
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10/umb_j11/umb_j12/umb_j13/umb_j14
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10/umb_j11/umb_j12/umb_j13/umb_j14/umb_j15
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10/umb_j11/umb_j12/umb_j13/umb_j14/umb_j15/umb_j16
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10/umb_j11/umb_j12/umb_j13/umb_j14/umb_j15/umb_j16/umb_j17
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10/umb_j11/umb_j12/umb_j13/umb_j14/umb_j15/umb_j16/umb_j17/umb_j18
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10/umb_j11/umb_j12/umb_j13/umb_j14/umb_j15/umb_j16/umb_j17/umb_j18/umb_j19
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Extend Idle
+      takeName: Take 001
+      firstFrame: 158
+      lastFrame: 218
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: left
+        weight: 1
+      - path: m_baby_kg_7_baby_geo
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/blendshapes
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/body
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/diaper
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/faceTape
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/IV_spot
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/IV_spot/ivInput_mesh
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/IV_spot/ivTape_mesh
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/L_hip
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/L_hip/L_knee
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/L_hip/L_knee/L_ankle
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/L_hip/L_knee/L_ankle/L_ball
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/L_hip/L_knee/L_ankle/L_ball/L_toe
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/R_hip
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/R_hip/R_knee
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/R_hip/R_knee/R_ankle
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/R_hip/R_knee/R_ankle/R_ball
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/R_hip/R_knee/R_ankle/R_ball/R_toe
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/chestTarget
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_index_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_index_a/L_index_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_index_a/L_index_b/L_index_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_index_a/L_index_b/L_index_c/L_indexEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_middle_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_middle_a/L_middle_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_middle_a/L_middle_b/L_middle_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_middle_a/L_middle_b/L_middle_c/L_middleEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_pinky_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_pinky_a/L_pinky_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_pinky_a/L_pinky_b/L_pinky_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_pinky_a/L_pinky_b/L_pinky_c/L_pinkyEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_ring_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_ring_a/L_ring_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_ring_a/L_ring_b/L_ring_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_ring_a/L_ring_b/L_ring_c/L_ringEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_thumb_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_thumb_a/L_thumb_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_thumb_a/L_thumb_b/L_thumb_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_thumb_a/L_thumb_b/L_thumb_c/L_thumbEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/headEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/jaw
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/jaw/jawEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/jaw/jawEnd/mouthTarget
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/L_btmLid
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/L_btmLid/L_btmLid_end
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/L_eye
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/L_eye/L_eye
+          1
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/L_topLid
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/L_topLid/L_topLid_end
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/R_btmRid
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/R_btmRid/R_btmRid_end
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/R_eye
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/R_eye/R_eye
+          1
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/R_topRid
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/R_topRid/R_topRid_end
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/IVTarget
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_index_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_index_a/R_index_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_index_a/R_index_b/R_index_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_index_a/R_index_b/R_index_c/R_indexEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_middle_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_middle_a/R_middle_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_middle_a/R_middle_b/R_middle_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_middle_a/R_middle_b/R_middle_c/R_middleEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_pinky_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_pinky_a/R_pinky_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_pinky_a/R_pinky_b/R_pinky_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_pinky_a/R_pinky_b/R_pinky_c/R_pinkyEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_ring_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_ring_a/R_ring_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_ring_a/R_ring_b/R_ring_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_ring_a/R_ring_b/R_ring_c/R_ringEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_thumb_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_thumb_a/R_thumb_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_thumb_a/R_thumb_b/R_thumb_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_thumb_a/R_thumb_b/R_thumb_c/R_thumbEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalCatheter
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalCatheter/catheterTape
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalCatheter1
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalCatheter1/catheterCord
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10/umb_j11
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10/umb_j11/umb_j12
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10/umb_j11/umb_j12/umb_j13
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10/umb_j11/umb_j12/umb_j13/umb_j14
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10/umb_j11/umb_j12/umb_j13/umb_j14/umb_j15
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10/umb_j11/umb_j12/umb_j13/umb_j14/umb_j15/umb_j16
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10/umb_j11/umb_j12/umb_j13/umb_j14/umb_j15/umb_j16/umb_j17
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10/umb_j11/umb_j12/umb_j13/umb_j14/umb_j15/umb_j16/umb_j17/umb_j18
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10/umb_j11/umb_j12/umb_j13/umb_j14/umb_j15/umb_j16/umb_j17/umb_j18/umb_j19
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: <- Extend
+      takeName: Take 001
+      firstFrame: 218
+      lastFrame: 249
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: left
+        weight: 1
+      - path: m_baby_kg_7_baby_geo
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/blendshapes
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/body
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/diaper
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/faceTape
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/IV_spot
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/IV_spot/ivInput_mesh
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/IV_spot/ivTape_mesh
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/L_hip
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/L_hip/L_knee
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/L_hip/L_knee/L_ankle
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/L_hip/L_knee/L_ankle/L_ball
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/L_hip/L_knee/L_ankle/L_ball/L_toe
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/R_hip
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/R_hip/R_knee
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/R_hip/R_knee/R_ankle
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/R_hip/R_knee/R_ankle/R_ball
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/R_hip/R_knee/R_ankle/R_ball/R_toe
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/chestTarget
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_index_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_index_a/L_index_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_index_a/L_index_b/L_index_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_index_a/L_index_b/L_index_c/L_indexEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_middle_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_middle_a/L_middle_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_middle_a/L_middle_b/L_middle_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_middle_a/L_middle_b/L_middle_c/L_middleEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_pinky_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_pinky_a/L_pinky_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_pinky_a/L_pinky_b/L_pinky_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_pinky_a/L_pinky_b/L_pinky_c/L_pinkyEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_ring_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_ring_a/L_ring_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_ring_a/L_ring_b/L_ring_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_ring_a/L_ring_b/L_ring_c/L_ringEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_thumb_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_thumb_a/L_thumb_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_thumb_a/L_thumb_b/L_thumb_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_thumb_a/L_thumb_b/L_thumb_c/L_thumbEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/headEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/jaw
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/jaw/jawEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/jaw/jawEnd/mouthTarget
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/L_btmLid
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/L_btmLid/L_btmLid_end
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/L_eye
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/L_eye/L_eye
+          1
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/L_topLid
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/L_topLid/L_topLid_end
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/R_btmRid
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/R_btmRid/R_btmRid_end
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/R_eye
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/R_eye/R_eye
+          1
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/R_topRid
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/R_topRid/R_topRid_end
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/IVTarget
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_index_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_index_a/R_index_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_index_a/R_index_b/R_index_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_index_a/R_index_b/R_index_c/R_indexEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_middle_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_middle_a/R_middle_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_middle_a/R_middle_b/R_middle_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_middle_a/R_middle_b/R_middle_c/R_middleEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_pinky_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_pinky_a/R_pinky_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_pinky_a/R_pinky_b/R_pinky_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_pinky_a/R_pinky_b/R_pinky_c/R_pinkyEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_ring_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_ring_a/R_ring_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_ring_a/R_ring_b/R_ring_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_ring_a/R_ring_b/R_ring_c/R_ringEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_thumb_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_thumb_a/R_thumb_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_thumb_a/R_thumb_b/R_thumb_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_thumb_a/R_thumb_b/R_thumb_c/R_thumbEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalCatheter
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalCatheter/catheterTape
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalCatheter1
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalCatheter1/catheterCord
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10/umb_j11
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10/umb_j11/umb_j12
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10/umb_j11/umb_j12/umb_j13
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10/umb_j11/umb_j12/umb_j13/umb_j14
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10/umb_j11/umb_j12/umb_j13/umb_j14/umb_j15
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10/umb_j11/umb_j12/umb_j13/umb_j14/umb_j15/umb_j16
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10/umb_j11/umb_j12/umb_j13/umb_j14/umb_j15/umb_j16/umb_j17
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10/umb_j11/umb_j12/umb_j13/umb_j14/umb_j15/umb_j16/umb_j17/umb_j18
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10/umb_j11/umb_j12/umb_j13/umb_j14/umb_j15/umb_j16/umb_j17/umb_j18/umb_j19
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Head
+      takeName: Take 001
+      firstFrame: 132
+      lastFrame: 825
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: left
+        weight: 1
+      - path: m_baby_kg_7_baby_geo
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/blendshapes
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/body
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/diaper
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/faceTape
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/IV_spot
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/IV_spot/ivInput_mesh
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/IV_spot/ivTape_mesh
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/L_hip
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/L_hip/L_knee
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/L_hip/L_knee/L_ankle
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/L_hip/L_knee/L_ankle/L_ball
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/L_hip/L_knee/L_ankle/L_ball/L_toe
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/R_hip
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/R_hip/R_knee
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/R_hip/R_knee/R_ankle
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/R_hip/R_knee/R_ankle/R_ball
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/pelvis/R_hip/R_knee/R_ankle/R_ball/R_toe
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/chestTarget
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_index_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_index_a/L_index_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_index_a/L_index_b/L_index_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_index_a/L_index_b/L_index_c/L_indexEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_middle_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_middle_a/L_middle_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_middle_a/L_middle_b/L_middle_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_middle_a/L_middle_b/L_middle_c/L_middleEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_pinky_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_pinky_a/L_pinky_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_pinky_a/L_pinky_b/L_pinky_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_pinky_a/L_pinky_b/L_pinky_c/L_pinkyEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_ring_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_ring_a/L_ring_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_ring_a/L_ring_b/L_ring_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_ring_a/L_ring_b/L_ring_c/L_ringEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_thumb_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_thumb_a/L_thumb_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_thumb_a/L_thumb_b/L_thumb_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/L_clavicle/L_shoulder/L_elbow/L_wrist/L_hand/L_thumb_a/L_thumb_b/L_thumb_c/L_thumbEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/headEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/jaw
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/jaw/jawEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/jaw/jawEnd/mouthTarget
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/L_btmLid
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/L_btmLid/L_btmLid_end
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/L_eye
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/L_eye/L_eye
+          1
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/L_topLid
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/L_topLid/L_topLid_end
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/R_btmRid
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/R_btmRid/R_btmRid_end
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/R_eye
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/R_eye/R_eye
+          1
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/R_topRid
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/neck/head/R_topRid/R_topRid_end
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/IVTarget
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_index_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_index_a/R_index_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_index_a/R_index_b/R_index_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_index_a/R_index_b/R_index_c/R_indexEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_middle_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_middle_a/R_middle_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_middle_a/R_middle_b/R_middle_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_middle_a/R_middle_b/R_middle_c/R_middleEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_pinky_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_pinky_a/R_pinky_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_pinky_a/R_pinky_b/R_pinky_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_pinky_a/R_pinky_b/R_pinky_c/R_pinkyEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_ring_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_ring_a/R_ring_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_ring_a/R_ring_b/R_ring_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_ring_a/R_ring_b/R_ring_c/R_ringEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_thumb_a
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_thumb_a/R_thumb_b
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_thumb_a/R_thumb_b/R_thumb_c
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/root/spine1/spine2/spine3/R_clavicle/R_shoulder/R_elbow/R_wrist/R_hand/R_thumb_a/R_thumb_b/R_thumb_c/R_thumbEnd
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalCatheter
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalCatheter/catheterTape
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalCatheter1
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalCatheter1/catheterCord
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10/umb_j11
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10/umb_j11/umb_j12
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10/umb_j11/umb_j12/umb_j13
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10/umb_j11/umb_j12/umb_j13/umb_j14
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10/umb_j11/umb_j12/umb_j13/umb_j14/umb_j15
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10/umb_j11/umb_j12/umb_j13/umb_j14/umb_j15/umb_j16
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10/umb_j11/umb_j12/umb_j13/umb_j14/umb_j15/umb_j16/umb_j17
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10/umb_j11/umb_j12/umb_j13/umb_j14/umb_j15/umb_j16/umb_j17/umb_j18
+        weight: 1
+      - path: m_baby_kg_7_baby_geo/umbilicalRig/umb_j1/umb_j2/umb_j3/umb_j4/umb_j5/umb_j6/umb_j7/umb_j8/umb_j9/umb_j10/umb_j11/umb_j12/umb_j13/umb_j14/umb_j15/umb_j16/umb_j17/umb_j18/umb_j19
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .400000006
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 1
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

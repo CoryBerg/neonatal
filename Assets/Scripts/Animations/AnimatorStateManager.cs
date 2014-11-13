@@ -30,7 +30,7 @@ public class AnimatorStateManager {
 		} else if (stateInfo.IsName ("Swap Needle")) {
 			needle1.SetActive (false);
 			needle2.SetActive (true);
-			needle2.transform.parent = null;
+			//needle2.transform.parent = null;
 		} else if (stateInfo.IsName ("Reset Arms")) {
 			vtJoint.transform.parent = jointsGroup.transform;
 			//vtJoint.transform.localPosition = new Vector3(0.7489247f, 0.05975409f, 0.002217171f);
