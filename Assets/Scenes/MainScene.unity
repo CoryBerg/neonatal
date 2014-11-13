@@ -14576,7 +14576,7 @@ SkinnedMeshRenderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 47bdb0ec22d63a14098f096344146df5, type: 2}
+  - {fileID: 2100000, guid: 742423af44db1c0498dbce4565fcecd9, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -17958,7 +17958,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: 912c048d31d82491687a683ba7649537, type: 2}
     - target: {fileID: 13700000, guid: 0148f1ab19012d048b044c2d83cd50df, type: 3}
       propertyPath: m_BlendShapeWeights.Array.data[0]
-      value: 90
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 0148f1ab19012d048b044c2d83cd50df, type: 3}
       propertyPath: m_IsActive
@@ -30528,7 +30528,7 @@ SkinnedMeshRenderer:
   - {fileID: 1493100907}
   - {fileID: 2077709711}
   m_BlendShapeWeights:
-  - 90
+  - 100
   - 0
   - 0
   - 0
