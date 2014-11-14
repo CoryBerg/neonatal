@@ -41,7 +41,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: e0841ae58268143519edf67272638e6b, type: 2}
   items:
-  - name: Scene1
+  - name: 'R. sided pneumothorax '
     region:
       serializedVersion: 2
       x: 0
@@ -55,7 +55,7 @@ MonoBehaviour:
       m_Bottom: 0
     rotated: 0
     sizeInPixels: {x: 512, y: 512}
-    textureGUID: 4c66485b8cd954d2fbb1cd718c7719a3
+    textureGUID: 3d350d53513b7ea42908f8ecdd820342
     deleted: 0
     texture: {fileID: 0}
   generator: 0
