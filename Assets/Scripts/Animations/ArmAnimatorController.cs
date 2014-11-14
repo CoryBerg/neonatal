@@ -61,7 +61,8 @@ public class ArmAnimatorController : MonoBehaviour {
         }
     }
 
-	private void PlaySound(string target) {
+	IEnumerator PlaySound(string target) {
+		yield return new WaitForSeconds (2.0f);
 		Camera.main.audio.loop = true;
 
 		if (target == "StethTargetUL") {
@@ -78,8 +79,9 @@ public class ArmAnimatorController : MonoBehaviour {
 
         if (inSteth) {
             StopCoroutine("MoveTo");
+			StopCoroutine("PlaySound");
             StartCoroutine(MoveTo(target.position));
-			PlaySound(target.name);
+			StartCoroutine(PlaySound(target.name));
             print("Steth Transition");
             return;
         }
@@ -87,7 +89,7 @@ public class ArmAnimatorController : MonoBehaviour {
         print("Steth Begin");
 		animator.SetBool("InSteth", true);
 		inSteth = true;
-		PlaySound(target.name);
+		StartCoroutine(PlaySound(target.name));
 		transform.parent = target;
 		transform.localPosition = Vector3.zero;
 		ArmItemsContainer.Instance.NewAnimation ("ButtonSteth");

@@ -27,13 +27,10 @@ public class AnimatorStateManager {
 			vtJoint.transform.parent = ettJoint.transform;
 
 			arms.position = new Vector3(0.005775452f, 1.228995f, 5.056239f);
-		} else if (stateInfo.IsName ("Swap Needle")) {
-			needle1.SetActive (false);
-			needle2.SetActive (true);
-			//needle2.transform.parent = null;
+		} else if (stateInfo.IsName ("End Needle Decomp")) {
+			needle1.transform.parent = null;
 		} else if (stateInfo.IsName ("Reset Arms")) {
 			vtJoint.transform.parent = jointsGroup.transform;
-			//vtJoint.transform.localPosition = new Vector3(0.7489247f, 0.05975409f, 0.002217171f);
 			ArmAnimatorController.Instance.ResetArms();
 		} else if (stateInfo.IsName ("Enter Suction")) {
 			iv.SetActive (false);
