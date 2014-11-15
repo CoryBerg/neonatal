@@ -14,7 +14,7 @@ public class UserEvaluationPerformance : MonoBehaviour {
 		{"ButtonStethUL","Stethoscope"},
 		{"ButtonStethUR","Stethoscope"},
 		{"ButtonNeedle","Needle Decompression"},
-		{"ButtonSuctionbaby","Suction the Baby"},
+		{"ButtonSuction","Suction the Baby"},
 		{"ButtonTransilL","Transilluminate Chest"},
 		{"ButtonETT","Attach ETT"},
 		{"ButtonTransilR","Transilluminate Chest"},
