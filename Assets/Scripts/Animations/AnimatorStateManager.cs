@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class AnimatorStateManager {
-	public GameObject armEtt, babyEtt, bagAndMask, ettJoint, iv, jointsGroup, laryn, needle1, needle2, vt, vtJoint;
+	public GameObject armEtt, babyEtt, bagAndMask, ettJoint, iv, jointsGroup, laryn, needle1, vt, vtJoint;
 
 	public Transform arms;
 
@@ -15,6 +15,8 @@ public class AnimatorStateManager {
 			armEtt.SetActive (true);
 		} else if (stateInfo.IsName ("Enter bagging")) {
 			bagAndMask.SetActive (true);
+		} else if (stateInfo.IsName ("Bagging Loop")) {
+			arms.position = new Vector3(-0.0760451f, 1.228995f, 5.692109f);
 		} else if (stateInfo.IsName ("Reintubation")) {
 			bagAndMask.SetActive (false);
 			laryn.SetActive (true);
@@ -27,14 +29,14 @@ public class AnimatorStateManager {
 			vtJoint.transform.parent = ettJoint.transform;
 
 			arms.position = new Vector3(0.005775452f, 1.228995f, 5.056239f);
-		} else if (stateInfo.IsName ("End Needle Decomp")) {
+		} else if (stateInfo.IsName ("Exit Needle Decomp")) {
 			needle1.transform.parent = null;
 		} else if (stateInfo.IsName ("Reset Arms")) {
 			vtJoint.transform.parent = jointsGroup.transform;
 			ArmAnimatorController.Instance.ResetArms();
 		} else if (stateInfo.IsName ("Enter Suction")) {
 			iv.SetActive (false);
-		} else if (stateInfo.IsName ("Suction")) {
+		} else if (stateInfo.IsName ("Hide VT")) {
 			iv.SetActive (true);
 			vt.SetActive (false);
 		} else if (stateInfo.IsName("Exit Suction")) {

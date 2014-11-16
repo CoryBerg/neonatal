@@ -3,8 +3,8 @@ using System.Collections;
 
 public class ArmAnimatorController : MonoBehaviour {
 	public static ArmAnimatorController Instance;
-	public AudioClip armMove, stethSound;
-	public GameObject armEtt, babyEtt, bagAndMask, ettJoint, iv, jointsGroup, laryn, needle1, needle2, vt, vtJoint;
+	public AudioClip armMove;
+	public GameObject armEtt, babyEtt, bagAndMask, ettJoint, iv, jointsGroup, laryn, needle1, vt, vtJoint;
 	public Camera mainCamera;
 
 	private Animator animator;
@@ -26,7 +26,6 @@ public class ArmAnimatorController : MonoBehaviour {
 			jointsGroup = this.jointsGroup,
 			laryn = this.laryn,
 			needle1 = this.needle1,
-			needle2 = this.needle2,
 			vt = this.vt,
 			vtJoint = this.vtJoint
 		};
