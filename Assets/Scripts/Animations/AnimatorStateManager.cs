@@ -15,8 +15,6 @@ public class AnimatorStateManager {
 			armEtt.SetActive (true);
 		} else if (stateInfo.IsName ("Enter bagging")) {
 			bagAndMask.SetActive (true);
-		} else if (stateInfo.IsName ("Bagging Loop")) {
-			arms.position = new Vector3(-0.0760451f, 1.228995f, 5.692109f);
 		} else if (stateInfo.IsName ("Reintubation")) {
 			bagAndMask.SetActive (false);
 			laryn.SetActive (true);
