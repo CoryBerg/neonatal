@@ -7,7 +7,14 @@ public class ArmAnimatorController : MonoBehaviour {
 	public GameObject armEtt, babyEtt, bagAndMask, ettJoint, iv, jointsGroup, laryn, needle1, vt, vtJoint;
 	public Camera mainCamera;
 
+	public bool intubating = false;
+
 	private Animator animator;
+	public Animator Anim {
+		get {
+			return animator;
+		}
+	}
 	private AnimatorStateManager animatorStateManager;
 	private ArmAnimationContainer animations;
 	private Transform startingParent;
@@ -131,5 +138,14 @@ public class ArmAnimatorController : MonoBehaviour {
 		GameObject arms = GameObject.FindGameObjectWithTag ("Arms");
 		AudioSource.PlayClipAtPoint (armMove, arms.transform.position);
 		animator.SetTrigger (animName);
+	}
+
+	void intubationStart() {
+		BabyAnimatorController.Instance.IntubateBabyBegin();
+		print ("start intubate");
+	}
+	
+	void intubationEnd() {
+		print ("stop intubate");
 	}
 }
