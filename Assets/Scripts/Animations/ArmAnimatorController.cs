@@ -22,7 +22,6 @@ public class ArmAnimatorController : MonoBehaviour {
     private bool inSteth = false;
 	// Use this for initialization
     void Awake() {
-        print("AWAKE START");
 		animatorStateManager = new AnimatorStateManager () {
 			arms = this.transform,
 			armEtt = this.armEtt,
@@ -41,8 +40,6 @@ public class ArmAnimatorController : MonoBehaviour {
 		animations = new ArmAnimationContainer ();
 		animator = GetComponent<Animator> ();
         startingParent = this.transform.parent;
-
-        print("AWAKE END");
 	}
 
 	// Called every frame

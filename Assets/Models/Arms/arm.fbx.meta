@@ -3100,7 +3100,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Remove ETT
       takeName: Take 001
-      firstFrame: 275
+      firstFrame: 276
       lastFrame: 320
       wrapMode: 0
       orientationOffsetY: 0
@@ -4589,7 +4589,7 @@ ModelImporter:
       name: Remove ETT 2
       takeName: Take 001
       firstFrame: 321
-      lastFrame: 384
+      lastFrame: 383
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -6084,7 +6084,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       loopTime: 1
-      loopBlend: 0
+      loopBlend: 1
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
@@ -7340,7 +7340,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Reintubation
       takeName: Take 001
-      firstFrame: 515
+      firstFrame: 516
       lastFrame: 730
       wrapMode: 0
       orientationOffsetY: 0
@@ -9572,7 +9572,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Replace VT
       takeName: Take 001
-      firstFrame: 818
+      firstFrame: 820
       lastFrame: 926
       wrapMode: 0
       orientationOffsetY: 0
@@ -10316,7 +10316,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Needle Decomp
       takeName: Take 001
-      firstFrame: 926
+      firstFrame: 928
       lastFrame: 1180
       wrapMode: 0
       orientationOffsetY: 0
@@ -11883,8 +11883,8 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
-      loopTime: 0
-      loopBlend: 0
+      loopTime: 1
+      loopBlend: 1
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
@@ -14707,7 +14707,7 @@ ModelImporter:
     - serializedVersion: 16
       name: intubationEnd
       takeName: Take 001
-      firstFrame: 818
+      firstFrame: 820
       lastFrame: 926
       wrapMode: 0
       orientationOffsetY: 0
