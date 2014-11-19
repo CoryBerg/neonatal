@@ -104,6 +104,11 @@ public class RespiratoryCase : MonoBehaviour {
 	protected void UpdateMonitor(float seconds) {
 		MonitorUpdates.Instance.UpdateMonitor(Sp02,temperature,bloodPressure,heartRate,seconds);
 	}
+
+    IEnumerator updateNeedleDecompAfterDelay() { // values from paul
+        yield return new WaitForSeconds(15f);
+        UpdateMonitor(7f);
+    }
 	
 	// Initial state of baby
 	protected virtual void InitialState() {
@@ -182,11 +187,12 @@ public class RespiratoryCase : MonoBehaviour {
 		// Both lungs working
 		babyBreath.both = true;
 
-        Invoke("ChangeScene", 15.0f);
+        Invoke("ChangeScene", 27.0f);
 
         StartCoroutine(LipsOff(3f));
         BabyAnimatorController.Instance.SetRecovery();
-		UpdateMonitor(15f);
+        StartCoroutine(updateNeedleDecompAfterDelay());
+		//UpdateMonitor(15f);
 	}
 
 	// No needle decomp by 10 min (5+5, regardless of interations or lack thereof) or needle decomp in incorrect location
