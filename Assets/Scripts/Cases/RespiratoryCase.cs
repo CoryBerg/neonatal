@@ -25,7 +25,7 @@ public class RespiratoryCase : MonoBehaviour {
 	private GameObject babyEtt;
 
 	protected virtual void Awake() {
-		babyBreath = GameObject.FindGameObjectWithTag ("Baby").GetComponent<Breathing> ();
+		babyBreath = BabyAnimatorController.Instance.gameObject.GetComponent<Breathing> ();
         if (babyBreath == null) {
             print("WHY NULL.");
         }

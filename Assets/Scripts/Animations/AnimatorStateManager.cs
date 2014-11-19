@@ -15,9 +15,11 @@ public class AnimatorStateManager {
 			armEtt.SetActive (true);
 		} else if (stateInfo.IsName ("Enter bagging")) {
 			bagAndMask.SetActive (true);
+			armEtt.SetActive (false);
 		} else if (stateInfo.IsName ("Reintubation")) {
 			bagAndMask.SetActive (false);
 			laryn.SetActive (true);
+			armEtt.SetActive (true);
 		} else if (stateInfo.IsName ("ETT -> Baby")) {
 			babyEtt.SetActive (true);
 			armEtt.SetActive (false);
