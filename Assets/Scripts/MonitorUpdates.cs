@@ -83,6 +83,7 @@ public class MonitorUpdates : MonoBehaviour {
         float t = 0;
         float c = 0f;
         float c2 = 0f;
+        float granularity = 8f;
         while (t < bt.length) {
             t += updateGranularity;
             if (t > bt.length)
@@ -90,14 +91,14 @@ public class MonitorUpdates : MonoBehaviour {
             c = Mathf.Lerp(bt.start, bt.target, t / bt.length);
             c2 = Mathf.Lerp(bt.botStart, bt.botTarget, t / bt.length);
             bt.label.Text = string.Format(bt.format, c, c2);
-            yield return new WaitForSeconds(updateGranularity);
+            yield return new WaitForSeconds(granularity);
         }
         while (true) { // Fluctuates the heart rate a bit
             float tar = bt.target * Random.Range(.95f, 1.05f);
             float tar2 = bt.botTarget * Random.Range(.95f, 1.05f);
             float lerpSpeed = Random.Range(3f, 5.5f);
             t = 0f;
-            float up = updateGranularity * Random.RandomRange(.95f, 1.1f);
+            float up = granularity * Random.RandomRange(.95f, 1.1f);
             while (t < lerpSpeed) {
                 bt.label.Text = string.Format(bt.format, Mathf.Lerp(c, tar, t / lerpSpeed), Mathf.Lerp(c2, tar, t / lerpSpeed));
                 t += up;
@@ -114,13 +115,17 @@ public class MonitorUpdates : MonoBehaviour {
         float t = 0;
 		float start = lt.start;
         float c = 0f;
+        float granularity = updateGranularity;
+        if (lt.label != hRate) {
+            granularity = 8f;
+        }
 		while(t < lt.length) {
-			t += updateGranularity;
+            t += granularity;
 			if(t > lt.length)
 				t = lt.length;
 			c = Mathf.Lerp(start, lt.target, t/lt.length);
 			lt.label.Text = string.Format(lt.format,c);
-			yield return new WaitForSeconds(updateGranularity);
+            yield return new WaitForSeconds(granularity);
 		}
 		while(true) { // Fluctuates the heart rate a bit
 			float tar = lt.target * Random.Range(.95f,1.05f);
@@ -128,8 +133,8 @@ public class MonitorUpdates : MonoBehaviour {
 			t = 0f;
 			while(t < lerpSpeed) {
 				lt.label.Text = string.Format(lt.format,Mathf.Lerp(c, tar, t/lerpSpeed));
-				t += updateGranularity;
-				yield return new WaitForSeconds(updateGranularity);
+                t += granularity;
+                yield return new WaitForSeconds(granularity);
 			}
             c = tar;
 		}

@@ -106,8 +106,8 @@ public class RespiratoryCase : MonoBehaviour {
 	}
 
     IEnumerator updateNeedleDecompAfterDelay() { // values from paul
-        yield return new WaitForSeconds(15f);
-        UpdateMonitor(7f);
+        yield return new WaitForSeconds(7f);
+        UpdateMonitor(30f);
     }
 	
 	// Initial state of baby
@@ -187,9 +187,9 @@ public class RespiratoryCase : MonoBehaviour {
 		// Both lungs working
 		babyBreath.both = true;
 
-        Invoke("ChangeScene", 27.0f);
+        Invoke("ChangeScene", 37.0f);
 
-        StartCoroutine(LipsOff(3f));
+        StartCoroutine(LipsOff(30f));
         BabyAnimatorController.Instance.SetRecovery();
         StartCoroutine(updateNeedleDecompAfterDelay());
 		//UpdateMonitor(15f);
