@@ -63,7 +63,32 @@ public class RespiratoryCase : MonoBehaviour {
 		StartCoroutine(DeathCondition());
 		StartCoroutine(WinCondition());
         StartCoroutine(WarningCoroutine());
+        StartCoroutine(DBGAdvance());
 	}
+
+    IEnumerator DBGAdvance() {
+        while (true) {
+            float t = 0;
+            bool con = Input.GetKeyDown(KeyCode.A);
+            while (con) {
+                con = Input.GetKey(KeyCode.A);
+                t += Time.deltaTime;
+                if (t > 5f) {
+                    if (currentState == 0) {
+                        decompTimer = 0;
+                        print("Force further decomp");
+                    } else if (currentState == 1) {
+                        deathTimer = 0;
+                        print("Force death");
+                    }
+                    t = 0f;
+                    break;
+                }
+                yield return null;
+            }
+            yield return null;
+        }
+    }
 
 	protected virtual IEnumerator WinCondition() {
 		while(!isCorrect) {
@@ -84,9 +109,13 @@ public class RespiratoryCase : MonoBehaviour {
 			FurtherDecomp();
 		}
 	}
-	
-	protected virtual IEnumerator DeathCondition() {
-		yield return new WaitForSeconds(deathTimer);
+
+    protected virtual IEnumerator DeathCondition() {
+        float time = 0f;
+        while (time < deathTimer) {
+            time += Time.deltaTime;
+            yield return 0;
+        }
 		if(currentState != 2) { // If you haven't won after death time is up... kill the baby
 			BabyDeath();
 		}
@@ -98,7 +127,8 @@ public class RespiratoryCase : MonoBehaviour {
 	}
 
 	protected void UpdateMonitor() {
-		MonitorUpdates.Instance.UpdateMonitor(Sp02,temperature,bloodPressure,heartRate);
+        UpdateMonitor(30f);
+		//MonitorUpdates.Instance.UpdateMonitor(Sp02,temperature,bloodPressure,heartRate);
 	}
 	
 	protected void UpdateMonitor(float seconds) {

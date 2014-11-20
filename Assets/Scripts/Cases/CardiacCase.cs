@@ -10,7 +10,7 @@ public class CardiacCase : RespiratoryCase {
 	protected override void Awake() {
 		base.Awake();
 		decompTimer = 600f;
-		deathTimer = 900f;
+        deathTimer = 900f;
 		babyBreath.both = true;
 	}
 
@@ -61,7 +61,7 @@ public class CardiacCase : RespiratoryCase {
 		temperature = "37.1";
 		currentState = 1;
 		Sp02 = "60%";
-		// Cyanosis enabled
+		// Cyanosis enabledaa
 		// resp rate: 120 b/m
 		bloodPressure = "30/10";
 		heartRate = "220";
