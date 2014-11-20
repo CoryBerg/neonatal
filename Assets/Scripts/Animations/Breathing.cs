@@ -3,9 +3,10 @@ using System.Collections;
 
 public class Breathing : MonoBehaviour {
 	public float respRate = 50f;
-	private float respiratory;
 	public bool both = false;
-	private float breath;
+
+	private float amp, breath, respiratory;
+
 	private SkinnedMeshRenderer skinMeshRenderer;
 	private float changeTime, changeTarget;
 	// Use this for initialization
@@ -23,12 +24,14 @@ public class Breathing : MonoBehaviour {
 	}
 
 	void LeftLung() {
-		breath = Mathf.Sin (Time.time * 2) * respRate/2 + 50;
+		amp = 65 - (3*respRate)/8;
+		breath = 50 + amp * Mathf.Sin(respRate * Time.time / (10));
 		skinMeshRenderer.SetBlendShapeWeight (1, breath);
 	}
 
 	void BothLungs() {
-		breath = Mathf.Sin(Time.time * 2) * respRate + 50;
+		amp = 65 - (3*respRate)/8;
+		breath = 50 + amp * Mathf.Sin(respRate * Time.time / (10));
 		skinMeshRenderer.SetBlendShapeWeight(1, breath);
 		skinMeshRenderer.SetBlendShapeWeight(2, breath);
 	}
