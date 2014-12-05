@@ -680,7 +680,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1092662327}
-  m_RootOrder: 0
+  m_RootOrder: 2
 --- !u!114 &354703416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -879,11 +879,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 375420064}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .00130208337, y: 0, z: 0}
+  m_LocalPosition: {x: .00130208337, y: .00130208337, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1092662327}
-  m_RootOrder: 2
+  m_RootOrder: 1
 --- !u!20 &375420066
 Camera:
   m_ObjectHideFlags: 0
@@ -1240,7 +1240,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!23 &590039778
 Renderer:
   m_ObjectHideFlags: 0
@@ -1517,7 +1516,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!23 &851155356
 Renderer:
   m_ObjectHideFlags: 0
@@ -1952,9 +1950,9 @@ Transform:
   m_LocalPosition: {x: -100, y: 100, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 354703415}
   - {fileID: 1542916650}
   - {fileID: 375420065}
+  - {fileID: 354703415}
   m_Father: {fileID: 0}
   m_RootOrder: 2
 --- !u!33 &1092662328
@@ -2217,7 +2215,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!23 &1156287614
 Renderer:
   m_ObjectHideFlags: 0
@@ -2293,7 +2290,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!23 &1301920994
 Renderer:
   m_ObjectHideFlags: 0
@@ -2781,7 +2777,7 @@ Transform:
   - {fileID: 1843105690}
   - {fileID: 1908613695}
   m_Father: {fileID: 1092662327}
-  m_RootOrder: 1
+  m_RootOrder: 0
 --- !u!65 &1542916651
 BoxCollider:
   m_ObjectHideFlags: 2
@@ -3077,7 +3073,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!23 &1741261824
 Renderer:
   m_ObjectHideFlags: 0
@@ -3444,7 +3439,7 @@ MonoBehaviour:
   wordWrap: 0
   text: '1. Use Stethoscope
 
-    2. Transillumnate Chest
+    2. Transilluminate Chest
 
     3. Suction the Baby
 
@@ -3502,7 +3497,7 @@ MonoBehaviour:
 
     5. Blood Culture
 
-    5. Prostaglandin Infusion'
+    6. Prostaglandin Infusion'
 --- !u!1 &1908613694
 GameObject:
   m_ObjectHideFlags: 0
@@ -3658,7 +3653,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!23 &1992361240
 Renderer:
   m_ObjectHideFlags: 0
