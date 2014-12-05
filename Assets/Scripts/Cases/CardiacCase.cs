@@ -41,6 +41,7 @@ public class CardiacCase : RespiratoryCase {
 	}
 
 	protected override void BabyRecovery ()	{
+		TestHandler.Instance.Toast("Baby shows sign of Recovery");
 		temperature = "37.1";
 		currentState = 2; // win
 		Sp02 = "85%";
