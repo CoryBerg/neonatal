@@ -3,7 +3,8 @@ using System.Collections;
 
 public enum NeonatalCase {
 	Cardiac,
-	Respiratory
+	Respiratory,
+    Tutorial
 }
 
 public class CaseHandler : MonoBehaviour {
@@ -50,4 +51,8 @@ public class CaseHandler : MonoBehaviour {
 	public void ActivateRespiratory() {
 		ActivateCase(NeonatalCase.Respiratory);
 	}
+
+    public void ActivateTutorial() {
+        ActivateCase(NeonatalCase.Tutorial);
+    }
 }

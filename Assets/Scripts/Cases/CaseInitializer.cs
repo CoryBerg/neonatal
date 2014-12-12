@@ -18,7 +18,9 @@ public class CaseInitializer : MonoBehaviour {
 		} else if(CaseHandler.Instance.currentCase == NeonatalCase.Cardiac) {
 			ActiveCase = this.gameObject.AddComponent<CardiacCase>();
 			cardiacAnswer.IsAnswer = true;
-		}
+        } else if (CaseHandler.Instance.currentCase == NeonatalCase.Tutorial) {
+            ActiveCase = this.gameObject.AddComponent<TutorialCase>();
+        }
 	}
 	
 	// Update is called once per frame
