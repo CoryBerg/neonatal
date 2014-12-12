@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 public class UserEvaluationPerformance : MonoBehaviour {
 	public GameObject labelPrefab;
+    public dfLabel caseText;
 	public float offset = 2f;
 	public Transform root;
 	// From gold standard document
@@ -121,6 +122,7 @@ public class UserEvaluationPerformance : MonoBehaviour {
 			ineffective = _ineffectiveCardioInterventionDict;
 			inappropriate = _inappropriateCardioInterventionDict;
 		}
+        caseText.Text += "\n\nEvaluation of Player Performance";
 		List<string> displayedKeys = new List<string>();
 		if(UILogger.ButtonsPressed != null) {
 			string textVal = string.Format("{0:D}. {1}", 1, UILogger.ButtonsPressed[0]);
@@ -167,6 +169,7 @@ public class UserEvaluationPerformance : MonoBehaviour {
 				lbl.Color = lblC;
 				lbl.Position = root.transform.position + new Vector3(0,-offset * (c - 1));
 				textVal = string.Format("{0:D}. {1}",c,displayKey);
+                caseText.Text += "\n\n" + textVal + " - " + tooltip;
 				lbl.Text = textVal;
 				lbl.Tooltip = tooltip;
 				c++;

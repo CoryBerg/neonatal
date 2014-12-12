@@ -16,6 +16,7 @@ public class CaseHandler : MonoBehaviour {
 			Destroy(this.gameObject);
 			return;
 		}
+        Application.runInBackground = true;
 		babyAlive = true;
 		DontDestroyOnLoad(this.gameObject);
 		Instance = this;
