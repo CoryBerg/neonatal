@@ -17,7 +17,7 @@ public class CardiacCase : RespiratoryCase {
 	protected override void InitialState ()	{
 		temperature = "37.1";
 		Sp02 = "75%";
-		bloodPressure = "50/25";
+		bloodPressure = "40/25";
 		heartRate = "180";
 		bpm = 180;
 		UpdateMonitor();
@@ -64,7 +64,7 @@ public class CardiacCase : RespiratoryCase {
 		Sp02 = "60%";
 		// Cyanosis enabledaa
 		// resp rate: 120 b/m
-		bloodPressure = "30/10";
+		bloodPressure = "35/15";
 		heartRate = "220";
         bpm = 220;
 

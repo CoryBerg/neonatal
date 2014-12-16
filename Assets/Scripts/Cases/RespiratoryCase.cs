@@ -146,7 +146,7 @@ public class RespiratoryCase : MonoBehaviour {
 		Sp02 = "75%";
 		temperature = "37.1";
 		babyBreath.respRate = 90f;
-		bloodPressure = "50/25";
+		bloodPressure = "40/25";
 		heartRate = "180";
 		bpm = 180;
 
@@ -170,7 +170,7 @@ public class RespiratoryCase : MonoBehaviour {
 		Sp02 = "60%";
 		// Cyanosis enabled
 		babyBreath.respRate = 120f;
-		bloodPressure = "30/10";
+		bloodPressure = "35/15";
 		bpm = 220;
 		heartRate = "220";
 
