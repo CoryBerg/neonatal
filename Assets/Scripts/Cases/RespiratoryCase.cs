@@ -132,7 +132,7 @@ public class RespiratoryCase : MonoBehaviour {
 	}
 	
 	protected void UpdateMonitor(float seconds) {
-		MonitorUpdates.Instance.UpdateMonitor(Sp02,temperature,bloodPressure,heartRate,seconds);
+		MonitorUpdates.Instance.UpdateMonitor(Sp02,babyBreath.respRate.ToString(),bloodPressure,heartRate,seconds);
 	}
 
     IEnumerator updateNeedleDecompAfterDelay() { // values from paul

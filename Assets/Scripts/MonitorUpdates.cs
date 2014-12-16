@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class MonitorUpdates : MonoBehaviour {
-	public dfLabel pressure, hRate, spO2, temp;
+	public dfLabel pressure, hRate, spO2, respRate;
 	public static MonitorUpdates Instance;
 	public float updateGranularity = .1f; // How quickly the monitor updates. Needs to be longer than the length of a frame\, suggested minimum is .1
     private bool go = true;
@@ -68,7 +68,7 @@ public class MonitorUpdates : MonoBehaviour {
         StopCoroutine("PressureTween");
         StartCoroutine("MonitorTween", new LabelTween(seconds, spO2, sp02(so2), "{0:.#}%",sp02(spO2.Text)));
         StartCoroutine("MonitorTween", new LabelTween(seconds, hRate, float.Parse(hr), "{0:0}", float.Parse(hRate.Text)));
-        StartCoroutine("MonitorTween", new LabelTween(seconds, temp, float.Parse(t), "{0:.#}", float.Parse(hRate.Text)));
+        StartCoroutine("MonitorTween", new LabelTween(seconds, respRate, float.Parse(t), "{0:0}", float.Parse(hRate.Text)));
         float presTop = bpTop(bp);
         float presBot = bpBot(bp);
         float startTop = bpTop(pressure.Text);
