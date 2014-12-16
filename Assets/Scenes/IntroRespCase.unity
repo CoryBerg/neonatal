@@ -308,7 +308,8 @@ MonoBehaviour:
   labelToModify: {fileID: 0}
   buttonToModify: {fileID: 0}
   text: {fileID: 0}
-  value: This tutorial allows you to learn the interface with no way to win or lose.
+  value: This tutorial allows you to learn the interface with no effect on the baby's
+    condition.
 --- !u!1 &199010812
 GameObject:
   m_ObjectHideFlags: 0
