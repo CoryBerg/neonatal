@@ -66,7 +66,7 @@ public class MonitorUpdates : MonoBehaviour {
         go = false;
         StopCoroutine("MonitorTween");
         StopCoroutine("PressureTween");
-        StartCoroutine("MonitorTween", new LabelTween(seconds, spO2, sp02(so2), "{0:.#}%",sp02(spO2.Text)));
+        StartCoroutine("MonitorTween", new LabelTween(seconds, spO2, sp02(so2), "{0:0}%",sp02(spO2.Text)));
         StartCoroutine("MonitorTween", new LabelTween(seconds, hRate, float.Parse(hr), "{0:0}", float.Parse(hRate.Text)));
         StartCoroutine("MonitorTween", new LabelTween(seconds, respRate, float.Parse(t), "{0:0}", float.Parse(hRate.Text)));
         float presTop = bpTop(bp);
