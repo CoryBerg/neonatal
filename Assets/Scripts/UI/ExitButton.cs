@@ -10,7 +10,7 @@ public class ExitButton : MonoBehaviour {
 		}
 	}
 	
-	public void OnClick( dfControl control, dfMouseEventArgs mouseEvent ) {
+	public void ExitGame() {
 		Application.Quit();
 	}
 }

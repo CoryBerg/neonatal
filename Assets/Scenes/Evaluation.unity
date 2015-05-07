@@ -773,7 +773,7 @@ MonoBehaviour:
   disabledColor:
     serializedVersion: 2
     rgba: 4294967295
-  size: {x: 480, y: 96}
+  size: {x: 402, y: 36}
   minSize: {x: 0, y: 0}
   maxSize: {x: 500, y: 0}
   clipChildren: 0
@@ -785,8 +785,8 @@ MonoBehaviour:
     margins:
       left: 0
       top: 0
-      right: 544
-      bottom: 672
+      right: 622
+      bottom: 732
     owner: {fileID: 354703418}
   renderOrder: 18
   isLocalized: 0
@@ -806,7 +806,7 @@ MonoBehaviour:
     rgba: 4294967295
   align: 0
   vertAlign: 0
-  textScale: 1.45833337
+  textScale: .625
   textScaleMode: 2
   charSpacing: 0
   colorizeSymbols: 0
@@ -853,8 +853,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.25, y: .25, z: .00100000005}
-  m_Center: {x: .625, y: -.125, z: 0}
+  m_Size: {x: 1.046875, y: .09375, z: .00100000005}
+  m_Center: {x: .5234375, y: -.046875, z: 0}
 --- !u!1 &375420064
 GameObject:
   m_ObjectHideFlags: 0
@@ -1374,6 +1374,10 @@ Prefab:
       propertyPath: orthographic
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 78377a86a213043b48ce72c02f51cfee, type: 2}
+      propertyPath: EnableSound
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 78377a86a213043b48ce72c02f51cfee, type: 2}
   m_RootGameObject: {fileID: 2108117461}
@@ -1628,19 +1632,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 6500000, guid: 4c067ea9690fc4f4c81d778b5ad2faa8, type: 2}
       propertyPath: m_Size.x
-      value: 1.25
+      value: 1.046875
       objectReference: {fileID: 0}
     - target: {fileID: 6500000, guid: 4c067ea9690fc4f4c81d778b5ad2faa8, type: 2}
       propertyPath: m_Size.y
-      value: .25
+      value: .09375
       objectReference: {fileID: 0}
     - target: {fileID: 6500000, guid: 4c067ea9690fc4f4c81d778b5ad2faa8, type: 2}
       propertyPath: m_Center.x
-      value: .625
+      value: .5234375
       objectReference: {fileID: 0}
     - target: {fileID: 6500000, guid: 4c067ea9690fc4f4c81d778b5ad2faa8, type: 2}
       propertyPath: m_Center.y
-      value: -.125
+      value: -.046875
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 4c067ea9690fc4f4c81d778b5ad2faa8, type: 2}
       propertyPath: tooltipDelay
@@ -1660,15 +1664,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 4c067ea9690fc4f4c81d778b5ad2faa8, type: 2}
       propertyPath: layout.margins.right
-      value: 544
+      value: 909
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 4c067ea9690fc4f4c81d778b5ad2faa8, type: 2}
       propertyPath: layout.margins.bottom
-      value: 672
+      value: 745
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 4c067ea9690fc4f4c81d778b5ad2faa8, type: 2}
       propertyPath: renderOrder
-      value: 14
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 11400006, guid: 4c067ea9690fc4f4c81d778b5ad2faa8, type: 2}
       propertyPath: DataTarget.MemberName
@@ -1693,11 +1697,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 4c067ea9690fc4f4c81d778b5ad2faa8, type: 2}
       propertyPath: size.x
-      value: 480
+      value: 402
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 4c067ea9690fc4f4c81d778b5ad2faa8, type: 2}
       propertyPath: size.y
-      value: 96
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 4c067ea9690fc4f4c81d778b5ad2faa8, type: 2}
       propertyPath: maxSize.x
@@ -1705,11 +1709,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 4c067ea9690fc4f4c81d778b5ad2faa8, type: 2}
       propertyPath: textScale
-      value: 1.45833337
+      value: .625
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 4c067ea9690fc4f4c81d778b5ad2faa8, type: 2}
       propertyPath: textScaleMode
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 4c067ea9690fc4f4c81d778b5ad2faa8, type: 2}
+      propertyPath: enableGradient
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4c067ea9690fc4f4c81d778b5ad2faa8, type: 2}
@@ -3007,7 +3015,7 @@ MonoBehaviour:
   BlipMonitorWidth: 2
   BlipMonitorHeightModifier: .5
   ScaleAmount: .0299999993
-  EnableSound: 1
+  EnableSound: 0
   HeartVolume: 1
   Heart1: {fileID: 8300000, guid: e2d32f2b7c196534fbd0574934a04124, type: 3}
   Heart2: {fileID: 8300000, guid: e486690a11ef54a41a716560bbc771ea, type: 3}

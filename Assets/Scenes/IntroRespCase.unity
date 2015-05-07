@@ -98,7 +98,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 46787873}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .00166666671, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: .00166666671, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 862612588}
@@ -687,7 +687,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 3
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -758,7 +758,7 @@ MonoBehaviour:
   BlipMonitorWidth: 2
   BlipMonitorHeightModifier: .5
   ScaleAmount: .0299999993
-  EnableSound: 1
+  EnableSound: 0
   HeartVolume: 1
   Heart1: {fileID: 8300000, guid: e2d32f2b7c196534fbd0574934a04124, type: 3}
   Heart2: {fileID: 8300000, guid: e486690a11ef54a41a716560bbc771ea, type: 3}
@@ -1601,6 +1601,14 @@ Prefab:
     - target: {fileID: 100026, guid: 78377a86a213043b48ce72c02f51cfee, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8200000, guid: 78377a86a213043b48ce72c02f51cfee, type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 78377a86a213043b48ce72c02f51cfee, type: 2}
+      propertyPath: EnableSound
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 78377a86a213043b48ce72c02f51cfee, type: 2}
