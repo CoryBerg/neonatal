@@ -11,6 +11,7 @@ public class CaseHandler : MonoBehaviour {
 	public static CaseHandler Instance;
 	public NeonatalCase currentCase;
 	public bool babyAlive;
+
 	// Use this for initialization
 	void Awake () {
 		if(Instance != null) {

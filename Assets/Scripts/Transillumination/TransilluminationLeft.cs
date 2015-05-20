@@ -50,7 +50,6 @@ public class TransilluminationLeft : MonoBehaviour {
 		}
 
 	}
-	
 
 	void CamAnimate() {
 		this.animation.Play ("transilluminateCamZoom");

@@ -16,7 +16,7 @@ public class DoTest : MonoBehaviour {
 		if(TestHandler.Instance.TestStatus(TestName)) {
 			resultPanel.IsVisible = true;
 			testPanel.IsVisible = false;
-		} else if(!TestHandler.Instance.TestInProgressButNotComplete(TestName)) {
+		} else if(!TestHandler.Instance.TestStatus(TestName)) {
 			TestHandler.Instance.BeginTest(TestName,TestLength);
 			SetButtonColor(Color.red);
 			Invoke("SetComplete",TestLength);

@@ -1,30 +1,31 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class CaseInitializer : MonoBehaviour {
 	public static CaseInitializer Instance;
 	public RespiratoryCase ActiveCase;
-	public MakeChoice respAnswer, cardiacAnswer;
+
+	[Header ("Answer Buttons")]
+	public GameObject respAnswerButton;
+	public GameObject cardiacAnswerButton;
+
 	// Use this for initialization
 	void Awake () {
 		if(Instance != null) {
 			Destroy(this.gameObject);
 			return;
 		}
+
 		Instance = this;
 		if(CaseHandler.Instance.currentCase == NeonatalCase.Respiratory) {
 			ActiveCase = this.gameObject.AddComponent<RespiratoryCase>();
-			respAnswer.IsAnswer = true;
+			respAnswerButton.GetComponent<Button>().onClick.AddListener(() => this.gameObject.GetComponent<RespiratoryCase>().CorrectChoiceMade());
 		} else if(CaseHandler.Instance.currentCase == NeonatalCase.Cardiac) {
 			ActiveCase = this.gameObject.AddComponent<CardiacCase>();
-			cardiacAnswer.IsAnswer = true;
+			cardiacAnswerButton.GetComponent<Button>().onClick.AddListener(() => this.gameObject.GetComponent<CardiacCase>().CorrectChoiceMade());
         } else if (CaseHandler.Instance.currentCase == NeonatalCase.Tutorial) {
             ActiveCase = this.gameObject.AddComponent<TutorialCase>();
         }
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
 	}
 }

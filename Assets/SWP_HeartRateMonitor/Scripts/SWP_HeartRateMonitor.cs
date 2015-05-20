@@ -43,7 +43,7 @@ public class SWP_HeartRateMonitor : MonoBehaviour
 	void Start()
 	{
 		BeatsPerSecond = 60f / BeatsPerMinute;
-		BlipOffset = new Vector3 (transform.position.x - (BlipMonitorWidth / 2), transform.position.y, transform.position.z);
+		BlipOffset = new Vector3 (-4.93f/*transform.position.x - (BlipMonitorWidth / 2)*/, transform.position.y, 3.7f/*transform.position.z*/);
 		DisplayXEnd = BlipOffset.x + BlipMonitorWidth;
 		CreateClone();
 		TrailTime = NewClone.GetComponentInChildren<TrailRenderer>().time;

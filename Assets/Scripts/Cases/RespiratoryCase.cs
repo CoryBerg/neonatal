@@ -24,6 +24,10 @@ public class RespiratoryCase : MonoBehaviour {
 
 	private GameObject babyEtt;
 
+	public void CorrectChoiceMade() {
+		isCorrect = true;
+	}
+
 	protected virtual void Awake() {
 		babyBreath = BabyAnimatorController.Instance.gameObject.GetComponent<Breathing> ();
         if (babyBreath == null) {

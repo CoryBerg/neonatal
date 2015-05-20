@@ -13,6 +13,6 @@ public class SetScenarioAndLoad : MonoBehaviour {
 			CaseHandler.Instance.ActivateCase(CaseType);
 		}
 
-		Application.LoadLevel("IntroRespCase");
+		Application.LoadLevel("IntroCase");
 	}
 }

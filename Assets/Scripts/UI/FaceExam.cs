@@ -3,25 +3,17 @@ using System.Collections;
 
 public class FaceExam : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-	
+	public Camera mainCamera;
+
+	public void EnterFaceExam() {
+		mainCamera.animation ["faceExam"].speed = 1f;
+		mainCamera.animation["faceExam"].time = 0;
+		mainCamera.animation.Play("faceExam");
 	}
 
-	public void On() {
-		Camera.main.animation ["faceExam"].speed = 1f;
-		Camera.main.animation["faceExam"].time = 0;
-		Camera.main.animation.Play("faceExam");
-	}
-
-	public void Off() {
-		Camera.main.animation ["faceExam"].speed = -1f;
-		Camera.main.animation["faceExam"].time = Camera.main.animation["faceExam"].length;
-		Camera.main.animation.Play("faceExam");
-	}
-
-	// Update is called once per frame
-	void Update () {
-	
+	public void ExitFaceExam() {
+		mainCamera.animation ["faceExam"].speed = -1f;
+		mainCamera.animation["faceExam"].time = mainCamera.animation["faceExam"].length;
+		mainCamera.animation.Play("faceExam");
 	}
 }

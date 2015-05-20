@@ -1,14 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class ToggleMute : MonoBehaviour {
-	public dfButton button;
+
 	private int muted = 0;
+
 	// Use this for initialization
 	void Start () {
-		if(button == null) {
-			button = this.GetComponent<dfButton>();
-		}
 		if(PlayerPrefs.HasKey("muteAudio")) {
 			muted = PlayerPrefs.GetInt("muteAudio");
 		}
@@ -18,20 +17,16 @@ public class ToggleMute : MonoBehaviour {
 	void SetMute() {
 		if(muted == 1) {
 			AudioListener.volume = 0;
-			button.Text = "Unmute";
+			this.gameObject.GetComponentInChildren<Text> ().text = "Unmute";
 		} else {
 			AudioListener.volume = 1;
-			button.Text = "Mute";
+			this.gameObject.GetComponentInChildren<Text> ().text = "Mute";
 		}
 	}
 
-	void MuteToggle() {
+	public void MuteToggle() {
 		muted = Mathf.Abs(muted - 1);
 		PlayerPrefs.SetInt("muteAudio",muted);
 		SetMute();
-	}
-	
-	public void OnClick( dfControl control, dfMouseEventArgs mouseEvent ) {
-		MuteToggle();
 	}
 }

@@ -1,12 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 
 public class UserEvaluationPerformance : MonoBehaviour {
 	public GameObject labelPrefab;
-    public dfLabel caseText;
+    public Text summaryText;
 	public float offset = 2f;
 	public Transform root;
+	public Text yourPerformanceText;
+
 	// From gold standard document
 	static Dictionary<string, string> _translationDict = new Dictionary<string, string>
 	{
@@ -114,27 +117,33 @@ public class UserEvaluationPerformance : MonoBehaviour {
 		if(CaseHandler.Instance.babyAlive == false) {
 			UILogger.ButtonsPressed.Add ("TheBabyDied");
 		}
+
 		Dictionary<string,string> effective = _effectiveRespInterventionDict;
 		Dictionary<string,string> ineffective = _ineffectiveRespInterventionDict;
 		Dictionary<string,string> inappropriate = _inappropriateRespInterventionDict;
+
 		if(CaseHandler.Instance.currentCase == NeonatalCase.Cardiac) {
 			effective = _effectiveCardioInterventionDict;
 			ineffective = _ineffectiveCardioInterventionDict;
 			inappropriate = _inappropriateCardioInterventionDict;
 		}
-        caseText.Text += "\n\nEvaluation of Player Performance";
+
 		List<string> displayedKeys = new List<string>();
 		if(UILogger.ButtonsPressed != null) {
+			summaryText.text += "\n\nEvaluation of Player Performance";
+
 			string textVal = string.Format("{0:D}. {1}", 1, UILogger.ButtonsPressed[0]);
-			int c = 1;
+			int currentStepNumber = 1;
 			for(int i = 0; i < UILogger.ButtonsPressed.Count; i++) {
 				if(UILogger.ButtonsPressed[i].Contains("Exit") || ! _translationDict.ContainsKey(UILogger.ButtonsPressed[i])) {
 					continue;
 				}
+
 				string displayKey = _translationDict[UILogger.ButtonsPressed[i]];
 				if(displayedKeys.Contains(displayKey)) {
 					continue;
 				}
+
 				displayedKeys.Add(displayKey);
 				Color lblC;
 				string tooltip = effective["Debug"] + " " + displayKey;
@@ -163,29 +172,32 @@ public class UserEvaluationPerformance : MonoBehaviour {
 						continue;
 					}
 				}
-				GameObject labelInst = (GameObject)dfGUIManager.Instantiate(labelPrefab);
-				labelInst.transform.parent = this.transform;
-				dfLabel lbl = labelInst.GetComponent<dfLabel>();
-				lbl.Color = lblC;
-				lbl.Position = root.transform.position + new Vector3(0,-offset * (c - 1));
-				textVal = string.Format("{0:D}. {1}",c,displayKey);
-                caseText.Text += "\n\n" + textVal + " - " + tooltip;
-				lbl.Text = textVal;
-				lbl.Tooltip = tooltip;
-				c++;
+
+				if(currentStepNumber > 1) {
+					GameObject labelInst = (GameObject)Instantiate(labelPrefab);
+					labelInst.transform.SetParent(this.transform, false);
+					/*dfLabel lbl = labelInst.GetComponent<dfLabel>();
+					lbl.Color = lblC;*/
+					labelInst.transform.position = root.transform.position + new Vector3(0,-offset * (currentStepNumber - 1));
+					textVal = string.Format("{0:D}. {1}",currentStepNumber,displayKey);
+	                summaryText.text += "\n\n" + textVal + " - " + tooltip;
+					labelInst.GetComponent<Text>().text = textVal;
+					//lbl.Text = textVal;
+					//lbl.Tooltip = tooltip;
+				} else {
+					yourPerformanceText.text = textVal;
+				}
+
+				currentStepNumber++;
 			}
-		} else {
-			GameObject labelInst = (GameObject)dfGUIManager.Instantiate(labelPrefab);
-			labelInst.transform.parent = this.transform;
-			labelInst.transform.position = root.transform.position;
-			dfLabel lbl = labelInst.GetComponent<dfLabel>();
-			lbl.Text = "No data";
-			lbl.Tooltip = "No available description.";
+		} else { // If no data, display "No data"
+			//GameObject labelInst = (GameObject)Instantiate(labelPrefab);
+			//labelInst.transform.SetParent(this.transform, false);
+			//labelInst.transform.position = root.transform.position;
+			//dfLabel lbl = labelInst.GetComponent<dfLabel>();
+			yourPerformanceText.text = "No data";
+			//lbl.Text = "No data";
+			//lbl.Tooltip = "No available description.";
 		}
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
 	}
 }

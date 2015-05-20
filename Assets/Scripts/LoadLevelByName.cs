@@ -11,4 +11,10 @@ public class LoadLevelByName : MonoBehaviour
 		}
 	}
 
+	//TODO: Remove this
+	void OnClick( dfControl control, dfMouseEventArgs mouseEvent ) {
+		if(!string.IsNullOrEmpty(LevelName)) {
+			Application.LoadLevel(LevelName);
+		}
+	}
 }

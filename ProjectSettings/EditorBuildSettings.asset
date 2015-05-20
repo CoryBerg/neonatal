@@ -10,7 +10,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
   - enabled: 1
-    path: Assets/Scenes/IntroRespCase.unity
+    path: Assets/Scenes/IntroCase.unity
   - enabled: 1
     path: Assets/Scenes/MainScene.unity
   - enabled: 1
