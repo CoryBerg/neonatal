@@ -24,12 +24,6 @@ public class UIButtonLoggerNew : MonoBehaviour
 		}
 
 		string trimmedButton = this.name.TrimEnd("Button".ToCharArray());
-		trimmedButton = trimmedButton.TrimStart("Begin".ToCharArray());
-		trimmedButton = trimmedButton.TrimStart("End".ToCharArray());
-		trimmedButton = trimmedButton.TrimStart("Exit".ToCharArray());
-		trimmedButton = trimmedButton.Trim();
-		trimmedButton = trimmedButton.TrimEnd("Left".ToCharArray());
-		trimmedButton = trimmedButton.TrimEnd("Right".ToCharArray());
 		trimmedButton = trimmedButton.Trim();
 
 		UILoggerNew.ButtonsPressed.Add(trimmedButton);
