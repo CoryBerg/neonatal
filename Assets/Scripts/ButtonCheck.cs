@@ -16,20 +16,6 @@ public class ButtonCheck : MonoBehaviour {
 	private string action;
 	private int clickCount = 0;
 
-
-	public void OnClick(dfControl control, dfMouseEventArgs mouseEvent) {
-//		Debug.Log (this.transform.name);
-
-		if (showCurrentOperation) {
-			action = this.GetComponent<dfButton> ().Text;
-		}
-
-		clickCount += 1;
-		//PlayerPrefs.SetInt(this.transform.name, clickCount);
-		UpdateButtonCount (action, clickCount);
-//		Debug.Log ( this.transform.name + "has been pressed " + PlayerPrefs.GetInt(this.transform.name) + " times.");
-	}
-
 	public void ButtonPressed(GameObject buttonText) {
 		if (showCurrentOperation) {
 			action = buttonText.GetComponent<Text> ().text;
