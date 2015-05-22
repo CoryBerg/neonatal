@@ -326,7 +326,7 @@ RectTransform:
   m_RootOrder: 2
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: 0, y: -60}
+  m_AnchoredPosition: {x: 0, y: -10}
   m_SizeDelta: {x: 1075, y: 400}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &416244091
@@ -744,7 +744,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BeatsPerMinute: 60
   FlatLine: 0
-  ShowBlip: 1
+  ShowBlip: 0
   Blip: {fileID: 100000, guid: 8582258603ecc504984e33c84b273741, type: 2}
   BlipSize: .0299999993
   BlipTrailStartSize: .0199999996
@@ -942,6 +942,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CaseToShow: 2
   textToModify: {fileID: 132668085}
+  textFile: {fileID: 0}
   value: This tutorial allows you to learn the interface with no effect on the baby's
     condition.
 --- !u!114 &884776936
@@ -958,6 +959,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CaseToShow: 0
   textToModify: {fileID: 132668085}
+  textFile: {fileID: 0}
   value: One day old male infant born at 36 weeks gestation who was admitted to the
     NICU for suspected neonatal sepsis, transferred intubated from an outside hospital
     for acute decompensation.
@@ -1735,6 +1737,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 78377a86a213043b48ce72c02f51cfee, type: 2}
       propertyPath: EnableSound
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 78377a86a213043b48ce72c02f51cfee, type: 2}
+      propertyPath: ShowBlip
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

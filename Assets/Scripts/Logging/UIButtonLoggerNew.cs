@@ -7,6 +7,7 @@ public class UIButtonLoggerNew : MonoBehaviour
 {
 	void Start() {
 		this.gameObject.GetComponent<Button>().onClick.AddListener(() => this.gameObject.GetComponent<Button>().gameObject.GetComponent<UIButtonLoggerNew>().LogButton());
+
 		if(UILoggerNew.UILog.ContainsKey(this.name) == false) {
 			UILoggerNew.UILog.Add(this.name, 0);
 		}
@@ -22,6 +23,15 @@ public class UIButtonLoggerNew : MonoBehaviour
 			UILoggerNew.UILog.Add(this.name, 1);
 		}
 
-		UILoggerNew.ButtonsPressed.Add(this.name);
+		string trimmedButton = this.name.TrimEnd("Button".ToCharArray());
+		trimmedButton = trimmedButton.TrimStart("Begin".ToCharArray());
+		trimmedButton = trimmedButton.TrimStart("End".ToCharArray());
+		trimmedButton = trimmedButton.TrimStart("Exit".ToCharArray());
+		trimmedButton = trimmedButton.Trim();
+		trimmedButton = trimmedButton.TrimEnd("Left".ToCharArray());
+		trimmedButton = trimmedButton.TrimEnd("Right".ToCharArray());
+		trimmedButton = trimmedButton.Trim();
+
+		UILoggerNew.ButtonsPressed.Add(trimmedButton);
 	}
 }

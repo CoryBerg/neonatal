@@ -540,6 +540,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CaseToShow: 0
   textToModify: {fileID: 1120789423}
+  textFile: {fileID: 0}
   value: Appropriately administered prostaglandin drip
 --- !u!114 &462863043
 MonoBehaviour:
@@ -1462,7 +1463,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BeatsPerMinute: 60
   FlatLine: 0
-  ShowBlip: 1
+  ShowBlip: 0
   Blip: {fileID: 100000, guid: 8582258603ecc504984e33c84b273741, type: 2}
   BlipSize: .0299999993
   BlipTrailStartSize: .0199999996
@@ -1690,6 +1691,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 78377a86a213043b48ce72c02f51cfee, type: 2}
       propertyPath: EnableSound
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 78377a86a213043b48ce72c02f51cfee, type: 2}
+      propertyPath: ShowBlip
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:

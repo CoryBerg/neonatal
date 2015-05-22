@@ -8,40 +8,43 @@ public class UserEvaluationPerformance : MonoBehaviour {
     public Text summaryText;
 	public float offset = 2f;
 	public Transform root;
+	public GameObject yourPerformanceBox;
 	public Text yourPerformanceText;
 
 	// From gold standard document
-	static Dictionary<string, string> _translationDict = new Dictionary<string, string>
+	static Dictionary<string, string> _translationDictBackup = new Dictionary<string, string>
 	{
-		{"ButtonStethLL","Stethoscope"},
-		{"ButtonStethLR","Stethoscope"},
-		{"ButtonStethUL","Stethoscope"},
-		{"ButtonStethUR","Stethoscope"},
-		{"ButtonNeedle","Needle Decompression"},
-		{"ButtonSuction","Suction the Baby"},
-		{"ButtonTransilL","Transilluminate Chest"},
-		{"ButtonETT","Attach ETT"},
-		{"ButtonTransilR","Transilluminate Chest"},
-		{"ButtonXRay","X-Ray"},
+		{"Visualize Chest", "Visualize Chest"},
+		{"Examine Face","Examine Face"},
+		{"Cardiology","Cardiology Consult"},
+		{"Suction Baby Services","Suction Baby"},
+		{"Surgery","Surgery Consult"},
+		{"Extremity Blood Pressure","4 Extremity Blood Pressure"},
+		{"Hyperoxia ","Hyperoxia"},
+		{"ECHO ","ECHO"},
+		{"EKG ","EKG"},
+		{"X-Ray ","X-Ray"},
+		{"Suction ","Suction Baby"},
+		{"Needle Decompression ","Needle Decompression"},
+		{"ECHO","ECHO Test"},
+		{"EKG","EKG Test"},
+		{"Chest","Chest Compression"},
+		{"Dopamine","BP Medication"},
+		{"Dobutamine","BP Medication"},
+		{"Epinephrine","BP Medication"},
+		{"Hydrocortisone","BP Medication"},
+		{"AdministerSaline","Normal Saline"},
+		{"Intubation","Intubation"},
+		{"BMP","BMP Test"},
+		{"BloGlu","Glucose Test"},
+		{"BloCul","Blood Culture"},
+		{"CBC","CBC Test"},
+		{"InitialABG","ABG Test"},
+		{"HyperTest","Hyperoxia Test"},
+		{"Prostaglandin","Prostaglandin Drip"},
+		{"Inhaled","Inhaled Medications"},
 		{"SlowNeedle","No Needle"},
 		{"TheBabyDied","Baby Died"},
-		{"ButtonECHO","ECHO Test"},
-		{"ButtonEKG","EKG Test"},
-		{"ButtonChest","Chest Compression"},
-		{"ButtonDopamine","BP Medication"},
-		{"ButtonDobutamine","BP Medication"},
-		{"ButtonEpinephrine","BP Medication"},
-		{"ButtonHydrocortisone","BP Medication"},
-		{"ButtonAdministerSaline","Normal Saline"},
-		{"ButtonIntubation","Intubation"},
-		{"ButtonBMP","BMP Test"},
-		{"ButtonBloGlu","Glucose Test"},
-		{"ButtonBloCul","Blood Culture"},
-		{"ButtonCBC","CBC Test"},
-		{"ButtonInitialABG","ABG Test"},
-		{"ButtonHyperTest","Hyperoxia Test"},
-		{"ButtonProstaglandin","Prostaglandin Drip"},
-		{"ButtonInhaled","Inhaled Medications"},
 		{"Debug","Nothing"}
 	};
 	
@@ -109,37 +112,43 @@ public class UserEvaluationPerformance : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-//		For Debugging in scene...
-//		UILogger.ButtonsPressed = new List<string> ();
-//		for (int i = 0; i < 15; i++) {
-//			UILogger.ButtonsPressed.Add ("Debug");
-//		}
-		if(CaseHandler.Instance.babyAlive == false) {
-			UILogger.ButtonsPressed.Add ("TheBabyDied");
+		foreach(string pressedButton in UILoggerNew.ButtonsPressed) {
+			Debug.Log(pressedButton);
 		}
 
-		Dictionary<string,string> effective = _effectiveRespInterventionDict;
-		Dictionary<string,string> ineffective = _ineffectiveRespInterventionDict;
-		Dictionary<string,string> inappropriate = _inappropriateRespInterventionDict;
 
-		if(CaseHandler.Instance.currentCase == NeonatalCase.Cardiac) {
+		if(CaseHandler.Instance.babyAlive == false) {
+			UILoggerNew.ButtonsPressed.Add ("TheBabyDied");
+		}
+
+		Dictionary<string,string> effective = new Dictionary<string, string>();
+		Dictionary<string,string> ineffective = new Dictionary<string, string>();
+		Dictionary<string,string> inappropriate = new Dictionary<string, string>();
+
+		if(CaseHandler.Instance.currentCase == NeonatalCase.Respiratory) {
+			effective = _effectiveRespInterventionDict;
+			ineffective = _ineffectiveRespInterventionDict;
+			inappropriate = _inappropriateRespInterventionDict;
+		} else if(CaseHandler.Instance.currentCase == NeonatalCase.Cardiac) {
 			effective = _effectiveCardioInterventionDict;
 			ineffective = _ineffectiveCardioInterventionDict;
 			inappropriate = _inappropriateCardioInterventionDict;
 		}
 
 		List<string> displayedKeys = new List<string>();
-		if(UILogger.ButtonsPressed != null) {
+		if(UILoggerNew.ButtonsPressed != null) {
 			summaryText.text += "\n\nEvaluation of Player Performance";
 
-			string textVal = string.Format("{0:D}. {1}", 1, UILogger.ButtonsPressed[0]);
+			string textVal = string.Format("{0:D}. {1}", 1, UILoggerNew.ButtonsPressed[0]);
 			int currentStepNumber = 1;
-			for(int i = 0; i < UILogger.ButtonsPressed.Count; i++) {
-				if(UILogger.ButtonsPressed[i].Contains("Exit") || ! _translationDict.ContainsKey(UILogger.ButtonsPressed[i])) {
+			for(int i = 0; i < UILoggerNew.ButtonsPressed.Count; i++) {
+				//if(UILoggerNew.ButtonsPressed[i].Contains("Exit") || ! _translationDict.ContainsKey(UILoggerNew.ButtonsPressed[i])) {
+				if(UILoggerNew.ButtonsPressed[i].Contains("Exit")) {
 					continue;
 				}
 
-				string displayKey = _translationDict[UILogger.ButtonsPressed[i]];
+				//string displayKey = _translationDict[UILoggerNew.ButtonsPressed[i]];
+				string displayKey = UILoggerNew.ButtonsPressed[i];
 				if(displayedKeys.Contains(displayKey)) {
 					continue;
 				}
@@ -175,10 +184,11 @@ public class UserEvaluationPerformance : MonoBehaviour {
 
 				if(currentStepNumber > 1) {
 					GameObject labelInst = (GameObject)Instantiate(labelPrefab);
-					labelInst.transform.SetParent(this.transform, false);
+					labelInst.transform.SetParent(yourPerformanceBox.transform, false);
 					/*dfLabel lbl = labelInst.GetComponent<dfLabel>();
 					lbl.Color = lblC;*/
-					labelInst.transform.position = root.transform.position + new Vector3(0,-offset * (currentStepNumber - 1));
+					labelInst.transform.position = root.transform.position + new Vector3(0, -offset * (currentStepNumber - 1));
+
 					textVal = string.Format("{0:D}. {1}",currentStepNumber,displayKey);
 	                summaryText.text += "\n\n" + textVal + " - " + tooltip;
 					labelInst.GetComponent<Text>().text = textVal;
