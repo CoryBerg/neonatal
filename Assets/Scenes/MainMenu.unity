@@ -441,9 +441,8 @@ RectTransform:
 --- !u!114 &603550018
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11453152, guid: 94452008d1973b84fa99483ebc90a611,
-    type: 2}
-  m_PrefabInternal: {fileID: 620643506}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 603550016}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -451,7 +450,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CaseType: 1
-  loadNext: 0
 --- !u!114 &603550019
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -615,7 +613,25 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 11444090, guid: 94452008d1973b84fa99483ebc90a611, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 603550018}
+    - target: {fileID: 11444090, guid: 94452008d1973b84fa99483ebc90a611, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetScenario
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444078, guid: 94452008d1973b84fa99483ebc90a611, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1783331802}
+    - target: {fileID: 11444078, guid: 94452008d1973b84fa99483ebc90a611, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetScenario
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 11457764, guid: 94452008d1973b84fa99483ebc90a611, type: 2}
+    - {fileID: 11453152, guid: 94452008d1973b84fa99483ebc90a611, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 94452008d1973b84fa99483ebc90a611, type: 2}
   m_RootGameObject: {fileID: 857648074}
   m_IsPrefabParent: 0
@@ -981,7 +997,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CaseType: 0
-  loadNext: 0
 --- !u!114 &907541862
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1453,6 +1468,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b9d71f099f8ece4b945ec5b30553e2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  keepOriginalInstance: 1
+  destroyGameObject: 1
+  persistant: 1
   currentCase: 1
   babyAlive: 0
 --- !u!4 &1449380305
@@ -1904,9 +1922,8 @@ CanvasRenderer:
 --- !u!114 &1783331802
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11457764, guid: 94452008d1973b84fa99483ebc90a611,
-    type: 2}
-  m_PrefabInternal: {fileID: 620643506}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1783331797}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -1914,7 +1931,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CaseType: 2
-  loadNext: 0
 --- !u!1 &1888217481
 GameObject:
   m_ObjectHideFlags: 0
@@ -2100,6 +2116,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9c5b0d5c9c8c4b64387836cb08e19950, type: 2}
       propertyPath: currentCase
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9c5b0d5c9c8c4b64387836cb08e19950, type: 2}
+      propertyPath: persistant
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

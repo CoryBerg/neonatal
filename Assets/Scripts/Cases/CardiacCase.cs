@@ -1,11 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class CardiacCase : RespiratoryCase {
-	// States 
-	// 1 = furtherdecomp
-	// 2 = win
-	// 3 = death
+public class CardiacCase : Case {
 	
 	protected override void Awake() {
 		base.Awake();
@@ -25,19 +21,6 @@ public class CardiacCase : RespiratoryCase {
         babyMaterial = babyBody.renderer.material;
 
         StartCoroutine(LipsOff(3f));
-	}
-
-	protected override void BabyDeath () {
-		temperature = "37.1";
-		currentState = 3; // death
-		Sp02 = "85%";
-		bloodPressure = "65/35";
-		heartRate = "0";
-		bpm = 0;
-        // Pulse strength strong
-
-        StartCoroutine(LipsOn(1f));
-		UpdateMonitor();
 	}
 
 	protected override void BabyRecovery ()	{
@@ -71,5 +54,19 @@ public class CardiacCase : RespiratoryCase {
         StartCoroutine(LipsOn(3f));
 		UpdateMonitor();
 		// weak pulse strength
+	}
+
+	
+	protected override void BabyDeath () {
+		temperature = "37.1";
+		currentState = 3; // death
+		Sp02 = "85%";
+		bloodPressure = "65/35";
+		heartRate = "0";
+		bpm = 0;
+		// Pulse strength strong
+		
+		StartCoroutine(LipsOn(1f));
+		UpdateMonitor();
 	}
 }

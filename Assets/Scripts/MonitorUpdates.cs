@@ -6,7 +6,6 @@ public class MonitorUpdates : MonoBehaviour {
 	public Text hRate, spO2, pressure, respRate;
 	public static MonitorUpdates Instance;
 	public float updateGranularity = .1f; // How quickly the monitor updates. Needs to be longer than the length of a frame\, suggested minimum is .1
-    private bool go = true;
 
 	public class LabelTween {
 		public float length;
@@ -63,9 +62,6 @@ public class MonitorUpdates : MonoBehaviour {
     }
 	
 	public void UpdateMonitor(string so2, string t, string bp, string hr, float seconds) {
-		//pressure.Text = bp;
-        go = false;
-
         StopCoroutine("MonitorTween");
         StopCoroutine("PressureTween");
 
@@ -85,9 +81,7 @@ public class MonitorUpdates : MonoBehaviour {
 
     IEnumerator PressureTween(BPTween bt) {
         yield return null;
-
-        go = true;
-
+		
         float t = 0;
         float c = 0f;
         float c2 = 0f;
@@ -114,7 +108,7 @@ public class MonitorUpdates : MonoBehaviour {
 
             t = 0f;
 
-            float up = granularity * Random.RandomRange(.95f, 1.1f);
+            float up = granularity * Random.Range(.95f, 1.1f);
             while (t < lerpSpeed) {
                 bt.label.text = string.Format(bt.format, Mathf.Lerp(c, tar, t / lerpSpeed), Mathf.Lerp(c2, tar, t / lerpSpeed));
                 t += up;
@@ -128,9 +122,7 @@ public class MonitorUpdates : MonoBehaviour {
 
 	IEnumerator MonitorTween(LabelTween lt) {
         yield return null;
-
-        go = true;
-
+		
         float t = 0;
 		float start = lt.start;
         float c = 0f;

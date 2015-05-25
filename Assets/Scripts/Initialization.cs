@@ -11,9 +11,4 @@ public class Initialization : MonoBehaviour {
         PlayerPrefs.DeleteKey("buttonCount");
 		Caching.CleanCache ();
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 }

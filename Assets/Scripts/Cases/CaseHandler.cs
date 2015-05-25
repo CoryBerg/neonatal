@@ -7,21 +7,16 @@ public enum NeonatalCase {
     Tutorial
 }
 
-public class CaseHandler : MonoBehaviour {
-	public static CaseHandler Instance;
+public class CaseHandler : Singleton<CaseHandler> {
 	public NeonatalCase currentCase;
 	public bool babyAlive;
 
 	// Use this for initialization
-	void Awake () {
-		if(Instance != null) {
-			Destroy(this.gameObject);
-			return;
-		}
+	protected override void Awake () {
+		base.Awake();
+
         Application.runInBackground = true;
 		babyAlive = true;
-		DontDestroyOnLoad(this.gameObject);
-		Instance = this;
 	}
 
 	public void KillBaby() {
@@ -37,20 +32,12 @@ public class CaseHandler : MonoBehaviour {
 		currentCase = aCase;
 	}
 
-	public void ActivateNext() {
-		if(currentCase == NeonatalCase.Cardiac) {
-			currentCase = NeonatalCase.Respiratory;
-		} else {
-			currentCase = NeonatalCase.Cardiac;
-		}
-	}
-
-	public void ActivateCardiac() {
-		ActivateCase(NeonatalCase.Cardiac);
-	}
-
 	public void ActivateRespiratory() {
 		ActivateCase(NeonatalCase.Respiratory);
+	}
+	
+	public void ActivateCardiac() {
+		ActivateCase(NeonatalCase.Cardiac);
 	}
 
     public void ActivateTutorial() {
